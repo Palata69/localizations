@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Фильтр чата на прокси
+# ─────────────────────────────────────────────────────────────────────
+
+# Предупреждения о нарушениях: %vl_level% — набранные очки, %vl_threshold% — порог мута
+filter_flood_messages: "{warn}Не повторяйте одно и то же <dark>(нарушения: <accent>%vl_level%</accent>/<accent>%vl_threshold%</accent>)"
+filter_fast_packets_messages: "{warn}Слишком быстро! Подождите немного <dark>(нарушения: <accent>%vl_level%</accent>/<accent>%vl_threshold%</accent>)"
+filter_fast_chat_messages: "{warn}Не пишите так часто <dark>(нарушения: <accent>%vl_level%</accent>/<accent>%vl_threshold%</accent>)"
+
+# Диагностика: /почему-мне-не-дают-писать-в-чат
+filter_debug_avg_delay: "<muted>Средняя пауза: <accent>%delay%</accent> мс <dark>(нужно %cooldown%)"
+filter_debug_last_message: "<muted>С последнего сообщения: <accent>%time%</accent> мс"
+filter_debug_violations: "<muted>Нарушения: <accent>%vl%"
+filter_debug_words: "<muted>Последние сообщения:"
+filter_debug_words_row: "{dot}<text>%words%"
+filter_debug_footer: "{info}Если вам не дают писать по ошибке, сделайте скриншот <dark>(F2)</dark> и отправьте нам: <link>{discord}"

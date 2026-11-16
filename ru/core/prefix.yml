@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Цвет префикса ранга (/prefix)
+# ─────────────────────────────────────────────────────────────────────
+
+# Названия цветов (PrefixColor) — без тегов: код красит их сам
+prefix_color_lemon: "Лимонный"
+prefix_color_azure: "Лазурный"
+prefix_color_peach: "Персиковый"
+prefix_color_purple: "Фиолетовый"
+prefix_color_golden: "Золотой"
+prefix_color_lime: "Лаймовый"
+prefix_color_electric: "Электрик"
+prefix_color_powder: "Пудровый"
+prefix_color_icy: "Ледяной"
+prefix_color_white: "Белый"
+
+# Команда
+prefix_color_unavailable: "{err}Цвет префикса можно менять с ранга %group%"
+prefix_color_unknown: "{err}Нет такого цвета. Список цветов — <primary>/prefix"
+prefix_color_already: "{err}Цвет %color% уже выбран"
+prefix_color_already_default: "{err}У префикса и так цвет ранга"
+prefix_color_changed: "{ok}Цвет префикса: %color%"
+prefix_color_reset: "{ok}Префиксу возвращён цвет ранга"
+
+# Палитра в чате (там, где нет меню)
+prefix_color_palette_header: "{info}Цвет префикса — нажмите на цвет:"
+prefix_color_palette_hover: "<muted>Нажмите, чтобы выбрать"
+prefix_color_palette_selected: "<success>Выбран"
+prefix_color_palette_reset: "<dark>[</dark><primary>Цвет ранга</primary><dark>]"
+prefix_color_palette_reset_hover: "<muted>Вернуть префиксу цвет ранга"
+
+# Меню (/prefix на лобби и в играх)
+prefix_menu_title: "<dark>Цвет префикса"
+prefix_menu_info: "<primary>Цвет префикса"
+prefix_menu_info_lore:
+  - "<muted>Перекрашивает префикс ранга и ник"
+  - "<muted>в чате, табе и над головой"
+  - ""
+  - "<muted>Доступно с %group% — бесплатно"
+  - ""
+  - "<muted>Сейчас: %color%"
+prefix_menu_info_default: "<muted>цвет ранга"
+prefix_menu_color_lore:
+  - "<muted>Как это выглядит:"
+  - "%preview%"
+prefix_menu_color_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
+prefix_menu_color_selected:
+  - ""
+  - "<success>Выбран"
+prefix_menu_color_unavailable:
+  - ""
+  - "<muted>Доступно с %group%"
+prefix_menu_reset: "<primary>Цвет ранга"
+prefix_menu_reset_lore:
+  - "<muted>Вернуть префиксу обычный цвет"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>вернуть"

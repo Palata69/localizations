@@ -1,0 +1,79 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Команды игровых серверов
+#  command_<команда>[_<подкоманда>]_usage — только аргументы, команду подставит код
+# ─────────────────────────────────────────────────────────────────────
+
+# Использование команд с обязательными аргументами
+command_report_usage: "<muted><ник>"
+command_entity_get_usage: "<muted><id сущности>"
+command_fuck_usage: "<muted><ник> <число сущностей> <секунды>"
+command_gamemode_usage: "<muted><режим 0–3> [ник]"
+# Код требует три аргумента, но использует только первый
+command_image_usage: "<muted><путь к картинке> <любое> <любое>"
+command_speed_usage: "<muted><скорость 0–10> [all|fly|walk]"
+command_testlang_usage: "<muted><title|subtitle|actionbar|chat> <ключ>"
+command_translate_usage: "<muted><номер сообщения>"
+
+# /speed
+command_speed_set_all: "{ok}Скорость ходьбы и полёта: <accent>%speed%"
+command_speed_set_fly: "{ok}Скорость полёта: <accent>%speed%"
+command_speed_set_walk: "{ok}Скорость ходьбы: <accent>%speed%"
+command_speed_invalid_speed: "{err}Скорость — число от <accent>0</accent> до <accent>10"
+command_speed_not_available_for: "{err}Скорость меняют только строители на сервере постройки"
+
+# /gamemode
+gamemode_changed: "{ok}Режим игры изменён"
+gamemode_target_changed: "{ok}Режим игры для %target% изменён"
+gamemode_invalid: "{err}Такого режима нет. Используйте число от <accent>0</accent> до <accent>3"
+gamemode_unavailable: "{err}Этот режим игры вам недоступен"
+gamemode_unavailable_others: "{err}Менять режим другим игрокам могут только разработчики"
+
+# /firework
+command_firework_ingame: "{err}Салют нельзя запускать во время игры"
+
+# /fuck (crash)
+fuck_started: "{ok}Отправляем <accent>%entities%</accent> сущностей за <accent>%time%</accent> с"
+fuck_finished: "{ok}Готово"
+fuck_target_protected: "{err}Нельзя: ранг этого игрока выше вашего"
+
+# /image
+image_cant_get_block: "{err}Посмотрите на блок, на котором разместить картинку"
+image_spawned: "{ok}Картинка размещена"
+file_not_found: "{err}Файл не найден"
+
+# /entity
+entity_id: "ID сущности"
+entity_not_found: "{err}Сущность <accent>#%id%</accent> не найдена"
+entity_get_result:
+  - "{line}"
+  - "<primary><b>Сущность</b> <accent>#%id%"
+  - "{dot}<muted>Тип: <accent>%type%"
+  - "{dot}<muted>Имя: <text>%name%"
+  - "{dot}<muted>Мир: <accent>%world%"
+  - "{dot}<muted>Координаты: <accent>%x% %y% %z%"
+  - "{dot}<muted>Видна всем: <accent>%public%"
+  - "{dot}<muted>Фейковая: <accent>%fake%"
+  - "{line}"
+entity_list_header: "{info}Сущности <dark>(</dark><accent>%page%</accent><dark>/</dark><accent>%pages%</accent><dark>)"
+entity_list_entry: "{dot}<accent>#%id%</accent> <muted>%class%</muted> %name% <dark>·</dark> <muted>%location%"
+entity_list_receivers: "   <muted>Получатели: <text>%players%"
+entity_list_viewers: "   <muted>Видят: <text>%players%"
+
+# /checkuuid
+checkuuid_result: "{info}UUID: <accent>%uuid%"
+
+# /memory (/tps)
+memory_world_header: "<primary><b>%world%"
+memory_world_players: "{dot}<muted>Игроков: <accent>%count%"
+memory_world_chunks: "{dot}<muted>Загружено чанков: <accent>%count%"
+memory_world_tiles: "{dot}<muted>Тайл-сущностей: <accent>%count%"
+memory_world_entities: "{dot}<muted>Сущностей: <accent>%count%"
+memory_type_entry: "    <muted>%type% <dark>—</dark> <text>%count%"
+memory_tps: "<muted>TPS за 1, 5 и 15 минут: %tps_1m%<dark>,</dark> %tps_5m%<dark>,</dark> %tps_15m%"
+memory_max: "<muted>Память, максимум: <accent>%memory% МБ"
+memory_total: "<muted>Память, выделено: <accent>%memory% МБ"
+memory_free: "<muted>Память, свободно: <accent>%memory% МБ"
+memory_uptime: "<muted>Сервер работает: <accent>%time%"
+
+# /testcustomname — код сам подменяет текст на время проверки
+test_localization_key: "<muted>Время: <accent>%test%"

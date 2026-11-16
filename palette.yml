@@ -1,0 +1,73 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Палитра. В сообщениях цвет задаётся ролью, а не кодом:
+#      <accent>%player%</accent>   вместо   <#FFD166>%player%
+#  Тогда весь стиль сети меняется здесь, без правки сообщений.
+#
+#  Значение роли: "#RRGGBB" и, при желании, начертания через пробел:
+#      bold italic underlined strikethrough obfuscated
+# ─────────────────────────────────────────────────────────────────────
+
+colors:
+  # Бренд: градиент названия сети, заголовки
+  brand_from: "#9D8CFF"
+  brand_to:   "#6FB6FF"
+
+  # Основные роли
+  primary: "#9D8CFF"   # акценты бренда, названия разделов, команды
+  accent:  "#FFD166"   # значения: ники, числа, валюта, время, названия
+  text:    "#E6E6F0"   # основной текст (цвет по умолчанию у каждого сообщения)
+  muted:   "#A3A3B8"   # пояснения, второстепенный текст
+  dark:    "#6B6B80"   # рамки, разделители, скобки
+
+  # Статусы
+  success: "#6EE7A0"
+  error:   "#FF6B7A"
+  warning: "#FFB454"
+  info:    "#7CC7FF"
+
+  # Ссылки и кликабельные подсказки
+  link: "#7CC7FF underlined"
+
+  # Автоподсказки: оформление по образцу Lumora, без жирного заголовка и рамок.
+  announce_text:    "#FFFFFF"
+  announce_mark:    "#555555"
+  announce_command: "#FF5555"
+  announce_green:   "#55FF55"
+  announce_blue:    "#55FFFF"
+  announce_yellow:  "#FFFF55"
+
+  # Редкость предметов и кейсов
+  rarity_none:      "#6B6B80"
+  rarity_common:    "#C8C8D4"
+  rarity_rare:      "#5EB8FF"
+  rarity_epic:      "#C77DFF"
+  rarity_legendary: "#FFB347 bold"
+
+# ─────────────────────────────────────────────────────────────────────
+#  Шаблоны. Вставляются в сообщения как {ok}, {err}, {warn}, {info}, {brand}...
+#  Внутри можно использовать роли, разметку и переменные бренда.
+# ─────────────────────────────────────────────────────────────────────
+
+styles:
+  announce: " <announce_mark>|</announce_mark> <announce_text>"
+  # Начало строки по типу сообщения
+  ok:   "<success>✔</success> "
+  err:  "<error>✖</error> "
+  warn: "<warning>⚠</warning> "
+  info: "<primary>✦</primary> "
+
+  # Уведомление, которое видит только персонал (как в стафф-чате): {staff}{info}… / {staff}{warn}…
+  staff: "<warning>Персонал</warning> <dark>┃</dark> "
+
+  # Сообщение от имени сети: объявления, рассылки, системные уведомления
+  brand: "<gradient:brand_from:brand_to><b>{server|upper}</b></gradient> <dark>┃</dark> "
+
+  # Пункт списка и стрелка
+  dot:   "<dark>•</dark> "
+  arrow: "<dark>»</dark>"
+
+  # Горизонтальная линия для многострочных сообщений
+  line: "<dark><st>                                                  </st></dark>"
+
+  # Название сети в цветах бренда: заголовки табло, тайтлы, кик-экраны
+  logo: "<gradient:brand_from:brand_to><b>{server|upper}</b></gradient>"

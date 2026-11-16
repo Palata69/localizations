@@ -1,0 +1,38 @@
+# Автоподсказки в стиле Lumora: воздух, тонкая полоса слева,
+# обычный светлый текст и цветовые акценты на полезном действии.
+# Интервал и порядок задаются в config.yml модуля core-automessage.
+
+automessage_party:
+  - " "
+  - "{announce}Хотите играть <announce_green>вместе с друзьями</announce_green>?"
+  - "{announce}Создайте группу: <announce_command>/party <ник></announce_command>"
+  - "{announce}Играйте на <announce_blue>одной арене и в одной команде</announce_blue>"
+  - " "
+
+automessage_friends:
+  - " "
+  - "{announce}Добавляйте игроков в <announce_green>друзья</announce_green>: <announce_command>/friend <ник></announce_command>"
+  - "{announce}Узнавайте, когда они <announce_yellow>заходят на сервер</announce_yellow>,"
+  - "{announce}и смотрите, <announce_blue>где они сейчас играют</announce_blue>"
+  - " "
+
+automessage_skin:
+  - " "
+  - "{announce}Хотите <announce_green>сменить скин</announce_green>?"
+  - "{announce}Используйте <announce_command>/skin <ник></announce_command> — лицензия не нужна"
+  - "{announce}Доступно с ранга {rank:premium}"
+  - " "
+
+automessage_store:
+  - " "
+  - "{announce}Хотите <announce_green>больше возможностей</announce_green>?"
+  - "{announce}Ранги, кейсы и облака — <announce_blue>{store}</announce_blue>"
+  - "{announce}Ваши покупки <announce_yellow>поддерживают развитие сервера</announce_yellow>"
+  - " "
+
+automessage_community:
+  - " "
+  - "{announce}Будьте в курсе <announce_green>новостей и конкурсов</announce_green>"
+  - "{announce}Discord: <announce_blue>{discord}</announce_blue>"
+  - "{announce}Telegram: <announce_blue>{telegram}</announce_blue>"
+  - " "

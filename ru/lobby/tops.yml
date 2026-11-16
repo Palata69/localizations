@@ -1,0 +1,35 @@
+# Топы игроков в лобби (голограммы). Фрагменты: код вставляет их в заголовки топов
+
+# Тип топа в хабе (prop_player_top_subtitle, %type%)
+level_player_top_name: "Уровень"
+time_player_top_name: "Время в игре"
+
+# Периоды статистики (StatisticPeriod: <период>_player_top_name)
+all_player_top_name: "Всё время"
+month_player_top_name: "Месяц"
+week_player_top_name: "Неделя"
+today_player_top_name: "Сегодня"
+
+# Выбранный период / режим в переключателе топа (обычный — stat_player_top_changer_value, раздел base)
+stat_player_top_changer_value_active: "<accent><b>%value%"
+
+# ── Табличка топов (TopBoard, секция tops в lobby.yml) ──────────────
+# Заголовок, шапка и значение собираются по категории: level, time, coins
+top_board_title_level: "<gradient:brand_from:brand_to><b>ТОП ПО УРОВНЮ</b></gradient>"
+top_board_title_time: "<gradient:brand_from:brand_to><b>ТОП ПО ВРЕМЕНИ В ИГРЕ</b></gradient>"
+top_board_title_coins: "<gradient:brand_from:brand_to><b>ТОП ПО МОНЕТАМ</b></gradient>"
+top_board_subtitle: "<muted>Лучшие игроки {server}"
+
+top_board_header_player: "Игрок"
+top_board_header_value_level: "Уровень"
+top_board_header_value_time: "Часы"
+top_board_header_value_coins: "Монеты"
+
+top_board_value_level: "%value% ур."
+top_board_value_time: "%value% ч."
+top_board_value_coins: "%value%"
+
+top_board_loading: "<muted>Загружаем топ..."
+top_board_updated: "<success>Обновлено!"
+top_board_refresh_in: "<muted>До обновления: <accent>%time%"
+top_board_hint: "<dark>ПКМ — следующий топ, ЛКМ — предыдущий"

@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Названия наград: кейсы, голосование, ежедневные награды
+#  Это фрагменты: код вставляет их в названия предметов и сообщения
+# ─────────────────────────────────────────────────────────────────────
+
+reward_booster_name: "%name% <dark>×</dark><accent>%amount%"
+reward_case_key_name: "Ключ от кейса %type% <dark>×</dark><accent>%amount%"
+reward_cloud_name: "<accent>%amount%"
+# %mode% здесь всегда пустой
+reward_coin_name: "<accent>%amount%</accent>%mode%"
+reward_coin_mode_name: "<accent>%amount%</accent> <muted>(%mode%)"
+reward_dust_name: "Пыль <dark>×</dark><accent>%amount%"
+reward_experience_name: "<accent>%exp%</accent> опыта"
+reward_game_item_name: "%category% <accent>%name%"
+reward_group_name: "Ранг %group% <muted>(%duration%)"
+reward_suffix_name: "Суффикс %suffix%"

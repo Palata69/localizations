@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Чат на игровых серверах: режимы чата (/chat), перевод сообщений
+# ─────────────────────────────────────────────────────────────────────
+
+# Названия режимов (chat_mode_<режим>_name)
+chat_mode_all_name: "общий чат"
+chat_mode_party_name: "чат группы"
+chat_mode_staff_name: "чат персонала"
+chat_mode_helper_name: "чат хелперов"
+
+chat_mode_no_permission: "{err}Этот чат вам недоступен"
+chat_mode_party_empty: "{err}Вы не в группе. Пригласить друга — <primary>/party invite <ник>"
+
+# /chat без аргументов: %available% — режимы через «/»
+command_chat_usage: "{info}Сейчас: <accent>%current%</accent>. Сменить — <primary>/chat %available%"
+command_chat_invalid_mode: "{err}Такого чата нет. Доступные: <accent>%modes%"
+command_chat_mode_set: "{ok}Теперь вы пишете в <accent>%mode%"
+
+# Перевод сообщений (/translate)
+translate_button: " <link>[перевести]"
+translate_button_description: "<muted>Нажмите, чтобы перевести сообщение"
+translate_message_not_found: "{err}Сообщение не найдено или уже устарело"
+translate_result_fail: "{err}Не удалось перевести сообщение"
+translate_result_success: "{info}Перевод: <text>%message%"

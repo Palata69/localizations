@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Друзья (/friend)
+#  friend_invitation, кнопки и подсказки вставляются в JSON — без " и \
+# ─────────────────────────────────────────────────────────────────────
+
+# Заявка: текст над кнопками, кнопки и подсказки к ним
+friend_invitation: "{info}<accent>%name%</accent> хочет добавить вас в друзья"
+friend_accept_description: "<muted>Нажмите, чтобы принять заявку"
+friend_reject_description: "<muted>Нажмите, чтобы отклонить заявку"
+friend_invitation_sent: "{ok}Заявка в друзья отправлена"
+friend_invitation_already_sent: "{err}Вы уже отправили заявку игроку <accent>%name%"
+friend_disabled_invitation_sent: "{err}<accent>%name%</accent> не принимает заявки в друзья"
+friend_invitation_not_found: "{err}От <accent>%name%</accent> нет заявки в друзья"
+
+# Ответ на заявку
+friend_accept: "{ok}<accent>%name%</accent> теперь у вас в друзьях"
+friend_invitation_rejected_receiver: "{info}Вы отклонили заявку от <accent>%name%"
+friend_invitation_rejected_sender: "{info}<accent>%name%</accent> отклонил вашу заявку в друзья"
+friend_invitation_expired_receiver: "{info}Заявка в друзья от <accent>%name%</accent> истекла"
+friend_invitation_expired_sender: "{info}Ваша заявка в друзья к <accent>%name%</accent> истекла"
+friend_invitation_from_sender_reject_by_quit: "{info}Заявка от <accent>%name%</accent> отменена: игрок вышел с сервера"
+friend_invitation_to_receiver_reject_by_quit: "{info}Заявка к <accent>%name%</accent> отменена: игрок вышел с сервера"
+
+# Ошибки добавления
+friend_add_self: "{err}Нельзя добавить в друзья самого себя"
+friend_add_already: "{err}Этот игрок уже у вас в друзьях"
+friend_add_limit: "{err}У вас максимум друзей. Удалить — <primary>/friend remove <ник>"
+friend_add_target_limit: "{err}У этого игрока уже максимум друзей"
+friend_reject_self: "{err}Нельзя отклонить заявку от самого себя"
+friend_reject_already: "{err}От <accent>%name%</accent> нет заявки в друзья"
+
+# Удаление
+friend_remove_sender: "{ok}<accent>%name%</accent> удалён из друзей"
+friend_remove_receiver: "{info}<accent>%name%</accent> удалил вас из друзей"
+
+# Список (/friend list)
+friend_empty_list: "{info}У вас пока нет друзей. Добавить — <primary>/friend <ник>"
+friend_list_invalid_page: "{err}Такой страницы нет"
+friend_list_result: "<primary><b>Друзья</b> <dark>(стр. <accent>%page%</accent>/<accent>%pages%</accent>)"
+friend_list_online_row: "{dot}<accent>%name%</accent> <success>в сети"
+friend_list_offline_row: "{dot}<accent>%name%</accent> <dark>не в сети"
+# Дописываются в конец строки друга в сети
+friend_list_vanished_row: " <dark>(невидимка)"
+friend_list_server: " <dark>—</dark> <muted>%server%"
+
+# Друзья в сети при входе
+friends_online: "<primary><b>Друзья в сети:"
+friend_online_entry: "{dot}<accent>%name%</accent> <dark>—</dark> <muted>%server%"
+friend_online_others_entry: "{dot}<muted>и ещё <accent>%count%"
+friend_join_the_game: "{info}Друг <accent>%name%</accent> зашёл в игру"
+friend_left_the_game: "{info}Друг <accent>%name%</accent> вышел из игры"
+
+# Телепорт к другу (/friend tp)
+friend_teleport_already: "{err}Вы уже на сервере этого друга"
+friend_teleport_sender: "{info}Переходим к <accent>%name%</accent> на <accent>%server%</accent>…"
+friend_teleport_receiver: "{info}<accent>%name%</accent> переходит к вам на сервер"
+
+# Общие
+player_not_friend: "{err}Этот игрок не у вас в друзьях"
+ignored_player_action: "{err}<accent>%name%</accent> добавил вас в чёрный список"

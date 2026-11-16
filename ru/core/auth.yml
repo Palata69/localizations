@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Авторизация на прокси: /login, /register, /changepassword, /license
+# ─────────────────────────────────────────────────────────────────────
+
+# Напоминания, пока игрок не вошёл
+auth_idle_registration: "{info}Зарегистрируйтесь: <primary>/register <пароль> <пароль>"
+auth_idle_login: "{info}Войдите в аккаунт: <primary>/login <пароль>"
+auth_idle_too_long:
+  - "{logo}"
+  - ""
+  - "<error>Время на вход истекло"
+  - "<muted>Зайдите снова и введите пароль"
+
+# Ошибки состояния
+auth_already_authorized: "{err}Вы уже вошли в аккаунт"
+auth_already_registered: "{err}Аккаунт уже зарегистрирован. Войти — <primary>/login <пароль>"
+auth_not_authorized: "{err}Сначала войдите в аккаунт: <primary>/login <пароль>"
+auth_not_registered: "{err}Сначала зарегистрируйтесь: <primary>/register <пароль> <пароль>"
+auth_should_disable_license: "{err}У вас включён вход по лицензии. Выключить — <primary>/license"
+
+# Использование (команду пишем целиком: код подставляет строку как есть)
+auth_login_format: "<primary>/login</primary> <muted><пароль>"
+auth_registration_format: "<primary>/register</primary> <muted><пароль> <пароль ещё раз>"
+auth_changepassword_format: "<primary>/changepassword</primary> <muted><старый пароль> <новый пароль>"
+
+# Вход
+auth_login_success: "{ok}Вы вошли в аккаунт. Приятной игры!"
+auth_invalid_password: "{err}Неверный пароль"
+auth_kick_wrong_password:
+  - "{logo}"
+  - ""
+  - "<error>Слишком много неверных паролей"
+  - "<muted>Вход с вашего IP временно заблокирован"
+auth_password_migrated: "{info}Мы обновили защиту пароля — менять ничего не нужно"
+
+# Регистрация
+auth_registration_success: "{ok}Вы зарегистрировались. Добро пожаловать на {server}!"
+auth_language_detected: "{info}Язык: <accent>%language%</accent>. Сменить его можно в настройках"
+auth_registration_passwords_different: "{err}Пароли не совпадают"
+auth_nick_registration_disallowed:
+  - "{logo}"
+  - ""
+  - "<error>Этот ник нельзя зарегистрировать"
+  - "<muted>Он занят или используется как маска"
+  - "<muted>Зайдите с другим ником"
+
+# Пароль
+auth_min_password_length: "{err}Пароль слишком короткий: нужно от <accent>4</accent> символов"
+auth_max_password_length: "{err}Пароль слишком длинный: не больше <accent>16</accent> символов"
+auth_password_has_illegal_symbols: "{err}В пароле есть недопустимые символы. Используйте буквы, цифры и знаки препинания"
+auth_changepassword_passwords_equal: "{err}Новый пароль совпадает со старым"
+auth_changepassword_success: "{ok}Пароль изменён"
+
+# Лицензия (/license)
+auth_license_enabled_status_checking: "{info}Проверка лицензии уже запрошена. Перезайдите на сервер"
+auth_license_enabled_status_enabled: "{ok}Вход по лицензии включён. Перезайдите, чтобы подтвердить аккаунт"
+auth_license_enabled_status_disabled: "{ok}Вход по лицензии выключен. Теперь вход — по паролю"
+
+# Перезагрузка настроек (/authreload, /filterreload)
+configuration_reloaded: "{ok}Настройки перезагружены"

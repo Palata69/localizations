@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Привязка Discord (/discord)
+# ─────────────────────────────────────────────────────────────────────
+
+discord_link_action:
+  - "{line}"
+  - "{info}Ваш код привязки: <accent><b>%code%</b>"
+  - "<muted>Отправьте его нашему боту в канал привязки на сервере Discord: <link>{discord}"
+  - "{line}"
+discord_already_awaiting: "{err}Вы уже получили код. Отправьте его боту в Discord"
+discord_already_linked: "{err}Discord уже привязан. Отвязать — <primary>/discord unlink"
+discord_link_success: "{ok}Discord привязан: <accent>%tag%"
+discord_not_linked: "{err}Discord не привязан. Привязать — <primary>/discord link"
+discord_unlink_success: "{ok}Discord отвязан"
+
+# Буст сервера Discord (Nitro)
+discord_nitro_thanks: "{ok}Спасибо за буст нашего Discord-сервера!"
+discord_nitro_gained: "{ok}Вы получили ранг {rank:nitro} за буст Discord-сервера"
+discord_nitro_removed: "{info}Ранг {rank:nitro} снят: буст Discord-сервера закончился"

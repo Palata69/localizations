@@ -1,0 +1,20 @@
+# Ресурспак сети: окно на клиенте, ответы прокси (/rp), перезагрузка в ядре (/rpreload)
+
+# Текст в окне «скачать ресурспак?» на клиенте
+resourcepack_prompt:
+  - "<primary><b>Ресурспак {server}"
+  - "<muted>Нужен для моделей, звуков и интерфейса сети"
+
+resourcepack_declined_kick:
+  - "{logo}"
+  - ""
+  - "<error>Без ресурспака играть нельзя"
+  - "<muted>Зайдите снова и нажмите <accent>«Да»</accent> в окне загрузки."
+  - "<muted>Если окна нет: <accent>Сервер → Настроить → Наборы ресурсов: Включить"
+resourcepack_declined: "{warn}Вы отказались от ресурспака: часть предметов и интерфейса будет выглядеть иначе. Скачать — <accent>/rp"
+resourcepack_failed: "{err}Не удалось скачать ресурспак. Попробуйте ещё раз — <accent>/rp"
+resourcepack_resent: "{ok}Ресурспак отправлен — подтвердите загрузку на экране"
+resourcepack_none: "{info}Сейчас ресурспака нет"
+
+resourcepack_reload_done: "{ok}Ресурспак перезагружен (SHA-1 <accent>%sha1%</accent>), прокси получили новую ссылку"
+resourcepack_reload_missing: "{err}Файл ресурспака не найден — проверьте resourcepack.zip рядом с ядром"

@@ -1,0 +1,107 @@
+# ─────────────────────────────────────────────────────────────────────
+#  2FA через Telegram (модуль ядра TelegramBot): /2fa, подтверждение входа
+# ─────────────────────────────────────────────────────────────────────
+
+# /2fa — статус
+telegram_status_linked: "{ok}Telegram привязан с <accent>%date%</accent>. Вход по паролю подтверждается в боте. Отвязать — <primary>/2fa unlink"
+telegram_status_not_linked: "{info}Telegram не привязан. Привяжите его, чтобы защитить вход: <primary>/2fa link"
+telegram_status_suspended: "{warn}Ваши ранги приостановлены до привязки Telegram: %ranks%"
+
+# /2fa link
+telegram_link_code:
+  - "{line}"
+  - "{info}<primary><b>Привязка Telegram"
+  - "<muted>Откройте ссылку и нажмите «Запустить»:"
+  - "<link>%link%"
+  - "<muted>Или отправьте боту <accent>@%bot%</accent> команду <primary>/start %code%"
+  - "<muted>Код действует <accent>10 минут"
+  - "{line}"
+telegram_already_linked: "{err}Telegram уже привязан. Отвязать — <primary>/2fa unlink"
+telegram_unavailable: "{err}Бот Telegram сейчас недоступен. Попробуйте позже"
+telegram_link_success: "{ok}Telegram привязан. Теперь вход по паролю нужно подтверждать в боте"
+
+# /2fa unlink
+telegram_not_linked: "{err}Telegram не привязан. Привязать — <primary>/2fa link"
+telegram_unlink_sent: "{info}Подтвердите отвязку в Telegram — бот прислал сообщение"
+telegram_unlink_success: "{ok}Telegram отвязан"
+
+# Персоналу и переводчикам Telegram обязателен
+telegram_ranks_suspended:
+  - "{line}"
+  - "{warn}Ранги приостановлены: %ranks%"
+  - "<muted>Персоналу и переводчикам нужен привязанный Telegram — он защищает вход в аккаунт"
+  - "<muted>Привяжите его — <primary>/2fa link</primary> — и ранги вернутся сами"
+  - "{line}"
+telegram_ranks_restored: "{ok}Telegram привязан — ранги возвращены: %ranks%"
+
+# Прокси: вход по паролю ждёт подтверждения в Telegram
+telegram_auth_waiting: "{info}Подтвердите вход в Telegram — бот прислал сообщение. На ответ <accent>2 минуты"
+telegram_auth_waiting_title: "<primary><b>Подтвердите вход"
+telegram_auth_waiting_subtitle: "<muted>Бот прислал сообщение в Telegram"
+telegram_auth_waiting_actionbar: "<warning>Ждём подтверждения входа в Telegram"
+telegram_auth_denied:
+  - "{logo}"
+  - ""
+  - "<error>Вход отклонён в Telegram"
+  - "<muted>Если это были не вы, смените пароль: <primary>/changepassword"
+telegram_auth_timeout:
+  - "{logo}"
+  - ""
+  - "<error>Вход не подтверждён"
+  - "<muted>Зайдите снова и подтвердите вход в Telegram в течение 2 минут"
+telegram_auth_unavailable:
+  - "{logo}"
+  - ""
+  - "<error>Не удалось отправить подтверждение входа в Telegram"
+  - "<muted>Попробуйте зайти позже"
+
+# ─────────────────────────────────────────────────────────────────────
+#  Сообщения бота в Telegram — простой текст: без тегов и шаблонов {ok}, {line}...
+#  Можно только {server}, {domain}, {site} и %значения%
+# ─────────────────────────────────────────────────────────────────────
+
+telegram_bot_help:
+  - "Это бот защиты аккаунтов {server}."
+  - ""
+  - "Чтобы привязать аккаунт, зайдите на {domain} и введите /2fa link — бот получит код по ссылке."
+  - "После привязки вход по паролю с нового IP нужно будет подтвердить здесь."
+telegram_bot_code_invalid: "Код неверный или устарел. Получите новый в игре: /2fa link"
+telegram_bot_link_success:
+  - "Telegram привязан к аккаунту %player%."
+  - ""
+  - "Теперь вход по паролю с нового IP нужно подтверждать здесь. Отвязать — /2fa unlink в игре."
+telegram_bot_already_linked_same: "Этот Telegram уже привязан к аккаунту %player%"
+telegram_bot_already_linked_other: "Этот Telegram уже привязан к другому аккаунту. Сначала отвяжите его: /2fa unlink в игре"
+telegram_bot_account_already_linked: "К аккаунту %player% уже привязан другой Telegram"
+
+# Подтверждение входа
+telegram_bot_login_request:
+  - "Вход в аккаунт %player% на {server}"
+  - ""
+  - "IP: %ip%"
+  - "Прокси: %proxy%"
+  - ""
+  - "Это вы? На ответ 2 минуты."
+telegram_bot_button_approve: "Это я"
+telegram_bot_button_deny: "Не я"
+telegram_bot_answer_approved: "Вход подтверждён"
+telegram_bot_answer_denied: "Вход отклонён"
+telegram_bot_login_approved: "Вход в аккаунт %player% с IP %ip% подтверждён."
+telegram_bot_login_denied:
+  - "Вход в аккаунт %player% с IP %ip% отклонён."
+  - ""
+  - "Если это были не вы, кто-то знает ваш пароль — смените его в игре: /changepassword"
+telegram_bot_login_timeout: "Вход в аккаунт %player% с IP %ip% не подтверждён вовремя."
+telegram_bot_login_replaced: "Запрос входа в аккаунт %player% заменён более новым."
+telegram_bot_request_expired: "Запрос устарел"
+telegram_bot_not_your_request: "Это не ваш запрос"
+
+# Отвязка
+telegram_bot_unlink_request:
+  - "Отвязать Telegram от аккаунта %player%?"
+  - ""
+  - "Вход по паролю перестанет подтверждаться здесь. У персонала и переводчиков ранги будут приостановлены до новой привязки."
+telegram_bot_button_unlink: "Отвязать"
+telegram_bot_button_cancel: "Отмена"
+telegram_bot_unlink_cancelled: "Отвязка отменена"
+telegram_bot_unlinked: "Telegram отвязан от аккаунта %player%"

@@ -1,0 +1,13 @@
+# Обучение в хабе
+
+tutorial_npc_hologram_title: "<primary><b>Обучение"
+tutorial_npc_hologram_action: "<muted>Нажмите, чтобы начать"
+
+tutorial_already_started: "{err}Обучение уже идёт"
+tutorial_level_up: "{ok}Обучение пройдено! Вы получили <accent>2</accent> уровень"
+
+# Книга-приглашение (страница светлая — текст тёмным цветом)
+lobby_tutorial_book_text: "<dark>Добро пожаловать на {server}! Есть вопросы о сервере? Посмотрите короткое обучение и начинайте свою историю"
+lobby_tutorial_book_accept: "<primary>[Посмотреть обучение]"
+lobby_tutorial_book_accept_hover: "<muted>Нажмите, чтобы начать обучение"
+lobby_tutorial_book_reject: "<dark>Помощь не нужна? Просто закройте книгу и начинайте игру"

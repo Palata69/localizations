@@ -1,0 +1,69 @@
+# Уведомления персоналу: вход персонала, наказания, жалобы, слежка
+# Видит только персонал: кому именно — решает код (обычно HELPER и выше, иногда SUPPORT или SR_BUILDER).
+
+# ── Вход и выход персонала ──────────────────────────────────────
+core_staff_join_notify: "{staff}{info}<accent>%name%</accent> зашёл в игру"
+core_staff_join_another_ip_notify: "{staff}{warn}<accent>%name%</accent> зашёл с другого IP: <accent>%old_addr%</accent> {arrow} <accent>%new_addr%"
+core_staff_leave_notify: "{staff}{info}<accent>%name%</accent> вышел из игры. %time_spent%"
+core_staff_leave_time_played: "<muted>За <accent>%date%</accent> наиграно <accent>%time%"
+core_staff_leave_didnt_played: "<muted>Сегодня не играл"
+
+# ── Защита от ботов (прокси) ────────────────────────────────────
+guard_attack_mode_enabled: "{staff}{warn}<accent>%proxy%</accent>: похоже на атаку ботов — включён режим защиты, входят только зарегистрированные игроки <dark>(%reason%<dark>)"
+guard_attack_mode_disabled: "{staff}{info}<accent>%proxy%</accent>: режим защиты от ботов выключен <dark>(длился <accent>%duration%</accent><dark>)"
+guard_attack_reason_connections: "<accent>%count%</accent> <muted>подключений за <accent>%seconds%</accent> с"
+guard_attack_reason_new_players: "<accent>%count%</accent> <muted>новых игроков за <accent>%seconds%</accent> с"
+guard_attack_reason_manual: "<muted>включён вручную"
+guard_hosting_join: "{staff}{warn}<accent>%name%</accent> зашёл через VPN/хостинг <dark>(</dark><accent>%asn%</accent><dark>)"
+
+# ── Невидимость ─────────────────────────────────────────────────
+core_vanish_enabled_broadcast: "{staff}{info}<accent>%user%</accent> включил невидимость"
+core_vanish_disabled_broadcast: "{staff}{info}<accent>%user%</accent> выключил невидимость"
+
+# ── Наказания: баны (ban_with_* — части строки ban_*_broadcast) ───
+ban_ip_broadcast: "{staff}{warn}<accent>%admin%</accent> заблокировал IP <accent>%target%"
+ban_name_broadcast: "{staff}{warn}<accent>%admin%</accent> заблокировал <accent>%target%"
+ban_with_ip: "<dark>, IP: <accent>%ips%"
+ban_with_name: "<dark>, ник: <accent>%nick%"
+ban_with_names: "<dark>, ники: <accent>%nicks%"
+ban_with_time: "<dark>, на <accent>%time%"
+ban_with_reason: "<dark>. Причина: <text>%reason%"
+ban_auto_remove: "{staff}{info}Из истории удалены ошибочно снятые баны: <accent>%count%"
+banhistory_ban_removed: "{staff}{warn}<accent>%admin%</accent> удалил из истории бан <dark>#%id%"
+
+# ── Наказания: разбаны ──────────────────────────────────────────
+unban_ip: "{staff}{info}<accent>%name%</accent> снял <accent>%count%</accent> %label% с IP <accent>%target%"
+unban_name: "{staff}{info}<accent>%name%</accent> снял <accent>%count%</accent> %label% с <accent>%target%"
+
+# ── Наказания: муты ─────────────────────────────────────────────
+unmute: "{staff}{info}<accent>%name%</accent> снял мут с <accent>%target%"
+mute_broadcast: "{staff}{warn}<accent>%name%</accent> выдал мут <accent>%target%</accent> на <accent>%time%</accent>. Причина: %reason%"
+mutehistory_mute_removed: "{staff}{warn}<accent>%admin%</accent> удалил из истории мут <dark>#%id%"
+
+# ── Наказания: кики ─────────────────────────────────────────────
+kick_single: "{staff}{warn}<accent>%name%</accent> выгнал <accent>%target%</accent>. Причина: %reason%"
+kick_many: "{staff}{warn}<accent>%name%</accent> выгнал игроков: <accent>%target%</accent>. Причина: %reason%"
+
+# ── Жалобы ──────────────────────────────────────────────────────
+report_new_report: "{staff}{warn}Жалоба на <accent>%target%</accent> от <accent>%name%</accent>: <text>%reason%</text> <dark>(</dark><muted>%server%</muted><dark>)</dark>. Открыть — <primary>/reports"
+report_start_spectating: "{staff}{info}<accent>%player%</accent> наблюдает за <accent>%target%</accent> по жалобе"
+report_broadcast_guilty: "{staff}{info}<accent>%admin%</accent> наказал <accent>%target%</accent> по жалобе"
+report_broadcast_not_guilty: "{staff}{info}<accent>%admin%</accent> отклонил жалобу на <accent>%target%"
+
+# ── Статистика ──────────────────────────────────────────────────
+wipestat_done_single: "{staff}{warn}<accent>%admin%</accent> очистил статистику <accent>%name%</accent> в <accent>%mode%"
+wipestat_done_all: "{staff}{warn}<accent>%admin%</accent> очистил всю статистику <accent>%name%"
+command_cancelwipe_broadcast: "{staff}{warn}<accent>%admin%</accent> отменил очистку статистики по бану <dark>#%id%</dark> <dark>(игроков: <accent>%count%</accent>)"
+
+# ── Администрирование ───────────────────────────────────────────
+core_setproperty_broadcast: "{staff}{warn}<accent>%admin%</accent> изменил свойство <accent>%key%</accent> игрока <accent>%player%</accent>: <accent>%value%"
+command_makebuilder_give_broadcast: "{staff}{info}<accent>%admin%</accent> выдал ранг {rank:builder} игроку <accent>%name%"
+command_makebuilder_reset_broadcast: "{staff}{info}<accent>%admin%</accent> снял ранг {rank:builder} с <accent>%name%"
+
+# ── Слежка за игроком (/tunnel): события отслеживаемого игрока ───
+core_tunnel_event_connected: "<primary>Туннель</primary> <dark>┃</dark> <accent>%name%</accent> <success>зашёл в игру"
+core_tunnel_event_disconnected: "<primary>Туннель</primary> <dark>┃</dark> <accent>%name%</accent> <error>вышел из игры"
+core_tunnel_event_vanished: "<primary>Туннель</primary> <dark>┃</dark> <accent>%name%</accent> <muted>включил невидимость"
+core_tunnel_event_unvanished: "<primary>Туннель</primary> <dark>┃</dark> <accent>%name%</accent> <muted>выключил невидимость"
+core_tunnel_event_switch: "<primary>Туннель</primary> <dark>┃</dark> <accent>%name%</accent> {arrow} <accent>%server%"
+core_tunnel_event_switch_cancelled: "<primary>Туннель</primary> <dark>┃</dark> <accent>%name%</accent> {arrow} <accent>%server%</accent> <error>(отменено)"

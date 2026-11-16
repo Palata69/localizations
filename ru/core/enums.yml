@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Значения перечислений ядра: редкость, цвета суффиксов, бустеры, кейсы,
+#  ошибки смены ника.
+#  Цвет у редкости и цвета суффикса задан тегом: код тоже ставит цвет перед
+#  названием, но каждая строка локализации начинается своим цветом.
+# ─────────────────────────────────────────────────────────────────────
+
+# Редкость (Rarity)
+rarity_none: "<rarity_none>Без редкости"
+rarity_common: "<rarity_common>Обычный"
+rarity_rare: "<rarity_rare>Редкий"
+rarity_epic: "<rarity_epic>Эпический"
+rarity_legendary: "<rarity_legendary>Легендарный"
+
+# Цвета суффиксов (SuffixColor) — покупаемые цвета, поэтому стандартные цвета Minecraft
+color_aqua: "<aqua>Голубой"
+color_blue: "<blue>Синий"
+color_dark_aqua: "<dark_aqua>Бирюзовый"
+color_dark_green: "<dark_green>Тёмно-зелёный"
+color_dark_purple: "<dark_purple>Фиолетовый"
+color_green: "<green>Зелёный"
+color_gold: "<gold>Золотой"
+color_gray: "<gray>Серый"
+color_pink: "<light_purple>Розовый"
+color_red: "<red>Красный"
+color_yellow: "<yellow>Жёлтый"
+color_white: "<white>Белый"
+color_black: "<black>Чёрный"
+color_dark_blue: "<dark_blue>Тёмно-синий"
+
+# Бустеры (BoosterType)
+booster_coins_1_name: "Бустер монет I"
+booster_coins_2_name: "Бустер монет II"
+booster_coins_3_name: "Бустер монет III"
+booster_experience_1_name: "Бустер опыта I"
+booster_experience_2_name: "Бустер опыта II"
+booster_experience_3_name: "Бустер опыта III"
+
+# Кейсы (CaseType): название и описание (список строк)
+cosmetic_case_name: "Косметический кейс"
+cosmetic_case_description:
+  - "<muted>Питомцы, следы, эффекты"
+  - "<muted>и другая косметика для лобби"
+donate_case_name: "Донатный кейс"
+donate_case_description:
+  - "<muted>Ранги, облака и редкие"
+  - "<muted>предметы"
+suffix_case_name: "Кейс суффиксов"
+suffix_case_description:
+  - "<muted>Суффиксы и цвета"
+  - "<muted>для вашего ника"
+game_case_name: "Игровой кейс"
+game_case_description:
+  - "<muted>Предметы для мини-игр:"
+  - "<muted>наборы, эффекты, украшения"
+skyblock_case_name: "Кейс SkyBlock"
+skyblock_case_description:
+  - "<muted>Полезные награды"
+  - "<muted>для режима SkyBlock"
+anarchy_case_name: "Кейс Анархии"
+anarchy_case_description:
+  - "<muted>Полезные награды"
+  - "<muted>для режима Анархия"
+
+# Ошибки смены ника (S47ChangePlayerNickResponse) — строка ошибки
+nick_error_user_not_found: "{err}Игрок не найден"
+nick_error_already_used: "{err}Этот ник уже используется"
+nick_error_already_registered: "{err}Этот ник уже зарегистрирован"

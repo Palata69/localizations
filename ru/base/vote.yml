@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Голосование за сервер на сайтах рейтингов (/vote)
+# ─────────────────────────────────────────────────────────────────────
+
+vote_gui_title: "<dark>Голосование"
+
+vote_gui_info: "<primary>Голосование за сервер"
+vote_gui_info_lore:
+  - "<muted>Голосуйте за {server} на сайтах"
+  - "<muted>рейтингов раз в сутки и получайте"
+  - "<muted>голоса — их можно обменять"
+  - "<muted>на награды"
+  - ""
+  - "<muted>Проголосуйте на всех площадках"
+  - "<muted>за день, чтобы засчитать комбо"
+
+# Площадка (названия vote_gui_entry_available / _unavailable — в разделе lobby)
+vote_gui_entry_lore:
+  - "<muted>Комбо: <accent>%combo_votes%"
+  - "<muted>Последнее комбо: <accent>%last_combo_vote%"
+vote_gui_entry_lore_already:
+  - ""
+  - "<muted>Сегодня вы уже голосовали"
+  - "<muted>Снова — через <accent>%left_time%"
+vote_gui_entry_lore_available:
+  - "<muted>Ваших голосов здесь: <accent>%votes%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>проголосовать"
+
+# Ссылка в чате после клика по площадке
+vote_redirect_message: "{info}<link>Нажмите, чтобы перейти на страницу голосования"
+vote_redirect_message_hover: "<muted>Откроется сайт рейтинга"
+
+# Магазин наград за голоса
+vote_gui_shop: "<primary>Награды за голоса"
+vote_gui_shop_lore:
+  - "<muted>Ваши голоса: <accent>%votes%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+vote_shop_gui_title: "<dark>Награды за голоса"
+vote_shop_gui_entry: "<primary>%reward%"
+vote_shop_gui_entry_lore:
+  - ""
+  - "<muted>Цена: <accent>%cost%"
+  - "<muted>У вас: <accent>%balance%"
+vote_shop_gui_entry_lore_available:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>получить"
+vote_shop_gui_entry_lore_unavailable:
+  - ""
+  - "<error>Не хватает голосов"
+vote_shop_reward_purchased: "{ok}Вы получили награду: %reward%"
+vote_shop_reward_unavailable: "{err}Эту награду сейчас нельзя получить"

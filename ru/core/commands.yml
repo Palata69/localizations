@@ -1,0 +1,157 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Командный фреймворк: справка, использование, общие ошибки команд.
+#  В ключах command_<команда>[_<подкоманда>]_usage — только аргументы:
+#  саму команду (/party invite) код подставляет перед ними.
+# ─────────────────────────────────────────────────────────────────────
+
+# Префикс сообщений команд (CommandMessageException)
+prefix: "{brand}"
+
+# Справка (/команда help) — заголовок и строки
+command_help: "<primary><b>Справка по команде</b>"
+command_help_row: "{dot}<primary>%usage%</primary> <dark>—</dark> <muted>%description%"
+command_help_no_description: "без описания"
+
+# Использование
+command_usage: "{info}Использование: <primary>%usage%"
+command_incorrect_usage: "{err}Неверные аргументы команды"
+
+# Условия выполнения
+command_unavailable_console: "{err}Эта команда недоступна из консоли"
+command_available_only_from_console: "{err}Эта команда доступна только из консоли"
+command_unavailable_group: "{err}Команда доступна с ранга %group_name%"
+group_available_at_website: "{info}Ранг можно приобрести в магазине <link>{store}"
+command_unavailable_cooldown: "{err}Повторить команду можно через <accent>%time%"
+command_unavailable: "{err}Эта команда вам недоступна"
+no_permission: "{err}У вас нет прав на эту команду"
+command_unavailable_on_production: "{err}Команда работает только на тестовом сервере"
+command_int_required: "{err}Ожидается число: <accent>%arg%"
+command_error: "{err}При выполнении команды произошла ошибка. Сообщите администрации"
+command_console_name: "<error>Консоль"
+
+# Названия аргументов для command_int_required
+page: "номер страницы"
+page_argument: "номер страницы"
+idargument: "ID игрока"
+
+# ─────────────────────────────────────────────────────────────────────
+#  Аргументы и описания команд
+# ─────────────────────────────────────────────────────────────────────
+
+# /party
+command_party_usage: "<muted><ник>"
+command_party_invite_usage: "<muted><ник>"
+command_party_invite_description: "пригласить игрока в группу"
+command_party_accept_usage: "<muted><ID группы>"
+command_party_reject_usage: "<muted><ID группы>"
+command_party_join_usage: "<muted><ник>"
+command_party_join_description: "вступить в открытую группу игрока"
+command_party_invites_description: "ваши приглашения в группы"
+command_party_setleader_usage: "<muted><ник>"
+command_party_setleader_description: "передать лидерство в группе"
+command_party_warp_description: "перенести участников к себе на сервер"
+command_party_kick_usage: "<muted><ник>"
+command_party_kick_description: "исключить игрока из группы"
+command_party_kickoffline_description: "исключить участников, которые не в сети"
+command_party_disband_description: "распустить группу"
+command_party_leave_description: "покинуть группу"
+command_party_list_description: "участники группы"
+command_party_chat_usage: "<muted><сообщение>"
+command_party_chat_description: "написать в чат группы"
+
+# /friend
+command_friend_usage: "<muted><ник>"
+command_friend_add_usage: "<muted><ник>"
+command_friend_add_description: "отправить заявку в друзья"
+command_friend_reject_usage: "<muted><ник>"
+command_friend_reject_description: "отклонить заявку в друзья"
+command_friend_remove_usage: "<muted><ник>"
+command_friend_remove_description: "удалить из друзей"
+command_friend_list_usage: "<muted>[страница]"
+command_friend_list_description: "список друзей"
+command_friend_tp_usage: "<muted><ник>"
+command_friend_tp_description: "перейти на сервер друга"
+
+# /ignore
+command_ignore_usage: "<muted><ник>"
+command_ignore_add_usage: "<muted><ник>"
+command_ignore_add_description: "не получать сообщения и заявки от игрока"
+command_ignore_remove_usage: "<muted><ник>"
+command_ignore_remove_description: "убрать игрока из чёрного списка"
+command_ignore_list_usage: "<muted>[страница]"
+command_ignore_list_description: "чёрный список"
+
+# /discord
+command_discord_link_description: "привязать аккаунт Discord"
+command_discord_unlink_description: "отвязать аккаунт Discord"
+
+# /skin
+command_skin_usage: "<muted><ник>"
+command_skin_set_usage: "<muted><ник>"
+command_skin_set_description: "поставить скин другого игрока"
+command_skin_reset_description: "вернуть свой скин"
+
+# /analytics
+command_analytics_domains_usage: "<muted>[сервер]"
+command_analytics_domains_description: "по каким адресам заходят игроки"
+command_analytics_protocol_usage: "<muted>[сервер]"
+command_analytics_protocol_description: "версии клиентов игроков"
+
+# Сообщения
+command_message_usage: "<muted><ник> <сообщение>"
+command_reply_usage: "<muted><сообщение>"
+command_append_usage: "<muted><сообщение>"
+command_alert_usage: "<muted><сообщение>"
+command_staffchat_usage: "<muted><сообщение>"
+
+# Игра и серверы
+command_play_usage: "<muted><режим>"
+command_server_usage: "<muted><сервер>"
+command_serverinfo_usage: "<muted><сервер>"
+command_time_usage: "<muted>[ник]"
+command_stream_usage: "<muted><ссылка на трансляцию></muted> <dark>или</dark> <muted>remove"
+
+# Персонал
+command_find_usage: "<muted><ник>"
+command_findaccounts_usage: "<muted><ник>"
+command_whois_usage: "<muted><ник>"
+command_getname_usage: "<muted><ID игрока>"
+command_nickhistory_usage: "<muted><маска>"
+command_actions_usage: "<muted><ник или IP> [период]"
+command_tunnel_usage: "<muted><ник></muted> <dark>или</dark> <muted>list"
+command_port_usage: "<muted><ник>"
+command_send_usage: "<muted><ник> <сервер>"
+command_sendall_usage: "<muted><сервер>"
+command_sendfrom_usage: "<muted><откуда> <куда>"
+command_execute_usage: "<muted><сервер> <команда>"
+command_setproperty_usage: "<muted><ник> <свойство> <значение>"
+command_makebuilder_usage: "<muted><ник>"
+command_removefromcore_usage: "<muted><ник>"
+command_wipestat_usage: "<muted><ник> [режим]"
+command_cancelwipe_usage: "<muted><ID бана>"
+
+# Наказания
+command_ban_usage: "<muted><ник или IP> <причина>"
+command_tempban_usage: "<muted><ник или IP> <время> <причина>"
+command_massban_usage: "<muted><ник или IP> [ещё ники или IP]"
+command_unban_usage: "<muted><ник или IP>"
+command_baninfo_usage: "<muted><ник или IP>"
+command_banidinfo_usage: "<muted><ID бана>"
+command_banbyinfo_usage: "<muted><ник модератора>"
+command_banhistory_usage: "<muted><ник или IP>"
+command_banhistory_show_usage: "<muted><ник или IP>"
+command_banhistory_remove_usage: "<muted><ID бана>"
+command_kick_usage: "<muted><ник> <причина>"
+command_mute_usage: "<muted><ник> <время> <причина>"
+command_unmute_usage: "<muted><ник>"
+command_muteinfo_usage: "<muted><ник>"
+command_muteidinfo_usage: "<muted><ID мута>"
+command_mutebyinfo_usage: "<muted><ник модератора>"
+command_mutehistory_usage: "<muted><ник>"
+command_mutehistory_show_usage: "<muted><ник>"
+command_mutehistory_remove_usage: "<muted><ID мута>"
+
+# /reloadlanguages
+reloadlanguages_done: "{ok}Локализация перечитана, сеть «<accent>%server_name%</accent>». Ошибок: <accent>%problems%"
+reloadlanguages_all_done: "{ok}Локализация «<accent>%server_name%</accent>» разослана. Серверов и прокси: <accent>%servers%</accent>, ошибок: <accent>%problems%"
+reloadlanguages_server_done: "{ok}Локализация отправлена на сервер <accent>%server%"

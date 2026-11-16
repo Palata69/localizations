@@ -1,0 +1,18 @@
+# Мини-игры: наблюдатели
+
+spectator_game_started: "{info}Игра уже идёт, вы наблюдатель"
+spectator_exit: "{info}Вы перестали наблюдать за игроком"
+spectator_spectating_to_player: "{info}Вы наблюдаете за <accent>%name%</accent>. Выйти — <accent>Shift"
+spectator_spectating_to_player_title: "<accent>%name%"
+spectator_spectating_to_player_subtitle: "<muted>Вид от лица <accent>%name%</accent>, выход — <accent>Shift"
+spectator_spectating_to_player_bar: "<muted>Вы наблюдаете за <accent>%name%"
+
+game_spectator_chat_format: "<dark>[</dark><muted>Наблюдатель</muted><dark>]</dark> "
+
+# Меню телепортатора
+game_spectator_gui_title: "<dark>Живые игроки"
+game_spectator_gui_player_name: "<accent>%name%"
+game_spectator_gui_player_lore:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>телепортироваться"
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>наблюдать от лица игрока"

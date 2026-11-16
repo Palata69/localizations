@@ -1,0 +1,91 @@
+# Мини-игры: общие сообщения игры (lite-api, server/game)
+
+# Префикс сообщений игры, %game% — название режима
+game_prefix: "<primary>%game%</primary> <dark>┃</dark> "
+
+# Сводка в начале и в конце игры (по центру, между линиями)
+game_broadcaster_line: "{line}"
+game_broadcast_title: "<primary><b>%mini%"
+
+# Ошибка входа в игру (причина отмены входа), %error% — одно из game_<результат> ниже
+game_error: "{err}Не удалось войти в игру <accent>%game%</accent>: %error%"
+game_not_found: "игра не найдена"
+game_ending: "игра уже заканчивается"
+game_is_full: "все места заняты"
+game_success: "вход выполнен"
+game_cant_spectate: "наблюдать за этой игрой нельзя"
+
+game_kicked_by_donater: "{warn}Ваше место занял игрок с {rank:premium}, вы перенесены в лобби"
+game_lobby_connect_failed:
+  - "{logo}"
+  - ""
+  - "<error>Не удалось перенести вас в лобби"
+  - ""
+  - "<muted>Зайдите снова: <accent>{domain}"
+
+# Ход игры
+game_statistic_disabled: "{warn}Статистика этой игры не будет сохранена"
+game_feature_auto_queuing_disabled: "{info}Автоматический переход в следующую игру выключен. Включить его можно в настройках профиля"
+game_skin_change_disabled: "{err}Менять скин во время игры нельзя"
+game_max_height_limit_reached: "{err}Выше строить нельзя"
+game_min_height_limit_reached: "{err}Ниже строить нельзя"
+game_blocks_not_exploded: "{info}Взрыв не задел блоки вашей команды"
+gamemode_unavailable_timer: "{err}Во время боя менять режим игры нельзя"
+
+# Невидимость (персонал)
+game_vanished: "{info}Вы в невидимости и наблюдаете за игрой"
+game_vanished_title: "<primary><b>НЕВИДИМОСТЬ"
+game_vanished_subtitle: "<muted>Вы наблюдаете за игрой"
+game_vanish_killed: "{info}Вы включили невидимость и выбыли из игры"
+
+# Возрождение (подзаголовок тайтла)
+game_respawning_title: "<muted>Возрождение через <accent>%seconds%"
+game_respawned_title: "<success>Вы возродились"
+
+# Выстрел из лука: здоровье цели
+game_bow_health_actionbar: "<accent>%player%</accent> %health%"
+game_bow_health_message: "{info}Здоровье <accent>%player%</accent>: <error>%health%"
+# Сердца для %health% в action bar: целое, половина, пустое
+game_bow_health_heart_full: "<error>❤"
+game_bow_health_heart_half: "<warning>❤"
+game_bow_health_heart_empty: "<dark>❤"
+
+# Компас-трекер
+game_tracker_mode_changed: "{info}Режим компаса: <accent>%mode%"
+game_tracker_mode_nearest_player: "ближайший игрок"
+game_tracker_mode_nearest_teammate: "ближайший союзник"
+game_nearest_player_bar: "<muted>Цель: <accent>%name%</accent> <dark>—</dark> <accent>%distance% м"
+game_nearest_player_not_found: "<muted>Рядом никого нет"
+
+# Чат в игре: приставка перед ником, %color% — команда («Красные», «Красным») или подпись ниже
+game_chat_format: "<dark>[</dark>%color%<dark>]</dark> "
+game_solo_chat_player: "<muted>Игрок"
+game_team_chat_global: "<muted>Всем"
+game_team_chat_local: "<muted>Команде"
+
+game_team_chest: "<dark>Сундук команды"
+
+# Конец игры: тайтлы
+game_winner_title: "<success><b>ПОБЕДА"
+game_winner_subtitle: "<muted>Отличная игра!"
+game_loser_title: "<error><b>ПОРАЖЕНИЕ"
+game_loser_subtitle: "<muted>Повезёт в следующий раз"
+game_draw_title: "<warning><b>НИЧЬЯ"
+game_draw_subtitle: "<muted>Победителя нет"
+
+# Конец игры: сводка в чате (по центру), ники победителей код выводит строками ниже
+game_end_draw: "<warning><b>Ничья"
+game_end_winner: "<success><b>Победитель"
+game_end_winners: "<success><b>Победители"
+game_end_empty_winners: "<muted>Победителей нет"
+
+# Конец игры: табло
+game_end_board_draw: "<warning>Ничья"
+game_end_board_winner: "<success>Победа:"
+game_end_board_end: "<muted>Игра окончена"
+
+# Самодельные зачарования: строка в описании предмета, по ней ищется эффект (цвет не важен)
+game_enchant_poison: "<info>Отравление I"
+game_enchant_slowness: "<info>Замедление I"
+game_enchant_mining_fatigue: "<info>Усталость I"
+game_enchant_blindness: "<info>Слепота"

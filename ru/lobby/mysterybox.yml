@@ -1,0 +1,66 @@
+# Загадочный сундук и кейсы
+
+mysterybox_hologram_title: "<primary><b>Загадочный сундук"
+mysterybox_hologram_title_action: "<muted>Нажмите, чтобы открыть кейс"
+mysterybox_no_items: "{err}В этом кейсе пока нет наград"
+
+# ── Список кейсов ───────────────────────────────────────────────────
+case_list_title: "<dark>Ваши кейсы"
+case_list_empty: "<primary><b>Кейсов нет"
+case_list_empty_lore:
+  - "<muted>Купите кейс в магазине ниже"
+case_list_shop: "<primary><b>Магазин кейсов"
+case_list_shop_lore:
+  - "<muted>Кейсы за облака"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+case_gui_name: "<primary><b>%case%"
+case_open_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+case_open_unavailable_group:
+  - ""
+  - "<error>Открывать можно с %group%"
+case_open_unavailable_processing: "{err}Сундук уже открывают, подождите немного"
+
+# ── Создание кейса из загадочной пыли ───────────────────────────────
+case_craft_available_name: "<success><b>Создать кейс"
+case_craft_unavailable_name: "<error><b>Создать кейс"
+case_craft_lore:
+  - "<muted>Загадочная пыль: <accent>%dust%</accent><dark>/</dark><accent>%required%"
+  - ""
+case_craft_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>обменять <accent>%dust%</accent> пыли на кейс"
+case_craft_unavailable_dust:
+  - "<error>Не хватает пыли"
+  - "<muted>Её дают за повторные награды"
+case_craft: "{ok}Вы создали кейс из загадочной пыли"
+
+# ── Магазин кейсов ──────────────────────────────────────────────────
+case_purchase_title: "<dark>Магазин кейсов"
+case_purchase_lore:
+  - ""
+  - "<muted>Цена: <accent>%cost%"
+  - "<muted>У вас: <accent>%balance%"
+  - ""
+case_purchase_click:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>купить"
+case_purchase: "{ok}Вы купили <accent>%name%</accent> за <accent>%cost%"
+
+# ── Награды ─────────────────────────────────────────────────────────
+case_reward_given: "{ok}Вам выпало: %item% <dark>(</dark>%rarity%<dark>)"
+case_reward_duplicate: "{info}У вас уже есть %item%"
+case_duplicate_clouds: "{ok}Вместо повтора — <accent>%clouds%"
+case_duplicate_dust: "{ok}Вместо повтора — <accent>%dust%</accent> загадочной пыли"
+# %mode% здесь всегда пустой (монеты без режима)
+case_duplicate_coins: "{ok}Вместо повтора — <accent>%coins%</accent>%mode%"
+case_duplicate_mode_coins: "{ok}Вместо повтора — <accent>%coins%</accent> в режиме <accent>%mode%"
+case_out_of_cases: "{info}Кейсы закончились. Купить ещё можно в магазине кейсов"
+case_broadcast: "{info}%player% <muted>выбивает</muted> %item% <dark>(</dark>%rarity%<dark>)"
+case_purchase_advertise: "<muted>Хотите так же? Кейсы открываются в загадочном сундуке"
+
+# Название награды (фрагменты: цвет редкости подставляет код)
+case_content_game_item: "%rarity%%category% «%name%»"
+case_content_keys: "%rarity_color%Кейс «%name%» (%amount% шт.)"
+case_content_suffix: "%rarity_color%Суффикс %suffix%"

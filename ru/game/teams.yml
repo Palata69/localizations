@@ -1,0 +1,117 @@
+# Мини-игры: цвета команд и выбор команды
+
+# Названия команд (TeamColor). Код ставит цвет команды перед текстом, но каждое сообщение
+# начинается цветом text и перекрыло бы его — поэтому здесь тот же стандартный цвет команды.
+# their — «их» (кровать Красных), them — «им» (чат Красным), they — «они» (Красные победили),
+# he — «он» (Красный остров), she — «она» (Красная команда)
+team_color_red_their: "<red>Красных"
+team_color_red_them: "<red>Красным"
+team_color_red_they: "<red>Красные"
+team_color_red_he: "<red>Красный"
+team_color_red_she: "<red>Красная"
+
+team_color_blue_their: "<blue>Синих"
+team_color_blue_them: "<blue>Синим"
+team_color_blue_they: "<blue>Синие"
+team_color_blue_he: "<blue>Синий"
+team_color_blue_she: "<blue>Синяя"
+
+team_color_green_their: "<green>Зелёных"
+team_color_green_them: "<green>Зелёным"
+team_color_green_they: "<green>Зелёные"
+team_color_green_he: "<green>Зелёный"
+team_color_green_she: "<green>Зелёная"
+
+team_color_yellow_their: "<yellow>Жёлтых"
+team_color_yellow_them: "<yellow>Жёлтым"
+team_color_yellow_they: "<yellow>Жёлтые"
+team_color_yellow_he: "<yellow>Жёлтый"
+team_color_yellow_she: "<yellow>Жёлтая"
+
+team_color_gold_their: "<gold>Оранжевых"
+team_color_gold_them: "<gold>Оранжевым"
+team_color_gold_they: "<gold>Оранжевые"
+team_color_gold_he: "<gold>Оранжевый"
+team_color_gold_she: "<gold>Оранжевая"
+
+team_color_pink_their: "<light_purple>Розовых"
+team_color_pink_them: "<light_purple>Розовым"
+team_color_pink_they: "<light_purple>Розовые"
+team_color_pink_he: "<light_purple>Розовый"
+team_color_pink_she: "<light_purple>Розовая"
+
+team_color_dark_aqua_their: "<dark_aqua>Бирюзовых"
+team_color_dark_aqua_them: "<dark_aqua>Бирюзовым"
+team_color_dark_aqua_they: "<dark_aqua>Бирюзовые"
+team_color_dark_aqua_he: "<dark_aqua>Бирюзовый"
+team_color_dark_aqua_she: "<dark_aqua>Бирюзовая"
+
+team_color_white_their: "<white>Белых"
+team_color_white_them: "<white>Белым"
+team_color_white_they: "<white>Белые"
+team_color_white_he: "<white>Белый"
+team_color_white_she: "<white>Белая"
+
+# Предмет выбора команды в лобби игры
+team_selector_item_name: "<primary><b>Выбор команды"
+team_selector_item_lore:
+  - "<muted>Соберите команду"
+  - "<muted>с другими игроками"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+# Меню выбора команды
+team_selector_gui_title: "<dark>Выбор команды"
+team_selector_gui_click_to_invite:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>пригласить в команду"
+team_selector_empty_item_name: "<primary><b>Некого пригласить"
+team_selector_empty_item_lore:
+  - "<muted>Все игроки уже в командах"
+team_selector_full_item_name: "<error><b>Команда собрана"
+team_selector_full_item_lore:
+  - "<muted>Свободных мест"
+  - "<muted>в команде не осталось"
+team_selector_invite_unavailable_item_name: "<error><b>Приглашения недоступны"
+team_selector_invite_unavailable_item_lore:
+  - "<muted>Приглашать игроков может"
+  - "<muted>только лидер — <accent>%leader_name%"
+team_selector_team_item_lore:
+  - "<muted>Лидер вашей команды"
+team_selector_team_leader_item_name: "<primary><b>Вы — лидер команды"
+team_selector_team_leader_item_lore:
+  - ""
+  - "<muted>Приглашайте игроков из списка выше"
+team_selector_team_member_item_name: "<primary><b>Ваша команда"
+team_selector_team_member_item_lore:
+  - "<muted>Лидер: <accent>%leader_name%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>покинуть команду"
+team_selector_click_to_kick:
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>исключить из команды"
+
+# Приглашения (строка приглашения и подсказки кнопок идут в JSON — без кавычек и обратной косой черты)
+team_selector_invite_message: "{info}<accent>%name%</accent> зовёт вас в свою команду"
+accept_request_description: "<muted>Нажмите, чтобы вступить в команду"
+reject_request_description: "<muted>Нажмите, чтобы отказаться"
+team_selector_sent: "{ok}Приглашение отправлено: <accent>%name%"
+team_selector_already_sent: "{err}Вы уже пригласили этого игрока"
+team_selector_request_not_found: "{err}Приглашение не найдено или уже истекло"
+team_selector_invite_ignored_sender: "{warn}<accent>%name%</accent> не ответил на приглашение в команду"
+team_selector_invite_ignored_receiver: "{warn}Приглашение в команду от <accent>%name%</accent> истекло"
+team_selector_cant_accept_party: "{err}Вы в группе, вступить в другую команду нельзя. Выйти — <primary>/party leave"
+team_selector_cant_accept_team: "{err}Вы уже в команде. Сначала покиньте её"
+team_selector_cant_accept_full: "{err}В этой команде нет свободных мест"
+team_selector_accept_sender: "{ok}<accent>%name%</accent> теперь в вашей команде"
+team_selector_accept_receiver: "{ok}Вы в команде с <accent>%name%"
+# Код не передаёт ник (см. отчёт), поэтому без него
+team_selector_reject_sender: "{info}<accent>%name%</accent> отклонил приглашение в команду"
+team_selector_reject_receiver: "{ok}Вы отклонили приглашение от <accent>%name%"
+
+# Состав команды
+team_selector_leave: "{info}Вы покинули команду <accent>%leader_name%"
+team_selector_leave_broadcast: "{info}<accent>%name%</accent> покинул команду"
+team_selector_kicked: "{warn}<accent>%leader_name%</accent> исключил вас из команды"
+team_selector_kicked_broadcast: "{info}<accent>%name%</accent> исключён из команды"
+team_selector_unavailable_vanished: "{err}В невидимости выбор команды недоступен"

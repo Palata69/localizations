@@ -1,0 +1,56 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Жалобы (/report, /reports)
+# ─────────────────────────────────────────────────────────────────────
+
+report_self: "{err}Нельзя пожаловаться на самого себя"
+
+# Выбор причины: игрок отправляет жалобу, персонал выносит решение
+report_gui_title: "<dark>Причина жалобы"
+report_gui_title_staff: "<dark>Нарушение игрока"
+report_gui_reason_name: "<accent>%reason%"
+report_gui_reason_lore:
+  - ""
+  - "<muted>Модераторы проследят за игроком"
+  - "<muted>и примут решение. Мы сообщим,"
+  - "<muted>когда жалобу рассмотрят"
+  - ""
+  - "<muted>Жалоба попадёт к персоналу,"
+  - "<muted>когда на игрока пожалуется"
+  - "<muted>кто-то ещё"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>отправить жалобу"
+report_gui_reason_lore_staff:
+  - ""
+  - "<muted>Наказание: блокировка на <accent>%duration%"
+  - ""
+  - "%target% <muted>будет заблокирован"
+  - "<muted>автоматически от вашего имени"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>принять жалобу"
+report_gui_dismiss_name: "<error>Отклонить жалобу"
+report_gui_dismiss_lore:
+  - ""
+  - "<muted>Игрок не будет наказан, а все"
+  - "<muted>отправители получат оповещение"
+  - "<muted>без вашего ника"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>отклонить"
+
+# Список жалоб для персонала
+report_list_gui_title: "<dark>Жалобы"
+report_list_icon: "%name%"
+report_list_icon_lore:
+  - "<muted>Сервер: <accent>%server%"
+  - "<muted>Последняя жалоба: <accent>%time%</accent> назад"
+  - "<muted>Жалоб: <accent>%count%"
+  - ""
+  - "<muted>Отправители:"
+report_list_icon_lore_player:
+  - "{dot}%name% <dark>—</dark> <muted>%reason%"
+report_list_icon_lore_actions:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>следить за игроком"
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>вынести решение"
+report_not_found_icon: "<muted>Жалоб нет"
+report_not_found_icon_lore:
+  - "<muted>Новые жалобы появятся здесь"

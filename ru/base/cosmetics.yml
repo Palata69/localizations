@@ -1,0 +1,98 @@
+# Косметика лобби: шапки, питомцы, ауры, следы.
+# Предметы — в коде (api/lite-api/.../base/cosmetic/CosmeticCatalog.java),
+# тексты предмета: cosmetic_<вид>_<имя>_name и cosmetic_<вид>_<имя>_lore.
+
+# ── Меню ────────────────────────────────────────────────────────────
+cosmetic_menu_title: "<dark>Косметика"
+profile_cosmetics_item_name: "<primary><b>Косметика"
+profile_cosmetics_item_lore:
+  - "<muted>Шапки, питомцы, ауры и следы"
+  - "<muted>для лобби"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+cosmetics_icon: "<primary><b>Косметика"
+cosmetics_icon_lore:
+  - "<muted>Шапки, питомцы, ауры и следы"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+cosmetic_lobby_only: "{err}Косметику можно выбрать только в лобби"
+
+cosmetic_category_hat_name: "Шапки"
+cosmetic_category_hat_description:
+  - "<muted>3D-головные уборы"
+  - "<muted>Шапку можно примерить"
+cosmetic_category_pet_name: "Питомцы"
+cosmetic_category_pet_description:
+  - "<muted>Маленький спутник"
+  - "<muted>летает рядом с вами"
+cosmetic_category_aura_name: "Ауры"
+cosmetic_category_aura_description:
+  - "<muted>Частицы вокруг вас"
+cosmetic_category_trail_name: "Следы"
+cosmetic_category_trail_description:
+  - "<muted>Частицы за вами"
+  - "<muted>при ходьбе"
+
+# ── Описание предмета ───────────────────────────────────────────────
+cosmetic_rarity_line: "<muted>Редкость: %rarity%"
+cosmetic_soon:
+  - "<warning>Скоро"
+  - "<muted>Модель ещё готовится"
+cosmetic_soon_message: "{warn}Эта косметика ещё готовится — скоро будет доступна"
+cosmetic_preview_started: "{info}Примерка: шапка на вас <accent>5 секунд"
+
+# ── Шапки ───────────────────────────────────────────────────────────
+cosmetic_hat_straw_hat_name: "Соломенная шляпа"
+cosmetic_hat_straw_hat_lore:
+  - "<muted>Для тех, кто начинает"
+  - "<muted>с первого дерева"
+cosmetic_hat_headphones_name: "Наушники"
+cosmetic_hat_headphones_lore:
+  - "<muted>С логотипом {server}"
+cosmetic_hat_crown_name: "Корона"
+cosmetic_hat_crown_lore:
+  - "<muted>Только из кейса косметики"
+cosmetic_hat_traveler_hood_name: "Капюшон путешественника"
+cosmetic_hat_traveler_hood_lore:
+  - "<muted>Как у проводника в Vanilla"
+
+# ── Питомцы ─────────────────────────────────────────────────────────
+cosmetic_pet_mini_slime_name: "Мини-слайм"
+cosmetic_pet_mini_slime_lore:
+  - "<muted>Прыгучий и дружелюбный"
+cosmetic_pet_firefly_lantern_name: "Светлячок-фонарь"
+cosmetic_pet_firefly_lantern_lore:
+  - "<muted>Освещает путь в любом лобби"
+cosmetic_pet_book_buddy_name: "Книжка-компаньон"
+cosmetic_pet_book_buddy_lore:
+  - "<muted>Знает все правила {server}"
+
+# ── Ауры ────────────────────────────────────────────────────────────
+cosmetic_aura_hearts_name: "Сердечки"
+cosmetic_aura_hearts_lore:
+  - "<muted>Кружат на уровне груди"
+cosmetic_aura_spiral_name: "Спираль"
+cosmetic_aura_spiral_lore:
+  - "<muted>Две ленты света"
+  - "<muted>поднимаются до макушки"
+cosmetic_aura_spark_crown_name: "Корона из искр"
+cosmetic_aura_spark_crown_lore:
+  - "<muted>Золотые искры над головой"
+cosmetic_aura_brand_ring_name: "Кольцо {server}"
+cosmetic_aura_brand_ring_lore:
+  - "<muted>Кольцо в цветах сети"
+  - "<muted>вращается у ног"
+
+# ── Следы ───────────────────────────────────────────────────────────
+cosmetic_trail_clouds_name: "Облачка"
+cosmetic_trail_clouds_lore:
+  - "<muted>Мягкие облачка под ногами"
+cosmetic_trail_petals_name: "Лепестки"
+cosmetic_trail_petals_lore:
+  - "<muted>Лепестки вишни"
+cosmetic_trail_notes_name: "Ноты"
+cosmetic_trail_notes_lore:
+  - "<muted>Каждый шаг звучит"
+cosmetic_trail_brand_sparks_name: "Искры {server}"
+cosmetic_trail_brand_sparks_lore:
+  - "<muted>Искры в цветах сети"

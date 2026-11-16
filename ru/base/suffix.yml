@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Суффиксы — подпись после ника (/suffix)
+# ─────────────────────────────────────────────────────────────────────
+
+suffix_change_title: "<dark>Суффиксы"
+
+suffix_empty: "<muted>Суффиксов нет"
+suffix_empty_lore:
+  - "<muted>Суффиксы можно получить"
+  - "<muted>в кейсах и за голосование"
+
+suffix_info: "<primary>Что такое суффикс"
+suffix_info_lore:
+  - "<muted>Суффикс — подпись после ника"
+  - "<muted>в чате и табе"
+  - ""
+  - "<muted>Менять суффикс можно раз в час"
+  - "<muted>Цветной суффикс — с {rank:premium}"
+
+# Суффикс в списке
+suffix_name: "%suffix%"
+suffix_lore:
+  - "<muted>Как это выглядит:"
+  - "%display%"
+suffix_colored_lore:
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>сменить цвет <dark>(</dark>%group%<dark>)"
+suffix_uncolored_lore:
+  - ""
+  - "<muted>Цветной суффикс — с %group%"
+suffix_selected_lore:
+  - ""
+  - "<success>Выбран"
+suffix_cooldown_lore:
+  - ""
+  - "<muted>Сменить можно через <accent>%time%"
+suffix_force_change_lore:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>сменить сейчас за <accent>2</accent> облака"
+suffix_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
+
+suffix_changed: "{ok}Суффикс сменён на %suffix%"
+suffix_force_changed: "{ok}Суффикс сменён"
+suffix_unavailable_clouds: "{err}Не хватает облаков: нужно <accent>2"
+
+# Сброс
+suffix_reset_name: "<primary>Убрать суффикс"
+suffix_reset_lore:
+  - "<muted>Ник будет без подписи"
+suffix_reset_lore_available:
+  - ""
+  - "<muted>Сейчас: %suffix%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>убрать"
+suffix_reset_lore_unavailable:
+  - ""
+  - "<muted>Суффикс не выбран"
+suffix_reset: "{ok}Суффикс убран"
+
+# Цвет суффикса
+suffix_color_title: "<dark>Цвет суффикса"
+suffix_color_future_lore:
+  - "<muted>Как это выглядит:"
+  - "%name% %suffix%"
+suffix_color_already_set: "<success>Этот цвет уже выбран"
+suffix_color_click_to_change: "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать цвет"
+suffix_color_changed: "{ok}Цвет суффикса: %color%"

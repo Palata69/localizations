@@ -1,0 +1,91 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Ранг в кредит (/credit): ранг сразу, оплата облаками каждую неделю
+# ─────────────────────────────────────────────────────────────────────
+
+credit_gui_title: "<dark>Ранг в кредит"
+credit_unavailable_level: "{err}Кредит доступен с <accent>5</accent> уровня"
+
+# Кредитная история
+credit_history_ok_name: "<primary>Кредитная история"
+credit_history_bad_name: "<error>Плохая кредитная история"
+credit_history_lore_empty:
+  - "<muted>Вы ещё не брали кредитов"
+credit_history_lore_history:
+  - "<muted>Ваши кредиты:"
+credit_history_lore_entry:
+  - "{dot}%group% <dark>—</dark> <muted>%state%"
+credit_history_bad_history:
+  - ""
+  - "<error>Из-за просрочек кредиты"
+  - "<error>вам больше не выдаются"
+
+# Оформление
+credit_available_name: "<success>Взять ранг в кредит"
+credit_unavailable_name: "<error>Кредит недоступен"
+credit_available_lore:
+  - "<muted>Получите %group% <muted>сразу"
+  - "<muted>и платите за него частями"
+  - "<muted>каждую неделю"
+  - ""
+  - "<muted>Платёж в неделю: <accent>%clouds%"
+  - "<muted>Первый взнос: <accent>%first_payment%"
+credit_available_lore_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>оформить кредит"
+credit_unavailable_lore_clouds:
+  - ""
+  - "<error>Не хватает облаков на первый взнос"
+credit_unavailable_bad_history:
+  - "<muted>У вас плохая кредитная история,"
+  - "<muted>новый кредит не выдаётся"
+credit_unavailable_group:
+  - "<muted>У вас уже есть %group%<muted>,"
+  - "<muted>а в кредит можно взять ранг"
+  - "<muted>не выше %max_group%"
+credit_approved: "{ok}Кредит оформлен: %group% уже ваш. Платежи — в меню <primary>/credit"
+
+# Недели платежей
+credit_week_paid_name: "<success>Неделя <accent>%week%</accent> оплачена"
+credit_week_paid_lore:
+  - "<muted>Осталось выплатить: <accent>%left_debt%"
+credit_week_overdued_name: "<error>Неделя <accent>%week%</accent> просрочена"
+credit_week_overdued_lore:
+  - "<muted>Долг: <error>%debt%"
+  - ""
+  - "<muted>Пока долг не погашен,"
+  - "<muted>ранг недоступен"
+credit_week_pending_name: "<warning>Неделя <accent>%week%"
+credit_week_pending_lore:
+  - "<muted>К оплате: <accent>%debt%"
+  - "<muted>Платёж с <accent>%payment_date%"
+  - "<muted>Оплатить до <accent>%latest_payment_date%"
+credit_week_pending_lore_this_week: "<warning>Оплатите на этой неделе"
+credit_week_pending_lore_future_week: "<muted>Срок платежа ещё не наступил"
+
+# Отказ от кредита
+credit_reject_available_name: "<error>Отказаться от кредита"
+credit_reject_available_lore:
+  - "<muted>Ранг понизится до предыдущего,"
+  - "<muted>а первый взнос по следующему"
+  - "<muted>кредиту вырастет на <accent>2</accent> облака"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>отказаться"
+credit_reject_unavailable_name: "<muted>Отказаться от кредита"
+credit_reject_unavailable_lore:
+  - "<muted>Сначала оплатите"
+  - "<muted>текущую неделю"
+credit_cancellation_unavailable: "{err}Сначала погасите долг за текущую неделю"
+credit_cancelled: "{info}Вы отказались от кредита, ранг понижен"
+
+# Платежи
+credit_pay_name: "<primary>Внести платёж"
+credit_pay_lore:
+  - "<muted>Каждое нажатие вносит"
+  - "<accent>1</accent> <muted>облако в счёт долга"
+credit_pay_available_lore:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>внести <accent>1</accent> облако"
+credit_debt_paid: "{ok}Платёж принят. Долг за неделю <accent>%week%</accent>: <accent>%debt%"
+credit_debt_fully_paid: "{ok}Просрочка погашена — ранг возвращён"
+credit_fully_paid: "{ok}Кредит погашен! %group% теперь ваш навсегда"
+credit_fully_paid_early: "{ok}За досрочное погашение — <accent>1</accent> облако в подарок"

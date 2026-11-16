@@ -1,0 +1,120 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Описание рангов (/donate): что даёт ранг и как его купить
+# ─────────────────────────────────────────────────────────────────────
+
+donate_description_gui_title: "<dark>Ранги"
+
+# Ранги: donate_description_gui_<группа> — название, _lore — описание.
+# %prefix% — как будет выглядеть ник игрока с этим рангом
+donate_description_gui_premium: "<b>{rank:premium}"
+donate_description_gui_premium_lore:
+  - "<muted>Ваш ник: %prefix%"
+  - ""
+  - "<muted>Возможности:"
+  - "{dot}<muted>опыт <accent>×1,3"
+  - "{dot}<muted>цветной суффикс"
+  - "{dot}<muted>вход в заполненное лобби"
+  - "{dot}<muted>команды <primary>/sit</primary> и <primary>/firework"
+
+donate_description_gui_legend: "<b>{rank:legend}"
+donate_description_gui_legend_lore:
+  - "<muted>Ваш ник: %prefix%"
+  - ""
+  - "<muted>Возможности:"
+  - "{dot}<muted>всё, что есть у {rank:premium}"
+  - "{dot}<muted>опыт <accent>×1,6"
+
+donate_description_gui_ultra: "<b>{rank:ultra}"
+donate_description_gui_ultra_lore:
+  - "<muted>Ваш ник: %prefix%"
+  - ""
+  - "<muted>Возможности:"
+  - "{dot}<muted>всё, что есть у {rank:legend}"
+  - "{dot}<muted>опыт <accent>×1,8</accent>, монеты <accent>×2"
+  - "{dot}<muted>цвет префикса <primary>/prefix"
+  - "{dot}<muted>статистика других игроков"
+  - "{dot}<muted>доступ к подписке {rank:elite}"
+
+donate_description_gui_sponsor: "<b>{rank:sponsor}"
+donate_description_gui_sponsor_lore:
+  - "<muted>Ваш ник: %prefix%"
+  - ""
+  - "<muted>Возможности:"
+  - "{dot}<muted>всё, что есть у {rank:ultra}"
+  - "{dot}<muted>опыт <accent>×2</accent>, монеты <accent>×3"
+  - "{dot}<muted>скидка <accent>20%</accent> на покупки за монеты"
+
+donate_description_gui_support: "<b>{rank:support}"
+donate_description_gui_support_lore:
+  - "<muted>Ваш ник: %prefix%"
+  - ""
+  - "<muted>Для тех, кто хочет помогать"
+  - "<muted>игрокам и проекту"
+  - ""
+  - "<muted>Возможности:"
+  - "{dot}<muted>чат персонала <primary>/chat staff"
+
+donate_description_gui_elite: "<b>{rank:elite}"
+donate_description_gui_elite_lore:
+  - "<muted>Ваш ник: %prefix%"
+  - ""
+  - "<muted>Подписка к рангу {rank:ultra} и выше"
+  - ""
+  - "<muted>Возможности:"
+  - "{dot}<muted>эмоции в чате <primary>/emotes"
+  - "{dot}<muted>смена ника <primary>/nick"
+  - "{dot}<muted>любой цвет суффикса"
+  - "{dot}<muted>салют при входе в лобби"
+
+# Кнопка «Купить»
+donate_description_gui_purchase: "<success>Купить %rank%"
+donate_description_gui_purchase_lore:
+  - "<muted>Ранги покупаются в магазине"
+  - "<link>{store}"
+donate_description_gui_purchase_already:
+  - ""
+  - "<success>У вас уже есть этот ранг"
+donate_description_gui_purchase_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>как купить"
+donate_description_gui_purchase_subscription_unavailable:
+  - ""
+  - "<error>Подписка доступна с {rank:ultra}"
+donate_description_gui_purchase_subscription_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>как оформить"
+
+# Другие ранги
+donate_description_gui_others: "<primary>Другие ранги"
+donate_description_gui_others_lore:
+  - "<muted>Праздничные и особые ранги —"
+  - "<muted>в магазине сети"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>подробнее"
+
+# Книга с инструкцией. Страница книги светлая — пишем тёмными цветами.
+# После текста код добавляет ссылку (purchase_book_url)
+donate_description_gui_purchase_book_donate:
+  - "<dark>Ранг %rank% продаётся"
+  - "<dark>в магазине сети."
+  - ""
+  - "<dark>Откройте ссылку ниже, выберите ранг и укажите свой ник."
+  - ""
+  - ""
+donate_description_gui_purchase_book_subscription:
+  - "<dark>Подписка %subscription% оформляется в магазине сети."
+  - ""
+  - "<dark>Ваш ранг: %rank%"
+  - ""
+  - "<dark>Откройте ссылку ниже и укажите свой ник."
+  - ""
+  - ""
+donate_description_gui_purchase_book_other:
+  - "<dark>Праздничные и особые ранги ищите в магазине сети."
+  - ""
+  - ""
+donate_description_gui_purchase_book_url: "<primary><u>Открыть магазин"
+donate_description_gui_purchase_book_hover: "<muted>Откроется <link>{store}"
+
+# Адрес для ссылки «Открыть магазин» (код дописывает https://)
+website_url: "{store}"

@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Настройки игрока (Setting)
+#  _name — название предмета в меню, _description — описание (список строк)
+# ─────────────────────────────────────────────────────────────────────
+
+setting_forbid_friend_requests_name: "Запрет заявок в друзья"
+setting_forbid_friend_requests_description:
+  - "<muted>Никто не сможет отправить"
+  - "<muted>вам заявку в друзья"
+setting_forbid_party_requests_name: "Запрет приглашений в группы"
+setting_forbid_party_requests_description:
+  - "<muted>Никто не сможет пригласить"
+  - "<muted>вас в группу"
+setting_forbid_private_messages_name: "Личные сообщения только от друзей"
+setting_forbid_private_messages_description:
+  - "<muted>Писать вам в личные сообщения"
+  - "<muted>смогут только друзья"
+setting_hide_players_name: "Скрыть игроков"
+setting_hide_players_description:
+  - "<muted>Другие игроки в лобби"
+  - "<muted>станут невидимыми"
+setting_forbid_profile_viewing_name: "Скрытый профиль"
+setting_forbid_profile_viewing_description:
+  - "<muted>Другие игроки не смогут"
+  - "<muted>смотреть ваш профиль"
+setting_automatic_queuing_name: "Без автоочереди"
+setting_automatic_queuing_description:
+  - "<muted>После игры вас не будет"
+  - "<muted>ставить в очередь на следующую"
+setting_hide_join_message_name: "Скрыть сообщение о входе"
+setting_hide_join_message_description:
+  - "<muted>Игроки не увидят сообщение"
+  - "<muted>о вашем входе в лобби"
+setting_hide_self_cosmetic_morph_name: "Не видеть своё превращение"
+setting_hide_self_cosmetic_morph_description:
+  - "<muted>Вы не будете видеть"
+  - "<muted>собственное превращение"
+

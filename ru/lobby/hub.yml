@@ -1,0 +1,123 @@
+# Лобби и хаб: вход, хотбар, боссбар, статусы в action bar, NPC и порталы, общие сообщения лобби
+
+# ── Вход в хаб ──────────────────────────────────────────────────────
+hub_join_title: "{logo}"
+hub_join_subtitle: "<muted>Добро пожаловать"
+
+# Сообщение о входе игрока с рангом (сообщение о входе выбирает сам игрок)
+lobby_donate_join_message_format: "{arrow} %player% <muted>%message%"
+lobby_donate_join_message_format_elite: "{info}%player% <accent>%message%"
+
+# ── Боссбар ─────────────────────────────────────────────────────────
+lobby_bossbar_title: "{logo}"
+lobby_bossbar_messages:
+  - "<muted>Играйте с друзьями на <primary>{domain}"
+  - "<muted>Привилегии и облака — <accent>{store}"
+  - "<muted>Новости и общение — <accent>{discord}"
+  - "<muted>Заберите ежедневную награду у NPC в лобби"
+  - "<muted>Позвать друга в группу — <primary>/party invite <ник>"
+  - "<muted>Наш сайт — <accent>{site}"
+
+# ── Action bar: статусы игрока (код склеивает их через запятую) ─────
+lobby_nick_active_bar: "<warning>Вы под маской"
+lobby_vanish_active_bar: "<info>Вы невидимы"
+lobby_booster_active_bar: "<success>Бустер <accent>x%multiplier%</accent> <muted>ещё <accent>%expires%"
+
+# ── Хотбар ──────────────────────────────────────────────────────────
+gamemode_select_icon: "<primary><b>Выбор режима"
+gamemode_select_icon_lore:
+  - "<muted>Все игры сети в одном меню"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+lobby_select_icon: "<primary><b>Выбор лобби"
+lobby_select_icon_lore:
+  - "<muted>Перейти в другое лобби"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+server_select_icon: "<primary><b>Выбор подрежима"
+server_select_icon_lore:
+  - "<muted>Выберите подрежим и карту"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+map_select_icon: "<primary><b>Выбор карты"
+map_select_icon_lore:
+  - "<muted>Сыграть на любимой карте"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+shop_icon: "<primary><b>Магазин"
+shop_icon_lore:
+  - "<muted>Предметы и улучшения режима"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+donate_icon: "<primary><b>Привилегии"
+donate_icon_lore:
+  - "<muted>Ранги, облака и бонусы"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
+
+queue_join_icon: "<success><b>Встать в очередь"
+queue_join_icon_lore:
+  - "<muted>Выберите подрежим — вас перенесут"
+  - "<muted>в игру, как только найдётся арена"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>выбрать"
+
+queue_leave_icon: "<error><b>Покинуть очередь"
+queue_leave_icon_lore:
+  - "<muted>Вы ждёте свободную арену"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>выйти из очереди"
+
+profile_icon: "<primary><b>Профиль</b> %name%"
+
+show_players_icon: "<primary><b>Показать игроков"
+hide_players_icon: "<primary><b>Скрыть игроков"
+hider_icon_lore:
+  - "<muted>Скрывает всех, кроме друзей"
+  - "<muted>и участников вашей группы"
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>переключить"
+
+lobby_players_hidden: "{ok}Игроки скрыты"
+lobby_players_shown: "{ok}Игроки снова видны"
+
+# ── Очередь ─────────────────────────────────────────────────────────
+queue_vanish_cannot_join: "{err}В невидимости нельзя встать в очередь"
+queue_removed_by_core: "{warn}Очередь сброшена из-за перезапуска сети. Встаньте в неё снова"
+
+# ── Порталы и NPC (голограммы) ──────────────────────────────────────
+start_game_random_gamemode: "<primary><b>Случайная игра"
+start_game_on_gamemode: "<primary><b>Начать игру"
+
+gamemode_npc_status_title: "<primary><b>%mode%"
+gamemode_npc_status_players: "<muted>Играют: <accent>%players%"
+gamemode_npc_status_connect: "<success>Нажмите, чтобы играть"
+gamemode_npc_status_disabled: "<error>Режим временно недоступен"
+gamemode_npc_status_busy: "<warning>Все арены заняты"
+
+rewards_npc_hologram_title: "<primary><b>Ежедневные награды"
+rewards_npc_hologram_action: "<muted>Нажмите, чтобы открыть"
+
+votes_npc_hologram_title: "<primary><b>Голосование"
+votes_npc_hologram_action: "<muted>Голосуйте за сеть и получайте награды"
+
+quest_npc_hologram_title: "<primary><b>Задания дня"
+quest_npc_hologram_action: "<muted>Нажмите, чтобы открыть"
+
+spectate_npc_hologram_title: "<primary><b>Наблюдение"
+spectate_npc_hologram_action: "<muted>Нажмите, чтобы смотреть игры"
+
+# ── Общие сообщения лобби ───────────────────────────────────────────
+command_spawn_result: "{ok}Вы на спавне"
+command_cooldown: "{err}Не так быстро, подождите немного"
+command_available_only_in_lobby: "{err}Команда работает только в лобби"
+elite_not_available: "{err}Доступно с {rank:elite}"
+core_teleportation_unsuccessful: "{err}Не удалось подключиться, попробуйте позже"
+unable_to_connect_to_server: "{err}Не удалось подключиться к серверу"
+lobby_kaboomed_player: "{ok}<accent>%player%</accent> подброшен в воздух"
+lobby_player_profile_protected: "{err}Игрок скрыл свой профиль"

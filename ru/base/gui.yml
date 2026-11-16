@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Общие элементы меню: загрузка, «назад», страницы, подтверждение
+# ─────────────────────────────────────────────────────────────────────
+
+gui_loading_icon_name: "<muted>Загрузка…"
+gui_loading_icon_lore:
+  - "<muted>Получаем данные, подождите"
+
+gui_back_to_menu_icon_name: "<primary>Назад"
+gui_back_to_menu_icon_lore:
+  - "<muted>Вернуться в предыдущее меню"
+
+# Кнопки страниц (PagedZone)
+next_page_name: "<primary>Следующая страница"
+prev_page_name: "<primary>Предыдущая страница"
+
+# Кнопки страниц в меню улучшений
+page_next_name: "<primary>Следующая страница"
+page_next_lore:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>перейти"
+page_prev_name: "<primary>Предыдущая страница"
+page_prev_lore:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>перейти"
+
+# Окно подтверждения
+confirmation_gui_title: "<dark>Подтверждение"
+confirmation_gui_yes: "<success><b>Подтвердить"
+confirmation_gui_yes_lore:
+  - "<muted>Нажмите, чтобы подтвердить"
+confirmation_gui_no: "<error><b>Отмена"
+confirmation_gui_no_lore:
+  - "<muted>Нажмите, чтобы отменить"
+
+# Список категорий предметов (наборы, способности, косметика)
+category_gui_title: "<dark>Выбор категории"
+# Строка «%description%» заменяется описанием категории (код ищет её целиком)
+category_gui_category_lore:
+  - "%description%"
+  - ""
+  - "<muted>Открыто: <accent>%available%</accent><dark>/</dark><accent>%size%</accent> <dark>(</dark><accent>%percentage%%</accent><dark>)"
+  - "%scale%"
+category_gui_selected_lore:
+  - ""
+  - "<muted>Выбрано: <accent>%selected_item%"

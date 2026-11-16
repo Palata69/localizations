@@ -1,0 +1,52 @@
+# Маскировка: смена ника и ранга (/nick)
+
+nick_gui_title: "<dark>Маскировка"
+
+nick_gui_nickname_entry: "<primary><b>%nick%"
+nick_gui_nickname_entry_lore:
+  - "<muted>Ник для маскировки"
+  - ""
+nick_gui_nickname_entry_lore_selected:
+  - "<success>Выбран"
+nick_gui_nickname_entry_lore_select:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
+
+nick_gui_group_entry: "%group%"
+nick_gui_group_entry_lore:
+  - "<muted>Ранг для маскировки"
+  - ""
+nick_gui_group_entry_lore_selected:
+  - "<success>Выбран"
+nick_gui_group_entry_lore_select:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
+nick_default_group: "{rank:default}"
+
+nick_gui_normal_groups: "<primary><b>Обычные ранги"
+nick_gui_normal_groups_lore:
+  - "<muted>Показать ранги игроков"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+nick_gui_special_groups: "<primary><b>Ранги персонала"
+nick_gui_special_groups_lore:
+  - "<muted>Показать ранги команды сети"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+nick_gui_selector: "<primary><b>Надеть маску"
+nick_gui_selector_lore:
+  - "<muted>Другие игроки увидят вас"
+  - "<muted>с выбранным ником и рангом"
+  - ""
+nick_gui_selector_lore_select_masks:
+  - "<error>Выберите ник и ранг"
+nick_gui_selector_lore_click_to_mask:
+  - "<muted>Вас увидят как: %nick_format%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>надеть маску"
+
+nick_selected: "{ok}Теперь вы играете как %nick%. Снять маску — <primary>/nick reset"
+nick_reset: "{ok}Маска снята"
+nick_not_nicked: "{err}Вы не под маской"
+nick_already_nicked: "{err}Вы уже под маской. Снять — <primary>/nick reset"
+nick_error_no_nicks_found: "{err}Не удалось подобрать свободный ник, попробуйте позже"
+nick_error_invalid_name: "{err}Такой ник недопустим"

@@ -1,0 +1,109 @@
+# Описания режимов
+
+# В меню выбора режима (описание предмета), master_<режим>_description — Master.java
+master_sw_description:
+  - "<muted>Острова в небе, сундуки с лутом"
+  - "<muted>и бой до последнего выжившего"
+master_bw_description:
+  - "<muted>Защищайте свою кровать,"
+  - "<muted>собирайте ресурсы и ломайте"
+  - "<muted>кровати соперников"
+master_duels_description:
+  - "<muted>Бои один на один и два на два"
+  - "<muted>с разными наборами"
+master_mm_description:
+  - "<muted>Найдите убийцу среди мирных"
+  - "<muted>жителей — или станьте им сами"
+master_ag_description:
+  - "<muted>Сборник коротких мини-игр"
+  - "<muted>для всей компании"
+master_cc_description:
+  - "<muted>Окрашивайте блоки в цвет"
+  - "<muted>своей команды и захватывайте карту"
+
+# В меню выбора режима, uncommon_<режим>_description — Uncommon.java
+uncommon_smasher_description:
+  - "<muted>Сбивайте соперников с арены"
+  - "<muted>и оставайтесь на ней последним"
+uncommon_smasher_classic_description:
+  - "<muted>Smasher по классическим правилам"
+uncommon_skyblock_description:
+  - "<muted>Начните с маленького острова в небе"
+  - "<muted>и превратите его в целый мир"
+uncommon_creative_description:
+  - "<muted>Стройте без ограничений"
+  - "<muted>на своём участке"
+uncommon_anarchy_description:
+  - "<muted>Выживание без правил"
+  - "<muted>и без защиты построек"
+uncommon_prison_description:
+  - "<muted>Добывайте ресурсы, повышайте ранг"
+  - "<muted>и выберитесь на свободу"
+uncommon_vanilla_description:
+  - "<muted>Обычное выживание без модов и правок:"
+  - "<muted>стройте, добывайте, исследуйте"
+
+# Сводка в начале игры (по центру): game_<mini>_description, если нет — game_<master>_description
+game_sw_description:
+  - "Собирайте лут в сундуках на островах"
+  - "и останьтесь <accent>последним выжившим"
+game_bw_description:
+  - "Пока ваша <accent>кровать</accent> цела, вы возрождаетесь"
+  - "Покупайте снаряжение за ресурсы и ломайте кровати соперников"
+game_duels_description:
+  - "Победите соперника в честном бою"
+game_mm_description:
+  - "Среди вас есть <accent>убийца</accent>. Мирным жителям нужно выжить,"
+  - "а <accent>детективу</accent> — найти и остановить убийцу"
+game_ag_description:
+  - "Продержитесь дольше всех и победите"
+game_cc_description:
+  - "Окрашивайте блоки в цвет своей команды"
+  - "Побеждает команда, захватившая больше территории"
+
+# Arcade Games
+game_bomb_lobbers_description:
+  - "Закидывайте соперников <accent>динамитом</accent>"
+  - "Побеждает последняя уцелевшая команда"
+game_block_party_description:
+  - "Успейте встать на блок <accent>нужного цвета</accent>,"
+  - "пока остальные исчезают из-под ног"
+game_tnt_run_description:
+  - "Блоки исчезают у вас под ногами — <accent>не останавливайтесь</accent>"
+  - "Побеждает тот, кто дольше всех не упадёт"
+game_bow_spleef_description:
+  - "Разрушайте пол под соперниками <accent>огненными стрелами</accent>"
+  - "Побеждает последний устоявший"
+game_hot_potato_description:
+  - "Передайте <accent>горячую картошку</accent> другому игроку ударом,"
+  - "пока она не взорвалась у вас в руках"
+
+# Duels
+game_duel_classic_description:
+  - "Классическая дуэль: меч, лук и броня"
+  - "Победите в честном бою"
+game_duel_gapple_description:
+  - "Дуэль с <accent>золотыми яблоками</accent>"
+  - "Победите в честном бою"
+game_duel_builduhc_description:
+  - "Дуэль в стиле <accent>Build UHC</accent>: блоки, лава и вода"
+  - "Здоровье само не восстанавливается"
+game_duel_sumo_description:
+  - "Столкните соперника с платформы"
+  - "Без оружия и брони — только толчки"
+game_duel_bow_description:
+  - "Дуэль на <accent>луках</accent>"
+  - "Стреляйте метко и не подставляйтесь"
+game_duel_nodebuff_description:
+  - "Дуэль с <accent>зельями лечения</accent>"
+  - "Без зелий с негативными эффектами"
+game_duel_the_bridge_description:
+  - "Прорвитесь по мосту и прыгните в <accent>портал</accent> соперника"
+  - "Защищайте свой портал и набирайте очки"
+game_duel_classic_duo_description: "{@game_duel_classic_description}"
+game_duel_gapple_duo_description: "{@game_duel_gapple_description}"
+game_duel_builduhc_duo_description: "{@game_duel_builduhc_description}"
+game_duel_sumo_duo_description: "{@game_duel_sumo_description}"
+game_duel_bow_duo_description: "{@game_duel_bow_description}"
+game_duel_nodebuff_duo_description: "{@game_duel_nodebuff_description}"
+game_duel_the_bridge_duo_description: "{@game_duel_the_bridge_description}"

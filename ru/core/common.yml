@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Общее: запросы с кнопками, ранги, уровни, приветствие
+# ─────────────────────────────────────────────────────────────────────
+
+# Кнопки запросов (друзья, группы, игры) — вставляются в JSON, без " и \
+accept_request_button: "<success><b>[Принять]"
+reject_request_button: "<error><b>[Отклонить]"
+request_accept_hover: "<muted>Нажмите, чтобы принять"
+request_reject_hover: "<muted>Нажмите, чтобы отклонить"
+request_sent_to_same_player: "{err}Нельзя отправить запрос самому себе"
+
+# Срок ранга
+group_expires: "{warn}Ранг %rank% закончится через <accent>%time%"
+group_expires_information: "{info}Продлить ранг можно в магазине <link>{store}"
+group_expired: "{warn}Срок ранга %rank% закончился. Продлить — <link>{store}"
+
+# Статус по уровню (Leveling) — фрагмент
+level_status_newbie: "<muted>Новичок"
+level_status_established: "<text>Бывалый"
+level_status_pro: "<info>Профи"
+level_status_honorary: "<primary>Почётный"
+level_status_elder: "<accent>Старейшина"
+
+# Стандартное сообщение о входе: название и текст после ника
+default_join_message: "Стандартное"
+default_join_message_text: "заходит на сервер"

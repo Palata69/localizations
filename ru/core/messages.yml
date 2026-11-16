@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Личные сообщения, слежка, объявления, чат персонала
+#  message_format и подсказки вставляются в JSON — без " и \
+# ─────────────────────────────────────────────────────────────────────
+
+# Личные сообщения (/msg, /r, /a)
+message_format: "<dark>[</dark><accent>%from%</accent> <dark>→</dark> <accent>%to%</accent><dark>]</dark> %message%"
+message_me: "<accent>Я"
+message_send_hover: "<muted>Нажмите, чтобы написать <accent>%name%</accent> ещё"
+message_receive_hover: "<muted>Нажмите, чтобы ответить <accent>%name%"
+message_self: "{err}Нельзя написать самому себе"
+message_send_disabled: "{err}<accent>%name%</accent> принимает личные сообщения только от друзей"
+reply_nobody_pm: "{err}Некому ответить: вам ещё никто не писал"
+append_nobody_pm: "{err}Некому дописать: вы ещё никому не писали"
+
+# Слежка за личными сообщениями (/socialspy)
+socialspy_enabled: "{ok}Слежка за личными сообщениями включена"
+socialspy_disabled: "{ok}Слежка за личными сообщениями выключена"
+
+# Объявление (/alert)
+core_alert_message_format: "{brand}%message%"
+
+# Чат персонала (/staffchat)
+togglesupportchat_result_enabled: "{ok}Сообщения поддержки в чате персонала включены"
+togglesupportchat_result_disabled: "{ok}Сообщения поддержки в чате персонала скрыты"

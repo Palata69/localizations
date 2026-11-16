@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Жалобы на игроков (/report, /reports)
+# ─────────────────────────────────────────────────────────────────────
+
+# Причины жалоб (ReportReason) — фрагмент, вставляется в другие строки
+report_reason_cheat: "Читы"
+report_reason_teaming: "Тиминг"
+report_reason_traps: "Ловушки"
+report_reason_admin_nicknames: "Ник под персонал"
+report_reason_incorrect_nicknames: "Недопустимый ник"
+
+# Отправка жалобы
+report_send_success: "{ok}Жалоба отправлена. Персонал скоро её рассмотрит"
+report_cooldown: "{err}Жалобы можно отправлять не так часто. Подождите немного"
+report_send_staff: "{err}На персонал нельзя пожаловаться здесь — напишите на сайте <link>{site}"
+report_send_already_reported: "{err}Вы уже пожаловались на этого игрока"
+send_report_player_left: "{err}Игрок уже вышел с сервера"
+
+# Решение по жалобе
+report_your_report_accepted: "{ok}Ваша жалоба на <accent>%target%</accent> рассмотрена: <accent>%admin%</accent> наказал нарушителя. Спасибо!"
+report_your_report_declined: "{info}Ваша жалоба рассмотрена: нарушений не найдено"
+report_already_closed: "{err}Эту жалобу уже рассмотрели"
+
+# Персоналу
+report_spectating_vanish: "{info}Вы включили невидимость, чтобы наблюдать за игроком"

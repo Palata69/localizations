@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Паркур в лобби
+# ─────────────────────────────────────────────────────────────────────
+
+# Предметы на панели во время паркура
+parkour_leave_icon: "<error><b>Выйти из паркура</b> <dark>(ПКМ)"
+parkour_leave_icon_lore:
+  - "<muted>Вернуться в лобби"
+parkour_checkpoint_icon: "<accent><b>К чекпоинту</b> <dark>(ПКМ)"
+parkour_checkpoint_icon_lore:
+  - "<muted>Телепорт к последнему"
+  - "<muted>чекпоинту"
+
+parkour_action_bar: "<muted>Время: <accent>%time%</accent> <dark>·</dark> <muted>Чекпоинт: <accent>%checkpoints%"
+
+# Голограммы над плитами
+parkour_start_line_1_hologram: "<primary><b>ПАРКУР"
+parkour_start_line_2_hologram: "<muted>Награда: <accent>%reward%</accent> опыта"
+parkour_start_line_3_hologram: "<muted>Встаньте на плиту, чтобы начать"
+parkour_checkpoint_line_1_hologram: "<accent><b>Чекпоинт %index%"
+parkour_checkpoint_line_2_hologram: "<muted>Встаньте на плиту, чтобы сохраниться"
+parkour_finish_line_1_hologram: "<success><b>ФИНИШ"
+parkour_finish_line_2_hologram: "<muted>Встаньте на плиту, чтобы закончить"
+
+# Сообщения
+parkour_started: "{info}Паркур начат — время пошло"
+parkour_started_again: "{info}Время сброшено — начинаем заново"
+parkour_not_started: "{err}Начните паркур со стартовой плиты"
+parkour_checkpoint_hacking: "{err}Вы пропустили чекпоинт — вернитесь к предыдущему"
+parkour_checkpoint_got: "{ok}Чекпоинт пройден за <accent>%time%"
+parkour_you_fall: "{warn}Вы упали — возвращаем на чекпоинт"
+parkour_finished: "{ok}Паркур пройден!"
+parkour_no_reward: "{info}Награду за паркур можно получить раз в день"
+parkour_record: "{ok}Новый рекорд: <accent>%record_time%</accent> <dark>(</dark><muted>было <accent>%previous%</accent><dark>)"
+parkour_time: "{info}Ваше время: <accent>%time%"
+
+# Название топа паркура
+parkour_player_top_name: "Паркур: лучшее время"

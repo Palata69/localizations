@@ -1,0 +1,137 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Наказания: баны, муты, кики, история и информация
+#  Строки наказаний и их подсказки (punishment_row, *_hover_*) вставляются в JSON — без " и \
+# ─────────────────────────────────────────────────────────────────────
+
+eternity: "навсегда"
+ban_enumeration_delimiter: "<dark>, </dark>"
+punishment_row: "{dot}<dark>#%id%</dark> <text>%reason%</text> <dark>(наведите)"
+
+# ── Бан ──────────────────────────────────────────────────────────────
+ban_result: "{ok}<accent>%target%</accent> заблокирован на <accent>%time%</accent>. Причина: %reason%"
+# Дописываются к ban_*_broadcast
+
+ban_wrong_time: "{err}Неверный срок. Пример: <accent>30m</accent>, <accent>12h</accent>, <accent>7d"
+ban_too_long_time: "{err}Вы можете заблокировать не больше чем на <accent>7 дней"
+ban_permanent_unavailable: "{err}Вам недоступна вечная блокировка — укажите срок"
+ban_ip_unavailable: "{err}Вам недоступна блокировка по IP"
+ban_wrong_name: "{err}Неверный ник"
+ban_already_given: "{err}Этот игрок уже заблокирован"
+ban_empty_operation_list_empty: "{err}Некого блокировать: все цели выше вас по рангу"
+ban_disabled_command: "{err}Вы заблокированы, эта команда вам недоступна"
+ban_cant_ip: "{err}Информация по IP вам недоступна"
+massban_reason: "{server} \\<3"
+
+# Кик-экран заблокированного игрока
+ban_disconnect_reason:
+  - "{logo}"
+  - ""
+  - "<error>Вы заблокированы <dark>#%id%"
+  - "<muted>Причина: <text>%reason%"
+  - "%expires%"
+  - ""
+  - "<muted>Обжаловать: <link>{site}"
+ban_disconnect_permanent: "<muted>Срок: <error>навсегда"
+ban_disconnect_temporary_expiration: "<muted>Осталось: <accent>%expires%"
+
+# Подсказка к строке бана (строки склеиваются через перевод строки)
+ban_hover_time: "<muted>Выдан <accent>%time%</accent> назад"
+ban_hover_admin: "<muted>Выдал: <accent>%admin%"
+ban_hover_names: "<muted>Ники: <accent>%names%"
+ban_hover_ips: "<muted>IP: <accent>%ips%"
+ban_hover_expired: "<success>Закончился <accent>%time%</accent> назад"
+ban_hover_unbanned_by: "<muted>Снял: <accent>%admin%"
+ban_hover_never_expired: "<error>Навсегда"
+ban_hover_expiring: "<muted>Осталось: <accent>%time%"
+
+# Разбан
+unban_result: "{ok}<accent>%target%</accent> разблокирован"
+unban_more_name_bans: "{warn}Снято: <accent>%size_format%</accent>. Ещё остались: <accent>%left_format%</accent> — их выдал старший персонал"
+unban_more_ip_bans: "{warn}С IP снято: <accent>%size_format%</accent>. Ещё остались: <accent>%left_format%</accent> — их выдал старший персонал"
+unban_not_banned: "{err}Этот игрок не заблокирован"
+unban_cant: "{err}Вы не можете снять этот бан"
+ban_single: "бан"
+ban_onemore: "бана"
+ban_plural: "банов"
+
+# Информация о банах
+baninfo_name_result: "<primary><b>Активные баны</b> <accent>%target%</accent><dark>:"
+baninfo_ip_result: "<primary><b>Активные баны IP</b> <accent>%target%</accent><dark>:"
+banidinfo_result: "<primary><b>Бан</b> <dark>#%id%</dark><dark>:"
+banidinfo_empty_result: "{err}Бан с таким ID не найден"
+banbyinfo_result: "<primary><b>Баны, выданные</b> <accent>%ban_by%</accent><dark>:"
+banbyinfo_empty_result: "{err}<accent>%ban_by%</accent> ещё никого не блокировал"
+banlist_result: "<primary><b>Баны за</b> <accent>%duration%</accent><dark>:"
+banlist_empty_result: "{info}За <accent>%duration%</accent> банов не было"
+core_invalid_time_format: "{err}Неверный период. Пример: <accent>30m</accent>, <accent>12h</accent>, <accent>7d"
+
+# История банов
+banhistory_name_result: "<primary><b>История банов</b> <accent>%target%</accent><dark>:"
+banhistory_ip_result: "<primary><b>История банов IP</b> <accent>%target%</accent><dark>:"
+banhistory_name_never_was_banned: "{info}<accent>%target%</accent> ни разу не был заблокирован"
+banhistory_ip_never_was_banned: "{info}IP <accent>%target%</accent> ни разу не блокировался"
+banhistory_ban_count: "<muted>Отбыто банов: <accent>%count%"
+banhistory_ip_unavailable: "{err}История банов по IP вам недоступна"
+
+# ── Мут ──────────────────────────────────────────────────────────────
+mute_result: "{ok}<accent>%target%</accent> лишён чата на <accent>%time%</accent>. Причина: %reason%"
+muted_message_format:
+  - "{err}У вас мут <dark>#%meta_id%</dark>: писать в чат нельзя"
+  - "<muted>Причина: <text>%reason%</text> <dark>┃</dark> <muted>осталось: <accent>%time_left%"
+muted_read_rules: "{info}Правила сервера — на сайте <link>{site}"
+mute_wrong_time: "{err}Неверный срок. Пример: <accent>10m</accent>, <accent>1h</accent>, <accent>5d"
+mute_too_long_time: "{err}Вы можете выдать мут не больше чем на <accent>1 час"
+mute_already_given: "{err}У этого игрока уже есть мут"
+mute_cant: "{err}Нельзя выдать мут игроку старше вас по рангу"
+player_incorrect_name: "{err}Неверный ник"
+rule_filter_chat_detection: "Флуд в чате (автоматически)"
+
+# Подсказка к строке мута
+mute_hover_time: "<muted>Выдан <accent>%time%</accent> назад"
+mute_hover_admin: "<muted>Выдал: <accent>%admin%"
+mute_hover_muted: "<muted>Игрок: <accent>%name%"
+mute_hover_expired: "<success>Закончился"
+mute_hover_unmuted_by: "<muted>Снял: <accent>%unmutedBy%"
+mute_hover_expiring: "<muted>Осталось: <accent>%time%"
+
+# Размут
+unmute_result: "{ok}С <accent>%target%</accent> снят мут"
+unmute_not_muted: "{err}У этого игрока нет мута"
+unmute_no_permission: "{err}Вы не можете снять этот мут"
+
+# Информация о мутах
+muteinfo_result: "<primary><b>Активный мут</b> <accent>%target%</accent><dark>:"
+muteidinfo_result: "<primary><b>Мут</b> <dark>#%id%</dark><dark>:"
+muteidinfo_empty_result: "{err}Мут с таким ID не найден"
+mutebyinfo_result: "<primary><b>Муты, выданные</b> <accent>%ban_by%</accent><dark>:"
+mutebyinfo_empty_result: "{err}<accent>%ban_by%</accent> ещё никому не выдавал мут"
+mutelist_result: "<primary><b>Муты за</b> <accent>%duration%</accent><dark>:"
+mutelist_empty_result: "{info}За <accent>%duration%</accent> мутов не было"
+mutehistory_result: "<primary><b>История мутов</b> <accent>%target%</accent><dark>:"
+mutehistory_never_was_muted: "{info}<accent>%target%</accent> ни разу не получал мут"
+
+# ── Кик ──────────────────────────────────────────────────────────────
+kick_result: "{ok}<accent>%target%</accent> выгнан с сервера. Причина: %reason%"
+kick_empty: "{err}Некого выгнать: игрок не в сети или старше вас по рангу"
+kick_no_permission: "{err}Вам недоступен кик по IP"
+kick_disconnect_reason:
+  - "{logo}"
+  - ""
+  - "<error>Вас выгнали с сервера"
+  - "<muted>Кто: <accent>%initiator%"
+  - "<muted>Причина: <text>%reason%"
+player_removed_from_server: "{info}Нарушитель на этом сервере заблокирован. Спасибо за честную игру!"
+
+# ── Очистка статистики за читы ───────────────────────────────────────
+ban_stat_wipe_kick:
+  - "{logo}"
+  - ""
+  - "<warning>Ваша статистика очищается"
+  - "<muted>Зайдите снова через минуту"
+ban_stat_wipe_removed: "{info}Очищена статистика заблокированных игроков: <accent>%count%"
+command_cancelwipe_empty: "{info}Очистка статистики по этому бану не запланирована"
+command_cancelwipe_fail: "{err}Не удалось отменить очистку статистики"
+command_cancelwipe_no_bans: "{err}По этому бану никто не заблокирован"
+
+# /fixbans
+fixbans_result: "{ok}Исправлено банов: <accent>%count%"

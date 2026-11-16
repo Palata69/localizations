@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Трансляции игроков (/streams)
+# ─────────────────────────────────────────────────────────────────────
+
+stream_gui_title: "<dark>Трансляции"
+stream_gui_empty: "<muted>Сейчас никто не стримит"
+stream_gui_empty_lore:
+  - "<muted>Загляните позже"
+stream_gui_entry: "%name%"
+stream_gui_entry_lore:
+  - "<text>%title%"
+  - ""
+  - "<muted>Площадка: <accent>%platform%"
+  - "<muted>Идёт: <accent>%duration%"
+  - "<muted>Зрителей: <accent>%viewers%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>получить ссылку"
+
+# Уходит в JSON — без " и обратной косой черты
+stream_click_to_go: "{info}<link>Нажмите, чтобы открыть трансляцию"

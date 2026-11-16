@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Ранг в кредит: напоминания при входе и состояния кредита
+# ─────────────────────────────────────────────────────────────────────
+
+credit_active: "{info}У вас ранг %group% в кредит. На этой неделе платить не нужно"
+credit_payment_on_current_week: "{warn}Платёж по кредиту: <accent>%clouds%</accent> до <accent>%date%</accent>. Оплатить — <primary>/credit"
+credit_expiring: "{warn}Платёж по кредиту просрочен: долг <accent>%clouds%</accent>. Оплатить — <primary>/credit"
+credit_until_fully_expire: "{warn}Если не погасить долг, через <accent>%days%</accent> ранг заберут"
+credit_fully_expired: "{err}Срок кредита истёк, а долг не погашен — кредитная история испорчена"
+credit_forgiven: "{ok}Вы купили ранг выше — кредит закрыт, долг прощён"
+
+# Состояние кредита в истории (CreditState) — фрагмент
+not_paid_yet_state_name: "<info>выплачивается"
+not_paid_yet_bad_state_name: "<warning>выплачивается с просрочками"
+paid_state_name: "<success>погашен"
+paid_bad_state_name: "<warning>погашен с просрочками"
+paid_very_bad_state_name: "<error>закрыт с долгом"
+rejected_state_name: "<muted>отменён"
+forgiven_state_name: "<success>прощён"

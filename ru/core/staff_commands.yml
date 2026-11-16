@@ -1,0 +1,139 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Инструменты персонала: поиск, whois, туннель, ваниш, переносы, уведомления
+# ─────────────────────────────────────────────────────────────────────
+
+# Общие ответы
+player_not_found: "{err}Игрок не найден"
+player_offline: "{err}Игрок не в сети"
+"no": "нет"
+enabled: "<success>включено"
+disabled: "<error>выключено"
+
+# /find
+core_find_result: "{info}<accent>%name%</accent> сейчас на <accent>%server_name%"
+core_find_result_vanished: "{info}<accent>%name%</accent> сейчас на <accent>%server_name%</accent> <dark>(невидимка)"
+core_find_nicked_format: "%real_name% <dark>(маска</dark> %mask%<dark>)"
+
+# /findaccounts
+core_findaccounts_result:
+  - "<primary><b>Аккаунты игрока</b> <accent>%name%"
+  - "{dot}<muted>IP регистрации <accent>%reg_ip%</accent>: %reg_ip_names%"
+core_findaccounts_result_last: "{dot}<muted>Последний IP <accent>%last_ip%</accent>: %last_ip_names%"
+core_findaccounts_result_online: "{dot}<muted>Текущий IP <accent>%current_ip%</accent>: %current_ip_names%"
+
+# /whois
+core_whois_result_base:
+  - "{line}"
+  - "<primary><b>Игрок</b> <accent>%name%</accent> <dark>(ID %id%)"
+  - "{dot}<muted>Ранги: %ranks%"
+  - "{dot}<muted>Язык: <accent>%language%"
+  - "{dot}<muted>Вход по лицензии: %premium_auth%"
+  - "{dot}<muted>Друзья: <accent>%friends%</accent>/<accent>%friends_limit%</accent>, в сети: <accent>%online_friends%"
+core_whois_result_registration_data: "{dot}<muted>Регистрация: <accent>%reg_date%</accent>, IP <accent>%reg_ip%"
+core_whois_result_nickname: "{dot}<muted>Маска: <accent>%fake_nickname%</accent> %fake_group% <dark>(с %date_activated%)"
+core_whois_result_status: "{dot}<success>В сети</success> <muted>на <accent>%server_name%</accent> через <accent>%proxy_name%</accent>, <accent>%online_time%</accent>, версия <accent>%protocol%"
+core_whois_result_status_ip: "{dot}<muted>Текущий IP: <accent>%ip%"
+core_whois_result_party: "{dot}<muted>Группа <dark>#%id%</dark>: %players% <dark>(открытая: %public%<dark>)"
+core_whois_result_session: "{dot}<muted>Последний выход: <accent>%last_login%</accent> с <accent>%last_server%</accent>, сессия <accent>%duration%"
+core_whois_result_session_ip: "{dot}<muted>Последний IP: <accent>%last_ip%"
+core_whois_result_hosting: "{dot}<warning>Зашёл через VPN/хостинг: <accent>%asn%"
+
+# /guard (прокси): защита от ботов
+guard_usage: "{info}Использование: <primary>/guard</primary> <muted>[status | attack on/off/auto | unblock <адрес> | reload]"
+guard_status:
+  - "{line}"
+  - "<primary><b>Защита от ботов</b> <dark>(</dark><accent>%proxy%</accent><dark>)"
+  - "{dot}<muted>Защита: %enabled%"
+  - "{dot}<muted>Режим атаки: %attack% <dark>(</dark>%mode%<dark>)"
+  - "{dot}<muted>Подключений: <accent>%connections%</accent> за <accent>%connections_window%</accent> с <dark>(порог %connections_limit%)"
+  - "{dot}<muted>Новых игроков: <accent>%new_players%</accent> за <accent>%new_players_window%</accent> с <dark>(порог %new_players_limit%)"
+  - "{dot}<muted>Заблокировано адресов: <accent>%blocked%"
+  - "{dot}<muted>Отметка VPN/хостинга: %vpn%"
+  - "{line}"
+guard_attack_state_active: "<error>включён"
+guard_attack_state_inactive: "<success>выключен"
+guard_mode_auto: "<muted>автоматически"
+guard_mode_forced_on: "<warning>включён вручную"
+guard_mode_forced_off: "<warning>выключен вручную"
+guard_attack_mode_set: "{ok}Режим атаки: %mode%"
+guard_unblocked: "{ok}Блокировка с <accent>%address%</accent> снята"
+guard_not_blocked: "{err}<accent>%address%</accent> не заблокирован"
+
+# /getname
+core_getname_result: "{info}Ник игрока: <accent>%name%"
+
+# /nickhistory
+command_nickhistory_empty: "{info}Эту маску ещё никто не носил"
+command_nickhistory_title: "<primary><b>История маски</b> <accent>%nick%</accent> <dark>(записей: <accent>%size%</accent>)"
+command_nickhistory_entry: "{dot}%owner% <dark>[%rank%]</dark> <muted>с <accent>%issue_date%</accent> — %status%"
+command_nickhistory_entry_active: "<success>носит сейчас"
+command_nickhistory_entry_finished: "<muted>до <accent>%end_date%"
+
+# /tunnel — наблюдение за игроком
+core_tunnel_observed: "{ok}Вы следите за <accent>%target%"
+core_tunnel_removed: "{ok}Вы больше не следите за <accent>%target%"
+core_tunnel_invaliduser: "{err}Игрок не в сети"
+core_tunnel_emptylist: "{info}Вы ни за кем не следите"
+core_tunnel_list: "<primary><b>Вы следите за игроками</b> <dark>(<accent>%size%</accent>)<dark>:"
+
+# /port — перенести игрока к себе
+core_port_successful: "{ok}<accent>%player%</accent> перенесён к вам"
+core_port_alreadyconnected: "{err}<accent>%player%</accent> уже на вашем сервере"
+core_port_error: "{err}Не удалось перенести <accent>%player%</accent>: <muted>%error%"
+core_port_invaliduser: "{err}Игрок не в сети"
+core_port_self: "{err}Нельзя перенести самого себя"
+
+# /vanish
+core_vanish_enabled: "{ok}Невидимость включена"
+core_vanish_disabled: "{ok}Невидимость выключена"
+core_vanish_function_disabled: "{err}В невидимости это недоступно"
+
+# /staffs — персонал в сети
+core_stafflist_result: "<primary><b>Персонал в сети</b> <dark>(<accent>%count%</accent>)<dark>:"
+core_stafflist_admins: "{dot}<muted>Администрация: %names%"
+core_stafflist_moders: "{dot}<muted>Модераторы: %names%"
+core_stafflist_helpers: "{dot}<muted>Хелперы: %names%"
+core_stafflist_vanished: "{dot}<muted>В невидимости: %names%"
+core_no_online_staff: "{info}Сейчас никого из персонала нет в сети"
+
+# Уведомления о входе и выходе персонала
+
+# /send, /sendall, /sendfrom, /server
+core_send_sender_result: "{ok}<accent>%name%</accent> отправлен на <accent>%server_name%"
+core_send_player_result: "{info}<accent>%name%</accent> перенёс вас на <accent>%server_name%"
+core_sendall_result: "{ok}Перенесено игроков: <accent>%count%"
+core_sendfrom_result: "{ok}На <accent>%server%</accent> перенесено игроков: <accent>%count%"
+
+# /execute
+command_execute_success: "{ok}Команда отправлена на <accent>%server%"
+
+# /setproperty
+core_setproperty_invalid_value: "{err}Неверное значение. Пример: <accent>5</accent>, <accent>+5</accent>, <accent>-5"
+
+# /makebuilder
+command_makebuilder_already_better: "{err}У этого игрока уже есть ранг персонала"
+command_makebuilder_status_received: "{ok}Вам выдан ранг {rank:builder}"
+
+# /removefromcore
+core_removefromcore_result: "{ok}<accent>%name%</accent> удалён из ядра"
+
+# /wipestat
+wipestat_mode_not_found: "{err}Такого режима нет"
+wipestat_result_single: "{ok}Статистика <accent>%target%</accent> в <accent>%mode%</accent> очищена"
+wipestat_result_all: "{ok}Вся статистика <accent>%target%</accent> очищена"
+wipestat_kick:
+  - "{logo}"
+  - ""
+  - "<warning>Ваша статистика очищена"
+  - "<muted>Зайдите снова"
+
+# /time
+time_you_spent: "{info}<accent>%name%</accent>, вы провели на сервере <accent>%time%"
+time_other_spent: "{info}<accent>%name%</accent> провёл на сервере <accent>%time%"
+
+# /analytics
+analytics_scope_global: "вся сеть"
+analytics_protocol_header: "<primary><b>Версии клиентов</b> <dark>—</dark> <accent>%scope%"
+analytics_protocol_row: "{dot}<muted>Протокол <accent>%protocol%</accent>: <accent>%count%"
+analytics_domains_header: "<primary><b>Адреса входа</b> <dark>—</dark> <accent>%scope%"
+analytics_domains_row: "{dot}<accent>%domain%</accent><dark>:</dark> <accent>%count%"

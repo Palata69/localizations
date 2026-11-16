@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Множители монет и опыта: подсказка при наведении на «+N монет»
+#  Подсказка уходит в JSON — без кавычек " и обратной косой черты
+# ─────────────────────────────────────────────────────────────────────
+
+# Начало подсказки; ниже код перечисляет множители по строке
+multiplier_add_lore_initial:
+  - "<muted>Без множителей: %initial_value%"
+  - "<muted>Множители:"
+
+coin_no_multipliers_used_lore:
+  - "<muted>Множители не применялись"
+  - "<muted>Больше монет — с {rank:ultra}"
+experience_no_multipliers_used_lore:
+  - "<muted>Множители не применялись"
+  - "<muted>Больше опыта — с {rank:premium}"
+
+# Строки множителей
+donate_coin_multiplier_name: "<muted>Ранг %group%<muted>: <accent>×%multiplier%"
+donate_experience_multiplier_name: "<muted>Ранг %group%<muted>: <accent>×%multiplier%"
+level_coin_multiplier_name: "<muted>Уровень <accent>%level%</accent>: <accent>×%multiplier%"

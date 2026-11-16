@@ -1,0 +1,36 @@
+# Выдача и снятие рангов: /rank give|take|list (ADMIN и выше; старший персонал — только владелец)
+
+# ── Справка (@WithHelp) ─────────────────────────────────────────
+command_rank_usage: "<muted><give|take|list>"
+command_rank_give_usage: "<muted><ник> <ранг> [срок]"
+command_rank_give_description: "выдать ранг: срок вида 30d, 12h, без срока — навсегда"
+command_rank_take_usage: "<muted><ник> <ранг>"
+command_rank_take_description: "снять ранг"
+command_rank_list_usage: "<muted><ник>"
+command_rank_list_description: "ранги игрока, включая отложенные 2FA"
+
+# ── Ответы ───────────────────────────────────────────────────────
+core_rank_unknown: "{err}Нет ранга <accent>%group%</accent>. Подсказка — клавиша <accent>Tab"
+core_rank_default: "{err}Ранг «Игрок» есть у всех — его не выдают и не снимают"
+core_rank_no_permission: "{err}Ранг %rank% <text>выдаёт и снимает только %owner%"
+core_rank_already: "{err}У <accent>%name%</accent> уже есть %rank%"
+core_rank_wrong_time: "{err}Неверный срок <accent>%time%</accent>. Например: <accent>30d</accent>, <accent>7d</accent>, <accent>12h"
+core_rank_not_found: "{err}У <accent>%name%</accent> нет ранга %rank%"
+
+core_rank_given: "{ok}<accent>%name%</accent> выдан %rank% <text>%until%"
+core_rank_taken: "{ok}С <accent>%name%</accent> снят %rank%"
+core_rank_forever: "навсегда"
+core_rank_for: "на <accent>%time%"
+
+core_rank_list_header: "{info}Ранги <accent>%name%</accent>:"
+core_rank_list_entry: "{dot}%rank% <muted>%until%"
+core_rank_list_suspended: "{dot}%rank% <warning>отложен</warning> <muted>— нет привязки Telegram (/2fa)"
+core_rank_list_empty: "{info}У <accent>%name%</accent> нет рангов, только «Игрок»"
+
+# ── Игроку ───────────────────────────────────────────────────────
+core_rank_received: "{ok}Вам выдан ранг %rank% <text>%until%"
+core_rank_removed: "{warn}С вас снят ранг %rank%"
+
+# ── Персоналу (ADMIN и выше) ─────────────────────────────────────
+core_rank_give_broadcast: "{staff}{info}<accent>%admin%</accent> выдал ранг %rank% <text>игроку <accent>%name%</accent> <text>%until%"
+core_rank_take_broadcast: "{staff}{info}<accent>%admin%</accent> снял ранг %rank% <text>с <accent>%name%"

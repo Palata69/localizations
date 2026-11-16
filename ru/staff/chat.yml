@@ -1,0 +1,6 @@
+# Стафф-чат
+# Видит только персонал: кому именно — решает код (обычно HELPER и выше, иногда SUPPORT или SR_BUILDER).
+
+# ── Сообщение в стафф-чате (/staffchat, режим чата «персонал») ───
+core_staffchat_message_format: "<warning>Персонал</warning> <dark>┃</dark> %user%<dark>:</dark> %message%"
+core_staffchat_bot_label: "<dark><b>BOT</b></dark> "

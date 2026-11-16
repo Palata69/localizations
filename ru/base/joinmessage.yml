@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Сообщения о входе в лобби (/joinmessage)
+# ─────────────────────────────────────────────────────────────────────
+
+# Формат сообщения в лобби (lobby_donate_join_message_format) — в разделе lobby
+joinmessage_change_title: "<dark>Сообщения о входе"
+
+joinmessage_info: "<primary>Сообщения о входе"
+joinmessage_info_lore:
+  - "<muted>Когда вы заходите в лобби,"
+  - "<muted>все игроки видят это сообщение"
+  - ""
+  - "<muted>Доступно с {rank:premium}"
+
+joinmessage_name: "<primary>%name%"
+joinmessage_lore:
+  - "<muted>Как это выглядит:"
+  - "{arrow} %player% <muted>%text%"
+joinmessage_selected_lore:
+  - ""
+  - "<success>Выбрано"
+joinmessage_click:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
+joinmessage_changed: "{ok}Сообщение о входе: <accent>%name%"
+
+# Показ своего сообщения (%status% — «включено» / «выключено»)
+joinmessage_toggle: "<primary>Показ сообщения: %status%"
+joinmessage_toggle_lore:
+  - "<muted>Если выключить, о вашем входе"
+  - "<muted>узнает только персонал"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>переключить"
+joinmessage_enabled: "{ok}Игроки снова видят, когда вы заходите"
+joinmessage_disabled: "{ok}Сообщение о вашем входе больше не показывается"
+
+# Своё сообщение
+custom_join_message: "Своё сообщение"
+joinmessage_create_title: "<dark>Новое сообщение о входе"
+joinmessage_create_name: "<primary>Создать сообщение"
+joinmessage_create_lore:
+  - "<muted>Текст:"
+  - "<text>%text%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>создать"
+joinmessage_custom_purchase: "{err}У вас нет возможности создать своё сообщение. Её можно купить в магазине: <link>{store}"
+joinmessage_custom_created: "{ok}Сообщение создано и выбрано: %player% <muted>%text%"

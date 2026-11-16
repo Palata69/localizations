@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Журнал входов и действий с аккаунтом (/actions)
+# ─────────────────────────────────────────────────────────────────────
+
+core_actions_name_result: "<primary><b>Действия аккаунта</b> <accent>%target%</accent> <dark>за</dark> <accent>%duration%</accent><dark>:"
+core_actions_ip_result: "<primary><b>Действия с IP</b> <accent>%target%</accent> <dark>за</dark> <accent>%duration%</accent><dark>:"
+core_actions_empty_result: "{info}За этот период действий нет"
+
+# Строка журнала; к ней дописываются action_text_ip / _name
+action_text: "{dot}<text>%description%</text> <dark>%time% назад"
+action_text_ip: " <dark>IP <muted>%ip%"
+action_text_name: " <dark>ник <accent>%name%"
+
+# Типы действий (ActionType)
+action_register: "Регистрация"
+action_login: "Вход по паролю"
+action_session_login: "Вход по сессии"
+action_premium_login: "Вход по лицензии"
+action_fail_login: "<error>Неверный пароль"
+action_change_pass: "Смена пароля"
+action_log_out: "Выход из сессии"
+action_telegram_denied: "<error>Вход отклонён в Telegram"
+action_telegram_timeout: "<warning>Вход не подтверждён в Telegram"
+action_telegram_link: "Привязка Telegram"
+action_telegram_unlink: "Отвязка Telegram"

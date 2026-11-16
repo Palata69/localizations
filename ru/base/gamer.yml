@@ -1,0 +1,89 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Игрок: начисления, уровни, задания, AFK, вход на сервер
+# ─────────────────────────────────────────────────────────────────────
+
+# Начисление монет и опыта: «+25 монет (победа)». Уходит в JSON — без " и \
+gamer_coins_added: "<accent>+%amount%"
+gamer_experience_added: "<info>+%amount% опыта"
+gamer_reward_reason: " <muted>(%reason%)"
+
+# Причины начислений
+quest_completed: "ежедневное задание"
+
+# Ежедневные задания
+daily_quest_progress: "{ok}Задание выполнено: <accent>%description%</accent> <dark>(</dark><muted>%mode%</muted><dark>)</dark>. Осталось заданий: <accent>%uncompleted_quests%"
+daily_quest_completed: "{ok}Все ежедневные задания в режиме <accent>%mode%</accent> выполнены!"
+
+# Уровни
+levelup:
+  - "{line}"
+  - "<success><b>Новый уровень!</b> <accent>%level%"
+  - "<muted>Всего опыта: <accent>%exp%%for_players%"
+  - "{line}"
+# Добавляется к levelup для игроков без ранга
+levelup_for_players:
+  - ""
+  - "<muted>С {rank:premium} опыта на <accent>30%</accent> больше"
+uncollected_level_rewards: "{info}У вас <accent>%rewards%</accent> %ending% за уровни. Заберите их в лобби"
+uncollected_level_reward_single: "несобранная награда"
+uncollected_level_reward_onemore: "несобранные награды"
+uncollected_level_reward_plural: "несобранных наград"
+
+# AFK
+please_no_afk_title: "<warning><b>ВЫ ЗДЕСЬ?"
+please_no_afk_subtitle: "<muted>Подвигайтесь, иначе вас отключат"
+kicked_for_afk_message: "{warn}Вы долго бездействовали — переносим вас в лимбо"
+kicked_for_afk_reason:
+  - "{logo}"
+  - ""
+  - "<warning>Вы отключены за бездействие"
+  - ""
+  - "<muted>Возвращайтесь: <accent>{domain}"
+
+# Вход на сервер (кик-экраны)
+gamer_kick_core_unavailable:
+  - "{logo}"
+  - ""
+  - "<error>Не удалось загрузить ваши данные"
+  - "<muted>Сервер не связан с координатором сети"
+  - ""
+  - "<muted>Попробуйте зайти ещё раз"
+gamer_kick_no_access:
+  - "{logo}"
+  - ""
+  - "<error>Нет доступа к этому серверу"
+gamer_kick_not_loaded:
+  - "{logo}"
+  - ""
+  - "<error>Игровые данные не загружены"
+  - ""
+  - "<muted>Попробуйте зайти ещё раз"
+
+# Невидимость (vanish): подпись в табе и в чате для персонала
+gamer_vanish_tab_prefix: "<dark><i>[скрыт]</i></dark> "
+vanished_chat_format: "<dark><i>[скрыт]</i></dark> "
+# при входе, если игрок в невидимости
+vanished: "{info}Вы в невидимости: другие игроки вас не видят. Выключить — <primary>/vanish"
+
+# Сообщение с пометкой [shuffled] — видят только хелперы и выше
+gamer_advertisement_alert: "<error>Реклама</error> <dark>»</dark> <muted>%player%: %message%"
+
+# Сидение (/sit)
+sit_down: "{ok}Вы сели"
+sit_up: "{ok}Вы встали"
+sit_actionbar: "<muted>Чтобы встать, введите <primary>/sit"
+sit_not_on_ground: "{err}Сесть можно только на земле"
+
+# Предметы, не поместившиеся в инвентарь
+some_items_dropped: "{warn}Инвентарь заполнен, часть предметов выпала на землю <dark>(</dark><accent>%items%</accent><dark>)"
+
+# Статистика (/stats)
+stats_unavailable_group: "{err}Статистика других игроков доступна с {rank:ultra}"
+stats_result:
+  - "{line}"
+  - "<primary><b>Статистика</b> %name% <dark>·</dark> <accent>%mode%"
+stats_row: "{dot}<muted>%description%: <accent>%stat%"
+
+# Слова, которые подставляет код
+forever: "навсегда"
+never: "никогда"

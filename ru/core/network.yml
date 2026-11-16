@@ -1,0 +1,174 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Сеть: вход на прокси, переподключение, серверы, очередь, таб, MOTD
+#  Кик-экраны на прокси показываются до загрузки игрока — на основном языке.
+# ─────────────────────────────────────────────────────────────────────
+
+# MOTD в списке серверов (две строки)
+motd:
+  - "<gradient:brand_from:brand_to><b>{server|upper}</b></gradient> <dark>┃</dark> <muted>{domain}"
+  - "<accent>Мини-игры, друзья и группы — заходите!"
+motd_not_connected:
+  - "{logo}"
+  - "<warning>Сервер перезапускается, зайдите через минуту"
+
+# Таб: шапка и подвал
+tab_header:
+  - ""
+  - "{logo}"
+  - "<muted>Сервер: <accent>%server_name%"
+  - ""
+tab_footer:
+  - ""
+  - "<muted>Онлайн: <accent>%online%</accent> <dark>┃</dark> <muted>Сайт: <link>{site}"
+  - ""
+
+# Кик-экраны при входе
+core_not_connected:
+  - "{logo}"
+  - ""
+  - "<warning>Сервер запускается"
+  - "<muted>Попробуйте зайти через минуту"
+network_kick_invalid_nick:
+  - "{logo}"
+  - ""
+  - "<error>Недопустимый ник"
+  - "<muted>Ник — от 3 до 16 символов: только латинские"
+  - "<muted>или только русские буквы, цифры и «_»"
+network_kick_wrong_address:
+  - "{logo}"
+  - ""
+  - "<error>Заходите по основному адресу"
+  - "<accent><b>{domain}"
+network_kick_account_not_yours:
+  - "{logo}"
+  - ""
+  - "<error>Этот аккаунт вам не принадлежит"
+  - "<muted>Вход с вашего IP для него запрещён"
+network_kick_address_blocked:
+  - "{logo}"
+  - ""
+  - "<error>Ваш IP временно заблокирован"
+  - "<muted>Подозрение на подбор пароля. Попробуйте позже"
+network_kick_auth_server_down:
+  - "{logo}"
+  - ""
+  - "<error>Сервер авторизации недоступен"
+  - "<muted>Попробуйте зайти через минуту"
+  - "<dark>%reason%"
+network_kick_first_server_not_found:
+  - "{logo}"
+  - ""
+  - "<error>Нет свободных серверов для входа"
+  - "<muted>Попробуйте зайти через минуту"
+  - "<dark>%code%"
+network_kick_data_not_loaded:
+  - "{logo}"
+  - ""
+  - "<error>Не удалось загрузить ваши данные"
+  - "<muted>Попробуйте зайти ещё раз"
+  - "<dark>%code%"
+network_kick_already_connected:
+  - "{logo}"
+  - ""
+  - "<error>Вы уже на сервере"
+  - "<muted>С этим ником кто-то играет прямо сейчас"
+network_kick_player_not_exist:
+  - "{logo}"
+  - ""
+  - "<error>Игрок не найден"
+  - "<muted>Зайдите на сервер заново"
+network_kick_too_many_accounts:
+  - "{logo}"
+  - ""
+  - "<error>Слишком много аккаунтов"
+  - "<muted>С одного IP можно играть не больше чем с <accent>%limit%</accent> аккаунтов"
+network_kick_too_many_connections:
+  - "{logo}"
+  - ""
+  - "<error>Слишком много подключений"
+  - "<muted>С вашего адреса заходят слишком часто"
+  - "<muted>Подождите немного и зайдите снова"
+network_kick_connections_blocked:
+  - "{logo}"
+  - ""
+  - "<error>Ваш IP временно заблокирован"
+  - "<muted>Слишком много подключений подряд"
+  - "<muted>Попробуйте через <accent>%time%"
+network_kick_under_attack:
+  - "{logo}"
+  - ""
+  - "<warning>Сервер под атакой"
+  - "<muted>Сейчас могут войти только зарегистрированные игроки"
+  - "<muted>Попробуйте зайти через пару минут"
+network_kick_server_restart:
+  - "{logo}"
+  - ""
+  - "<warning>Сервер перезагружается"
+  - "<muted>Зайдите снова через минуту"
+
+# Переподключение прокси к ядру
+core_reconnect_message: "{warn}Связь с сетью прервалась. Переподключаемся…"
+core_reconnect_process_title: "<warning><b>ПЕРЕПОДКЛЮЧЕНИЕ"
+core_reconnect_process_subtitle: "<muted>Подождите несколько секунд"
+core_reconnect_success_title: "<success><b>ГОТОВО"
+core_reconnect_success_subtitle: "<muted>Связь с сетью восстановлена"
+core_reconnect_server_not_found:
+  - "{logo}"
+  - ""
+  - "<error>Не удалось вернуть вас на сервер"
+  - "<muted>Зайдите снова"
+
+# Перенос с упавшего сервера
+fallback_server: "{warn}Вас перенесло на <accent>%kick_to_name%</accent>: <muted>%reason%"
+
+# Переходы между серверами
+server_loading: "{err}Сервер ещё загружается, попробуйте через пару секунд"
+server_not_found: "{err}Сервер не найден"
+servers_not_found: "{err}Серверы по этому запросу не найдены"
+server_unknown: "<muted>неизвестно"
+server_unknown_slots: "{err}Не удалось узнать, сколько мест на сервере"
+server_already_full: "{err}На сервере не хватает мест"
+server_teleportation_started: "{info}Переходим на <accent>%server_name%</accent>…"
+server_teleportation_rejected: "{err}Не удалось перейти на сервер"
+core_hub_already_in: "{err}Вы уже в хабе"
+core_hub_not_found: "{err}Хаб сейчас недоступен, попробуйте позже"
+core_hub_teleported: "{info}Переходим в хаб <accent>%hub_name%</accent>…"
+core_no_servers_available_by_map: "{err}Нет свободных арен на этой карте. Попробуйте позже"
+core_no_servers_available_by_mode: "{err}Нет свободных арен в этом режиме. Попробуйте позже"
+
+# /play
+command_play_invalid_mode: "{err}Такого режима нет"
+command_play_no_free_servers: "{err}Нет свободных арен. Попробуйте позже"
+command_play_server_started: "{err}Игра на этой арене уже началась"
+command_play_server_full: "{err}Арена заполнена"
+command_play_teleport_mode: "{info}Переходим в <accent>%mode%</accent> на арену <accent>%server%</accent>…"
+command_play_teleport_server: "{info}Переходим на арену <accent>%server%</accent>…"
+
+# Очередь и набор игроков
+queue_players: "{info}Вы в очереди на <accent>%mode%</accent>: ждут <accent>%label%</accent> <dark>(вы %total%-й)"
+queue_leave: "{info}Вы вышли из очереди"
+queue_quit_by_party_leader: "{info}Лидер группы встал в другую очередь — вы с ним"
+game_fill_message_broadcast: "{info}На арену <accent>%server%</accent> <dark>(</dark><accent>%mode%</accent><dark>)</dark> нужны игроки — скоро старт!"
+
+# Онлайн
+core_total_online_result: "{info}Сейчас в сети: <accent>%online%"
+core_server_online_result: "{info}Онлайн <accent>%pattern%</accent>: <accent>%online%"
+core_servers_not_found: "{err}Серверы не найдены"
+core_list_format: "{info}Использование: <primary>/list <сервер>"
+core_list_invalid_pattern: "{err}Неверный шаблон: <muted>%exception%"
+core_list_result: "{info}Игроки: %players%"
+core_no_online_players: "{err}Здесь нет игроков в сети"
+
+# /serverinfo
+status_header: "<primary><b>Информация о серверах"
+information_title_field: "{arrow} <muted>%key%:</muted> <accent><b>%value%"
+information_field: "  <muted>%key%:</muted> <accent>%value%"
+information_server_name: "Сервер"
+information_master_servers: "Арены"
+information_arena_map: "Карта"
+information_arena_state: "Состояние"
+information_server_online: "Онлайн"
+
+# /servers (консоль)
+core_servers_proxies: "<primary>Прокси <dark>[<accent>%count%</accent>]:"
+core_servers_servers: "<primary>Серверы <dark>[<accent>%count%</accent>]:"

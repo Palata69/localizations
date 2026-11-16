@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Мелодии из нотных блоков (/song) — для персонала
+# ─────────────────────────────────────────────────────────────────────
+
+command_song_play_usage: "<muted><ссылка на .nbs>"
+command_song_play_description: "включить мелодию по ссылке"
+command_song_stop_description: "остановить мелодию"
+command_song_volume_usage: "<muted><громкость 0–100>"
+command_song_volume_description: "громкость мелодий"
+
+song_invalid_url: "{err}Не удалось загрузить файл по ссылке"
+song_started: "{ok}Мелодия запущена"
+song_stopped: "{ok}Воспроизведение остановлено"
+song_invalid_volume: "{err}Громкость — число от <accent>0</accent> до <accent>100"
+song_volume_set: "{ok}Громкость: <accent>%volume%"

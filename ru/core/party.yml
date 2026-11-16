@@ -1,0 +1,72 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Группы (/party, /pchat)
+# ─────────────────────────────────────────────────────────────────────
+
+# Приглашение
+party_invitation:
+  - "{line}"
+  - "{info}<accent>%name%</accent> приглашает вас в группу"
+  - "<muted>Принять — <primary>/party accept %id%</primary>, отклонить — <primary>/party reject %id%"
+  - "{line}"
+party_invitation_broadcast: "{info}<accent>%name%</accent> пригласил в группу <accent>%target%"
+party_already_invitation_sent: "{err}Вы уже пригласили <accent>%name%"
+party_disabled_invitation_sent: "{err}<accent>%name%</accent> не принимает приглашения в группы"
+party_invitation_receiver_vanished: "{err}Этого игрока нельзя пригласить"
+party_invite_self: "{err}Нельзя пригласить самого себя"
+party_invite_staff_only: "{err}Этого игрока нельзя пригласить в группу"
+party_invite_already_in_your_party: "{err}Этот игрок уже в вашей группе"
+party_invite_already_in_other_party: "{err}Этот игрок уже в другой группе"
+party_invitation_expired_receiver: "{info}Приглашение в группу от <accent>%name%</accent> истекло"
+party_invitation_expired_sender: "{info}Приглашение для <accent>%name%</accent> истекло"
+party_invitation_rejected_receiver: "{info}Вы отклонили приглашение от <accent>%name%"
+party_invitation_rejected_sender: "{info}<accent>%name%</accent> отклонил приглашение в группу"
+party_receiver_left_the_game: "{info}Приглашение для <accent>%name%</accent> отменено: игрок вышел"
+party_invitations_not_found: "{err}У вас нет приглашений в группы"
+
+# Список приглашений (/party invites) — вставляется в JSON, без " и \
+party_invites_result: "<primary><b>Приглашения в группы</b> <dark>— <muted>нажмите, чтобы вступить"
+party_invite_from: "{dot}<accent>%name%</accent> %participants%"
+party_invite_participants: "<dark>(в группе: <accent>%count%</accent>)"
+party_invite_click: "<muted>Вступить в группу <accent>%name%"
+
+# Состав
+party_join_broadcast: "{info}<accent>%name%</accent> вступил в группу"
+party_leave: "{ok}Вы покинули группу"
+party_leave_broadcast: "{info}<accent>%name%</accent> покинул группу"
+party_leave_is_leader: "{err}Вы лидер группы. Передать лидерство — <primary>/party setleader <ник></primary>, распустить — <primary>/party disband"
+party_disband_broadcast: "{info}Группа распущена"
+party_kick_self: "{err}Нельзя исключить самого себя"
+party_kick_target: "{info}Вас исключили из группы"
+party_kick_broadcast: "{info}<accent>%name%</accent> исключил из группы <accent>%target%"
+party_kickoffline_no_players: "{err}В группе нет участников не в сети"
+party_kickoffline_broadcast: "{info}<accent>%name%</accent> исключил участников не в сети: <accent>%count%"
+party_kicked_before: "{err}Вас исключили из этой группы — вступить снова нельзя"
+party_member_kicked_too_long_offline: "{info}<accent>%name%</accent> исключён из группы: слишком долго не в сети"
+party_member_left_the_game: "{info}<accent>%name%</accent> вышел из игры"
+party_member_rejoin: "{info}<accent>%name%</accent> вернулся в игру"
+party_setleader_broadcast: "{info}<accent>%name%</accent> передал лидерство <accent>%target%"
+
+# Список участников (/party list): строки идут в одну строку через пробел
+party_list_result: "<primary><b>Участники группы:"
+party_list_leader_row: "%status% <accent>%name%</accent> <dark>(лидер)"
+party_list_member_row: "%status% <accent>%name%"
+
+# Открытая группа (/party public, /party join)
+party_public_status_unavailable: "{err}Открыть группу можно с ранга {rank:elite}"
+party_public_status_enabled_broadcast: "{info}<accent>%name%</accent> открыл группу: вступить может любой"
+party_public_status_disabled_broadcast: "{info}<accent>%name%</accent> закрыл группу: только по приглашениям"
+party_not_public: "{err}У этого игрока нет открытой группы"
+
+# Перенос (/party warp)
+party_warp: "{ok}Участники группы переходят к вам"
+party_member_warped: "{info}Лидер группы перенёс вас к себе"
+party_warp_special_server: "{err}С этого сервера нельзя перенести группу"
+
+# Условия команд
+party_not_in_party: "{err}Этот игрок не в вашей группе"
+party_not_leader: "{err}Это может только лидер группы"
+party_with_party: "{err}Вы уже в группе. Выйти — <primary>/party leave"
+party_without_party: "{err}Вы не в группе. Создать — <primary>/party <ник>"
+
+# Чат группы
+party_chat: "<primary>Группа</primary> <dark>┃</dark> <accent>%name%</accent><dark>:</dark> %message%"

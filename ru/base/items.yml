@@ -1,0 +1,102 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Игровые предметы: наборы, способности, косметика — меню покупки и выбора
+#  %label% — название категории в нужном падеже (набор, шляпу, этого набора...)
+# ─────────────────────────────────────────────────────────────────────
+
+game_item_name: "<primary>%name%"
+game_item_exclusive_name: "%name% <dark>[</dark>%exclusive%<dark>]"
+
+# Эксклюзивные периоды (цвет задаём здесь: код ставит свой цвет перед текстом)
+period_halloween: "<warning>Хэллоуин"
+period_new_year: "<info>Новый год"
+
+# Статус предмета в описании
+game_item_already_purchased: "<success>Куплено"
+game_item_available_for_purchase: "<success>Можно купить"
+
+game_item_select_available: "<success>%label% можно выбрать"
+game_item_select_click: "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать %label%"
+game_item_select_unavailable: "<error>Нельзя выбрать %label%"
+game_item_select_requirements: "<muted>Чтобы выбрать %label%, нужно:"
+
+game_item_unselect_available: "<success>%label%"
+game_item_unselect_click: "<accent>ЛКМ</accent> <dark>—</dark> <muted>снять выбор"
+
+game_item_buy_unavailable: "<error>Нельзя купить %label%"
+game_item_buy_requirements: "<muted>Для покупки %label% нужно:"
+
+game_item_unlock_unavailable: "<error>Нельзя получить %label%"
+game_item_unlock_requirements: "<muted>Чтобы получить %label%, нужно:"
+
+game_item_exclusive_unavailable: "<muted>%label% можно получить только с <accent>%start%</accent> по <accent>%end%"
+
+game_item_case_hint_title:
+  - ""
+  - "<muted>Выпадает из кейсов:"
+game_item_case_hint_entry: "{dot}%type% <dark>—</dark> %rarity%"
+
+game_item_preview_available:
+  - ""
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>предпросмотр"
+
+# Невыполненные условия: каждая строка условия, между ними «и» / «или»
+failed_predicate: "{dot}%label%"
+failed_predicate_and: " <muted>и"
+failed_predicate_or: " <muted>или"
+
+# Сообщения
+game_item_selected: "{ok}Вы выбрали %label% <accent>%item%"
+game_item_unselected: "{ok}Выбор снят"
+game_item_unselected_from: "{ok}Вы сняли выбор с %label%"
+game_item_buy: "{ok}Покупка совершена: %label% <accent>%item%"
+
+# Иконка «что выбрано»
+game_item_gui_unselect_name: "<muted>Выбрано: <accent>%name%"
+game_item_gui_unselect_lore:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>снять выбор"
+game_item_gui_nothing_selected:
+  - "<muted>Ничего не выбрано"
+
+# Сортировка
+game_item_gui_sort_mode: "<primary>Сортировка"
+game_item_gui_sort_mode_lore:
+  - "<muted>Сейчас: <accent>%current%"
+  - "<muted>Далее: <text>%next%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>переключить"
+game_item_sort_mode_changed: "{ok}Сортировка: <accent>%mode%"
+game_item_sort_mode_a_z: "по алфавиту, А–Я"
+game_item_sort_mode_z_a: "по алфавиту, Я–А"
+game_item_sort_mode_first_available: "сначала доступные"
+game_item_sort_mode_price_asc: "сначала дешёвые"
+game_item_sort_mode_price_desc: "сначала дорогие"
+
+# Подтверждение покупки, улучшения, предпросмотр набора
+game_item_purchase_confirm:
+  - ""
+  - "<warning>Подтвердите покупку"
+game_item_no_upgrades: "<muted>Улучшений нет"
+game_item_preview_kit_title: "<dark>Содержимое набора"
+
+# ─────────────────────────────────────────────────────────────────────
+#  Условия получения предмета
+# ─────────────────────────────────────────────────────────────────────
+
+predicate_currency_requirement: "<accent>%cost%</accent> <dark>(у вас %balance%)"
+predicate_currency_purchase:
+  - "<muted>Цена: <accent>%cost%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>купить"
+predicate_sponsor_discount:
+  - "<muted>Скидка {rank:sponsor}: <accent>20%"
+
+predicate_level_requirement: "<accent>%level%</accent> <dark>(у вас %required%)"
+
+predicate_group_requirement_status: "<muted>Ранг %required%%match_type% <dark>(у вас %current%)"
+predicate_group_default_status: "<muted>нет ранга"
+predicate_group_other_status: "%group%"
+or_upper: " <muted>или выше"
+or_lower: " <muted>или ниже"
+
+predicate_upgrade: "<muted>Предыдущий уровень: <accent>%upgrade%"

@@ -1,0 +1,47 @@
+# Ежедневные награды и задания дня
+
+# ── Ежедневные награды ──────────────────────────────────────────────
+daily_rewards_title: "<dark>Ежедневные награды"
+daily_reward_name: "<primary><b>День <accent>%day%"
+daily_reward:
+  - "<muted>Награда:"
+# Строка награды в списке (общая для ежедневных наград)
+reward_row: "{dot}%reward_name%"
+daily_reward_unavailable_not_collected:
+  - "<error>Пока недоступно"
+daily_reward_unavailable_tomorrow:
+  - "<muted>Можно забрать завтра"
+daily_reward_unavailable_days:
+  - "<muted>Можно забрать через <accent>%day_label%"
+daily_reward_unavailable_collected: "<success>Получено"
+daily_reward_unavailable_skip: "<muted>День уже прошёл"
+# Действие на предмете награды (ежедневные награды, награды за уровни)
+click_to_collect_reward: "<accent>ЛКМ</accent> <dark>—</dark> <muted>забрать награду"
+
+daily_reward_collected: "{ok}Награда за <accent>%num%</accent> день получена!"
+daily_reward_thanks: "{ok}Вы собрали все награды серии — спасибо, что играете с нами!"
+daily_reward_cloud_gift: "{ok}Подарок за верность — <accent>1</accent> облако!"
+
+# ── Задания дня ─────────────────────────────────────────────────────
+quests_gui_title: "<dark>Задания: %mode%"
+
+quests_gui_completed_entry: "<success><b>%mode%"
+quests_gui_completed_entry_lore:
+  - "<success>Задание выполнено!"
+  - "<muted>Новое — через <accent>%time_before_next_day%"
+  - ""
+
+quests_gui_uncompleted_entry: "<primary><b>%mode%"
+# %progress% — число без знака %
+quests_gui_uncompleted_entry_lore:
+  - "<muted>Прогресс: <accent>%progress%%"
+  - "<muted>Осталось времени: <accent>%time_before_next_day%"
+  - ""
+
+quests_gui_completed_requirement: "{ok}<muted>%name% <dark>(<accent>%value%</accent>/<accent>%value%</accent>)"
+quests_gui_uncompleted_requirement: "{dot}%name% <dark>(<accent>%current%</accent>/<accent>%total%</accent>)"
+quests_gui_entry_reward: "<muted>Награда: <accent>%coins%</accent> монет и <accent>%exp%</accent> опыта"
+
+quests_available: "{info}Заданий на сегодня: <accent>%quests%</accent>. Открыть — <primary>/quests"
+quests_not_found: "{err}На сегодня заданий нет"
+quests_reloaded: "{ok}Задания перезагружены"

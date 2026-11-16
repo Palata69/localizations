@@ -1,0 +1,24 @@
+# Табло хаба и игровых лобби, голограмма статуса арен.
+# Строки табло: подпись muted — значение accent; внизу — board_website (общий ключ табло)
+
+lobby_board_title: "{logo}"
+
+board_group: "<muted>Ранг: %rank%"
+board_clouds: "<muted>Облака: <accent>%clouds%"
+board_coins: "<muted>Монеты: <accent>%coins%"
+board_level: "<muted>Уровень: <accent>%level%"
+# %scale% — полоска прогресса (код красит её сам), %percentage% — уже со знаком %
+board_level_progress: "%scale% <accent>%percentage%"
+board_multipliers: "<muted>Множители:"
+board_multipliers_value: "<muted>опыт <accent>x%experience%</accent><dark>,</dark> <muted>монеты <accent>x%coins%"
+board_total_online: "<muted>Онлайн: <accent>%online%"
+
+# Статистика режима в игровом лобби: заголовок над строками
+board_lobby_stat_title: "<primary><b>%master%"
+board_lobby_stat_line: "<muted>%name%: <accent>%value%"
+
+# Голограмма статуса арен в игровом лобби
+game_status_holo_info_total_online: "<muted>Играют: <accent>%value%"
+game_status_holo_info_total_servers: "<muted>Всего арен: <accent>%value%"
+game_status_holo_info_busy_servers: "<muted>Идёт игра: <accent>%value%"
+game_status_holo_info_free_servers: "<muted>Свободно: <accent>%value%"

@@ -1,0 +1,367 @@
+# Профиль игрока: мой профиль, чужой профиль, друзья, группа, язык, настройки, соцсети,
+# история скинов, статистика, награды за уровни, бустеры
+
+# ── Мой профиль ─────────────────────────────────────────────────────
+my_profile_gui_title: "<dark>Мой профиль"
+
+profile_main_item_name: "%name%"
+profile_main_item_lore:
+  - ""
+  - "<muted>ID: <accent>%id%"
+  - "<muted>Ранг: %group%"
+profile_main_item_group_expiration:
+  - "<muted>Ранг закончится через <accent>%expires%"
+profile_main_item_global_time:
+  - "<muted>В игре: <accent>%time%"
+profile_main_item_lore_stats:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>статистика"
+
+profile_friends_item_name: "<primary><b>Друзья"
+profile_friends_item_lore:
+  - "<muted>Друзей: <accent>%friends%</accent><dark>/</dark><accent>%limit%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_party_list_name: "<primary><b>Группа"
+profile_party_list_lore:
+  - "<muted>Участники вашей группы"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_skin_history_name: "<primary><b>История скинов"
+profile_skin_history_lore:
+  - "<muted>Скины, которые вы надевали"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_settings_name: "<primary><b>Настройки"
+profile_settings_lore:
+  - "<muted>Приватность и соцсети"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_join_messages_item_name: "<primary><b>Сообщения о входе"
+profile_join_messages_item_lore:
+  - "<muted>Как сеть объявит о вашем входе"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_boosters_item_name: "<primary><b>Бустеры"
+profile_boosters_item_lore:
+  - "<muted>Временно умножают опыт или монеты"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_open_another_player_name: "<primary><b>Найти игрока"
+profile_open_another_player_lore:
+  - "<muted>Открыть профиль другого игрока"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>ввести ник"
+
+profile_suffixes_item_name: "<primary><b>Суффиксы"
+profile_suffixes_item_lore:
+  - "<muted>Куплено: <accent>%suffixes%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_language_item_name: "<primary><b>Язык"
+profile_language_item_lore_description: "<muted>Язык меню и сообщений"
+# %percentage% — доля перевода, число без знака %
+profile_language_item_lore_language_entry: "{dot}<muted>%name% <dark>(<accent>%percentage%%</accent>)"
+profile_language_item_lore_language_entry_selected: "{arrow} <success>%name%</success> <dark>(<accent>%percentage%%</accent>)"
+profile_language_item_lore_action:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>сменить язык"
+
+profile_leveling_item_name: "<primary><b>Уровень"
+# %leveling_scale% — полоска прогресса (код красит её сам), %percentage% — число без знака %
+profile_leveling_item_lore:
+  - ""
+  - "<muted>Уровень: <accent>%level%</accent> <dark>(</dark>%status%<dark>)"
+  - "<muted>Всего опыта: <accent>%experience%"
+  - ""
+  - "<muted>До <accent>%next_level%</accent> уровня: <accent>%curr_lvl_exp%</accent><dark>/</dark><accent>%exp_to_next_lvl%"
+  - "%leveling_scale% <accent>%percentage%%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>награды за уровни"
+
+# ── Профиль другого игрока ──────────────────────────────────────────
+profile_gui_title: "<dark>Профиль %name%"
+
+profile_player_main_title: "%name%"
+profile_player_main_lore:
+  - ""
+  - "<muted>ID: <accent>%player_id%"
+  - "<muted>Уровень: <accent>%level%</accent> <dark>(</dark>%status%<dark>)"
+profile_player_main_online:
+  - ""
+  - "<success>В сети <dark>·</dark> <muted>сервер <accent>%server_name%"
+profile_player_main_offline:
+  - ""
+  - "<error>Не в сети</error> <muted>уже <accent>%time%"
+
+profile_player_media: "<primary><b>%media%"
+profile_player_media_unset: "<muted>%media% не указан"
+profile_player_media_lore:
+  - "<muted>%media%: <accent>%value%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>получить ссылку"
+profile_player_media_message: "{info}Профиль игрока в <accent>%media%</accent> — нажмите, чтобы вставить ссылку в чат"
+profile_player_media_hover: "<muted>Нажмите, чтобы вставить ссылку в чат"
+
+profile_player_stats_name: "<primary><b>Статистика"
+profile_player_stats_lore:
+  - "<muted>Игровая статистика игрока"
+  - ""
+profile_player_stats_lore_unavailable:
+  - "<muted>Доступно с {rank:ultra}"
+profile_player_stats_lore_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+profile_player_already_friends_name: "<success><b>Вы друзья"
+profile_player_already_friends_lore:
+  - "<muted>Этот игрок у вас в друзьях"
+  - ""
+profile_player_not_friends_name: "<primary><b>Добавить в друзья"
+profile_player_not_friends_lore:
+  - "<muted>Отправить заявку в друзья"
+  - ""
+profile_player_friends_remove_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>удалить из друзей"
+profile_player_friends_offline:
+  - "<error>Игрок не в сети"
+profile_player_friends_forbidden:
+  - "<error>Игрок не принимает заявки"
+profile_player_friends_add_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>отправить заявку"
+
+profile_player_party_name: "<primary><b>Группа"
+profile_player_party_lore:
+  - "<muted>Пригласить игрока в группу"
+  - ""
+profile_player_party_forbidden:
+  - "<error>Игрок не принимает приглашения"
+profile_player_party_offline:
+  - "<error>Игрок не в сети"
+profile_player_party_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>пригласить"
+profile_player_party_already_in:
+  - "<muted>Игрок уже в группе"
+profile_player_party_already_in_yours:
+  - "<success>Это ваша группа"
+profile_player_party_already_in_other:
+  - "<error>Пригласить пока нельзя"
+
+profile_player_message_name: "<primary><b>Личное сообщение"
+profile_player_message_lore:
+  - "<muted>Написать игроку в личные сообщения"
+  - ""
+profile_player_message_forbidden:
+  - "<error>Игрок закрыл личные сообщения"
+profile_player_message_offline:
+  - "<error>Игрок не в сети"
+profile_player_message_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>написать"
+profile_player_message_message: "{info}Нажмите, чтобы написать %name%"
+profile_player_message_hover: "<muted>Нажмите, чтобы начать сообщение"
+
+profile_player_setskin_name: "<primary><b>Скин игрока"
+profile_player_setskin_lore:
+  - "<muted>Надеть такой же скин"
+  - ""
+profile_player_setskin_unavailable_already:
+  - "<success>У вас уже этот скин"
+profile_player_setskin_available:
+  - "<muted>Скин: <accent>%skin%"
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>надеть"
+
+# ── Друзья ──────────────────────────────────────────────────────────
+friends_gui_title: "<dark>Друзья"
+friends_empty_name: "<primary><b>Друзей пока нет"
+friends_empty_lore:
+  - "<muted>Добавить друга — <primary>/friend add <ник>"
+friend_level_lore:
+  - "<muted>Уровень: <accent>%level%"
+friend_server_lore:
+  - "<success>В сети <dark>·</dark> <muted>сервер <accent>%server%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>перейти к другу"
+friend_offline_lore:
+  - "<error>Не в сети</error> <muted>уже <accent>%time%"
+# Подставляется вместо времени: «не в сети уже очень давно»
+last_login_time_unknown: "очень давно"
+
+# ── Группа ──────────────────────────────────────────────────────────
+party_gui_title: "<dark>Группа"
+party_empty_name: "<primary><b>Вы не в группе"
+party_empty_lore:
+  - "<muted>Пригласить игрока — <primary>/party invite <ник>"
+party_entry_lore:
+  - "<muted>Роль: %role%"
+party_leader_role: "<accent>лидер"
+party_member_role: "<muted>участник"
+party_entry_teleport_lore:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>перейти к игроку"
+party_entry_leader_lore:
+  - ""
+  - "<muted>Это вы, лидер группы"
+
+# ── Язык ────────────────────────────────────────────────────────────
+language_gui_title: "<dark>Язык"
+language_gui_entry_name: "<primary><b>%language%"
+# %percentage% — доля перевода, число без знака %
+language_gui_entry_lore:
+  - "<muted>Переведено: <accent>%percentage%%"
+  - ""
+language_gui_entry_already_selected:
+  - "<success>Выбран сейчас"
+language_gui_entry_click_to_select:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
+language_changed: "{ok}Язык изменён на <accent>%language%"
+
+# ── Настройки ───────────────────────────────────────────────────────
+settings_gui_title: "<dark>Настройки"
+setting_name: "<primary><b>%setting%"
+settings_click_to_enable:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>включить"
+settings_click_to_disable:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выключить"
+
+# ── Соцсети ─────────────────────────────────────────────────────────
+# Названия и подсказки соцсетей (core-base SocialMediaType: social_<тип>_name / _usage) — фрагменты без цвета
+social_discord_name: "Discord"
+social_discord_usage: "тег Discord в виде ник#1234"
+social_telegram_name: "Telegram"
+social_telegram_usage: "имя пользователя Telegram без @"
+social_youtube_name: "YouTube"
+social_youtube_usage: "ссылку на канал YouTube"
+
+media_name: "<primary><b>%media%"
+media_click_to_set:
+  - "<muted>%media% не указан"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>указать"
+media_click_to_update:
+  - "<muted>%media%: <accent>%value%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>изменить"
+  - "<accent>Shift + ПКМ</accent> <dark>—</dark> <muted>удалить"
+media_need_to_chat:
+  - "<muted>Потом напишите в чат"
+  - "<accent>%usage%"
+media_chat_to_continue: "{info}Напишите в чат <accent>%usage%"
+media_bad_format: "{err}Неверный формат, попробуйте ещё раз"
+media_already_set: "{err}Это значение уже указано в поле <accent>%media%"
+media_already_set_by_another_player: "{err}Такой профиль <accent>%media%</accent> уже привязан к другому игроку"
+media_set: "{ok}Сохранено, %usage%: <accent>%value%"
+media_removed: "{ok}Ссылка удалена"
+
+# ── История скинов ──────────────────────────────────────────────────
+skin_history_gui_title: "<dark>История скинов"
+skin_history_empty: "<primary><b>История пуста"
+skin_history_empty_lore:
+  - "<muted>Здесь появятся скины, которые вы наденете"
+skin_history_gui_reset_icon: "<primary><b>Сбросить скин"
+skin_history_gui_reset_icon_lore:
+  - "<muted>Сейчас: <accent>%skin_name%"
+  - ""
+skin_history_gui_reset_default:
+  - "<muted>У вас стандартный скин"
+skin_history_gui_reset_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>вернуть стандартный"
+skin_history_gui_entry: "<primary><b>%player%"
+skin_history_gui_entry_already:
+  - "<success>Надет сейчас"
+skin_history_gui_entry_available:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>надеть"
+skin_history_gui_entry_lore:
+  - ""
+  - "<muted>Надевали <accent>%duration%</accent> назад"
+
+# ── Статистика ──────────────────────────────────────────────────────
+stats_gui_title: "<dark>Статистика %name%"
+stats_gui_main_item_name: "<primary><b>Общая статистика"
+stats_gui_main_item_lore:
+  - ""
+  - "<muted>Ранг: %rank%"
+  - "<muted>Уровень: <accent>%level%"
+  - "<muted>Опыт: <accent>%experience%"
+  - "<muted>Облака: <accent>%clouds%"
+  - "<muted>Монеты: <accent>%coins%"
+  - "<muted>В игре: <accent>%time_spent%"
+stats_gui_mode_item_name: "<primary><b>%mode%"
+stats_gui_mode_item_lore_global:
+  - ""
+  - "<muted>За всё время:"
+stats_gui_mode_item_lore_stat: "{dot}<muted>%stat%: <accent>%value%"
+stats_gui_mode_item_lore_detailed:
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>подробнее"
+
+detailed_stats_gui_title: "<dark>Подробно: %name%"
+detailed_stats_gui_lore_title:
+  - ""
+  - "<muted>Всего <dark>/</dark> за месяц <dark>/</dark> сегодня:"
+detailed_stats_gui_lore_stat: "<accent>%total%</accent> <dark>/</dark> <accent>%monthly%</accent> <dark>/</dark> <accent>%daily%"
+
+# ── Награды за уровни ───────────────────────────────────────────────
+level_rewards_title: "<dark>Награды за уровни"
+level_reward_name: "<primary><b>Уровень <accent>%level%"
+level_reward:
+  - ""
+  - "<muted>Награда:"
+level_rewards:
+  - ""
+  - "<muted>Награды:"
+level_reward_row: "{dot}%reward_name%"
+level_rewards_status:
+  - ""
+  - "%status%"
+level_rewards_unavailable_collected: "<success>Награда получена"
+level_rewards_unavailable_collect_previous: "<warning>Сначала заберите прошлые награды"
+level_rewards_unavailable_unreached: "<error>Уровень ещё не достигнут"
+level_rewards_collected: "{ok}Награда за <accent>%level%</accent> уровень получена!"
+
+# ── Бустеры ─────────────────────────────────────────────────────────
+booster_activation_gui_title: "<dark>Бустеры"
+booster_purchase_gui_title: "<dark>Покупка бустеров"
+booster_gui_name: "<primary><b>%booster%"
+booster_available_count_lore:
+  - "<muted>У вас: <accent>%amount%</accent> %format%"
+  - ""
+# Окончания для «N бустеров» (language.getEnding)
+booster_single: "бустер"
+booster_onemore: "бустера"
+booster_plural: "бустеров"
+booster_this_already_activated:
+  - "<success>Активен</success> <muted>ещё <accent>%time%"
+booster_another_already_activated:
+  - "<warning>Уже активен другой бустер"
+booster_click_to_activate:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>активировать"
+booster_not_found_lore:
+  - "<error>Нет в наличии"
+booster_purchase_name: "<primary><b>Купить бустеры"
+booster_purchase_lore:
+  - "<muted>Бустеры за облака"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+booster_price_lore:
+  - "<muted>Цена: <accent>%cost%"
+  - "<muted>У вас: <accent>%balance%"
+  - ""
+booster_click_to_purchase:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>купить"
+booster_activated: "{ok}Бустер <accent>%name%</accent> активирован!"
+booster_already_actived: "{err}У вас уже активен бустер <accent>%name%"
+booster_not_found: "{err}У вас нет такого бустера"
+booster_purchase: "{ok}Вы купили бустер <accent>%name%"
+
+# Покупка за облака (бустеры, кейсы, кредит)
+purchase_unavailable_cost_lore:
+  - "<error>Не хватает облаков"
+purchase_unavailable_cost_message: "{err}Не хватает облаков. Пополнить — <accent>{store}"

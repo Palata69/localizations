@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Предметы на панели быстрого доступа в хабе и лобби
+# ─────────────────────────────────────────────────────────────────────
+
+hotbar_mode_selector_name: "<primary><b>Выбор режима</b> <dark>(ПКМ)"
+hotbar_mode_selector_lore:
+  - "<muted>Все режимы сети"
+  - "<muted>в одном меню"
+
+hotbar_lobby_selector_name: "<primary><b>Выбор лобби</b> <dark>(ПКМ)"
+hotbar_lobby_selector_lore:
+  - "<muted>Переход в другое лобби"
+hotbar_hub_selector_title: "<dark>Выбор хаба"
+hotbar_lobby_selector_title: "<dark>Выбор лобби"
+
+hotbar_shop_name: "<accent><b>Магазин</b> <dark>(ПКМ)"
+hotbar_shop_lore:
+  - "<muted>Покупка и выбор предметов"
+  - "<muted>для этого режима"

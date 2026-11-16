@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Трансляции (/stream, оповещения о стримах)
+#  stream_new_stream_second_line вставляется в JSON — без " и \
+# ─────────────────────────────────────────────────────────────────────
+
+# Площадки
+stream_platform_twitch: "<#9146FF>Twitch"
+stream_platform_youtube: "<#FF4E45>You<white>Tube"
+
+# /stream
+stream_only_youtube: "{err}Добавлять трансляции могут только {rank:youtube} и {rank:media}"
+stream_cooldown: "{err}Трансляцию можно добавлять не так часто. Подождите немного"
+stream_already_started: "{info}Ваша трансляция уже в списке. Убрать — <primary>/stream remove"
+stream_no_streams: "{err}У вас нет активной трансляции"
+stream_removed: "{ok}Трансляция убрана из списка"
+stream_created: "{ok}Трансляция добавлена. Как только она начнётся, игроки получат оповещение"
+stream_similar_found: "{err}Эту трансляцию уже добавили"
+stream_unknown_platform: "{err}Ссылка не распознана. Поддерживаются: %platforms%"
+
+# Обновление трансляции
+stream_update_error: "{err}Не удалось обновить трансляцию: <muted>%exception%"
+stream_update_removed: "{info}Трансляция убрана из списка"
+stream_ended: "трансляция завершилась"
+stream_not_found: "трансляция не найдена"
+
+# Оповещения
+stream_new_stream_first_line: "{info}<accent>%gamer%</accent> начал трансляцию на %platform%"
+stream_new_stream_second_line: "  <link>Нажмите, чтобы смотреть"
+stream_online_streams: "{info}Сейчас <accent>%stream_format%</accent> %player_format% трансляцию. Смотреть — <primary>/streams"
+stream_single: "ведёт"
+stream_plural: "ведут"

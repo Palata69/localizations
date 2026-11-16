@@ -1,0 +1,133 @@
+# Меню выбора режима, лобби, подрежима, карты и наблюдения
+
+# ── Выбор режима ────────────────────────────────────────────────────
+gamemode_selector_gui_title: "<dark>Выбор режима"
+
+gamemode_selector_gui_hub_teleport: "<primary><b>Вернуться в хаб"
+gamemode_selector_gui_hub_teleport_lore:
+  - "<muted>Главное лобби сети"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>перейти"
+
+gamemode_selector_gui_help: "<primary><b>Помощь"
+gamemode_selector_gui_help_lore:
+  - "<muted>Команды и ответы на частые вопросы"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+gamemode_selector_gui_donate: "<primary><b>Привилегии"
+gamemode_selector_gui_donate_lore:
+  - "<muted>Ранги, облака и бонусы"
+  - "<muted>Подробнее: <accent>{store}"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
+
+# Название режима: доступен / недоступен (или сервер заполнен)
+gamemode_selector_gui_entry_available: "<primary><b>%mode%"
+gamemode_selector_gui_entry_disabled: "<error><b>%mode%"
+
+gamemode_selector_gui_offline_lore:
+  - "<error>Режим временно недоступен"
+
+# Подрежим в списке режима и онлайн в нём
+gamemode_selector_gui_entry_list_item_available: "{dot}<accent>%mode%"
+gamemode_selector_gui_entry_list_item_full: "{dot}<error>%mode%"
+gamemode_selector_gui_mode_info: "  <muted>Играют: <accent>%online%</accent> <dark>·</dark> <muted>арен: <accent>%servers%"
+gamemode_selector_gui_single_mode_info: "<muted>Играют: <accent>%online%</accent> <dark>·</dark> <muted>арен: <accent>%servers%"
+
+gamemode_selector_gui_entry_large:
+  - "<muted>Подрежимов: <accent>%modes%"
+  - "<muted>Играют: <accent>%online%"
+
+gamemode_selector_gui_connect:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>играть"
+
+gamemode_selector_gui_uncommon_single_online: "<muted>Сейчас играют: <accent>%format%"
+gamemode_selector_gui_uncommon_online: "<muted>Онлайн: <accent>%online%</accent><dark>/</dark><accent>%slots%"
+gamemode_selector_gui_choose_server: "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать сервер"
+
+gamemode_selector_gui_no_slots_lore:
+  - ""
+  - "<error>Сервер заполнен"
+  - "<muted>На полные серверы можно с {rank:premium}"
+gamemode_selector_gui_full_servers_lore:
+  - "<warning>Часть серверов заполнена"
+  - "<muted>На полные серверы можно с {rank:premium}"
+
+# ── Выбор сервера редкого режима ────────────────────────────────────
+uncommon_selector_gui_title: "<dark>%name%: выбор сервера"
+uncommon_selector_gui_no_servers: "<error>Нет доступных серверов"
+uncommon_selector_gui_no_servers_lore:
+  - "<muted>Загляните чуть позже"
+
+# ── Выбор лобби ─────────────────────────────────────────────────────
+lobby_selector_gui_hub_title: "<dark>Выбор хаба"
+lobby_selector_gui_lobby_title: "<dark>Выбор лобби"
+
+lobby_selector_gui_no_lobbies: "<error>Нет доступных лобби"
+lobby_selector_gui_no_lobbies_lore:
+  - "<muted>Загляните чуть позже"
+
+lobby_selector_gui_lobby_entry_available: "<primary><b>%lobby_name%"
+lobby_selector_gui_lobby_entry_already_in: "<success><b>%lobby_name%"
+lobby_selector_gui_lobby_entry_online: "<muted>Игроков: <accent>%online%"
+lobby_selector_gui_lobby_entry_friend_title: "<muted>Здесь ваши друзья:"
+lobby_selector_gui_lobby_entry_friend: "{dot}%friend_name%"
+lobby_selector_gui_lobby_entry_more_friends: "<muted>и ещё <accent>%format%"
+lobby_selector_gui_lobby_entry_already_in_lore: "<success>Вы здесь"
+lobby_selector_gui_lobby_entry_connect_lore: "<accent>ЛКМ</accent> <dark>—</dark> <muted>перейти"
+
+# ── Выбор подрежима ─────────────────────────────────────────────────
+mini_selector_gui_title: "<dark>Выбор подрежима"
+mini_selector_gui_entry: "<primary><b>%mode%"
+mini_selector_gui_entry_lore:
+  - ""
+  - "<muted>Играют: <accent>%total_online%"
+  - "<muted>Свободных арен: <accent>%free_servers%</accent><dark>/</dark><accent>%servers%"
+  - ""
+mini_selector_gui_entry_lore_queue:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>встать в очередь"
+mini_selector_gui_entry_lore_join:
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>играть"
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>выбрать карту"
+mini_selector_gui_entry_lore_unavailable:
+  - ""
+  - "<error>Режим временно недоступен"
+
+# ── Выбор карты ─────────────────────────────────────────────────────
+map_cluster_gui_title: "<dark>%mode%: выбор карты"
+map_cluster_gui_entry: "<primary><b>%map_name%"
+map_cluster_gui_entry_lore:
+  - ""
+  - "<muted>Играют: <accent>%total_online%"
+  - "<muted>Арен: <accent>%total_servers%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>играть на этой карте"
+
+map_cluster_gui_best_name: "<primary><b>%mode%"
+map_cluster_gui_best_lore:
+  - "<muted>Любая карта"
+  - ""
+  - "<muted>Играют: <accent>%total_online%"
+  - "<muted>Свободных арен: <accent>%stand_by_servers%</accent><dark>/</dark><accent>%total_servers%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>быстрая игра"
+
+# ── Наблюдение за играми ────────────────────────────────────────────
+arena_spectate_gui_title: "<dark>Наблюдение"
+arena_spectate_gui_entry: "<primary><b>%mini%"
+arena_spectate_gui_entry_lore:
+  - "<muted>Карта: <accent>%map%"
+  - "<muted>Сервер: <accent>%server%"
+  - "<muted>Игроков: <accent>%players%"
+  - ""
+  - "<accent>ЛКМ</accent> <dark>—</dark> <muted>смотреть"
+
+arena_spectate_gui_no_permission_icon: "<error>Наблюдение недоступно"
+arena_spectate_gui_no_permission_icon_lore:
+  - "<muted>Смотреть чужие игры можно"
+  - "<muted>с {rank:premium}"
+
+arena_spectate_gui_no_arenas_icon: "<error>Сейчас нет идущих игр"
+arena_spectate_gui_no_arenas_icon_lore:
+  - "<muted>Загляните чуть позже"
