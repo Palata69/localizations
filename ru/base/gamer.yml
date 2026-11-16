@@ -17,7 +17,7 @@ daily_quest_completed: "{ok}Все ежедневные задания в реж
 # Уровни
 levelup:
   - "{line}"
-  - "<success><b>Новый уровень!</b> <accent>%level%"
+  - "<success>Новый уровень! <accent>%level%"
   - "<muted>Всего опыта: <accent>%exp%%for_players%"
   - "{line}"
 # Добавляется к levelup для игроков без ранга
@@ -30,7 +30,7 @@ uncollected_level_reward_onemore: "несобранные награды"
 uncollected_level_reward_plural: "несобранных наград"
 
 # AFK
-please_no_afk_title: "<warning><b>ВЫ ЗДЕСЬ?"
+please_no_afk_title: "<warning>ВЫ ЗДЕСЬ?"
 please_no_afk_subtitle: "<muted>Подвигайтесь, иначе вас отключат"
 kicked_for_afk_message: "{warn}Вы долго бездействовали — переносим вас в лимбо"
 kicked_for_afk_reason:
@@ -81,7 +81,7 @@ some_items_dropped: "{warn}Инвентарь заполнен, часть пр�
 stats_unavailable_group: "{err}Статистика других игроков доступна с {rank:ultra}"
 stats_result:
   - "{line}"
-  - "<primary><b>Статистика</b> %name% <dark>·</dark> <accent>%mode%"
+  - "<primary>Статистика %name% <dark>·</dark> <accent>%mode%"
 stats_row: "{dot}<muted>%description%: <accent>%stat%"
 
 # Слова, которые подставляет код

@@ -5,7 +5,7 @@ game_prefix: "<primary>%game%</primary> <dark>┃</dark> "
 
 # Сводка в начале и в конце игры (по центру, между линиями)
 game_broadcaster_line: "{line}"
-game_broadcast_title: "<primary><b>%mini%"
+game_broadcast_title: "<primary>%mini%"
 
 # Ошибка входа в игру (причина отмены входа), %error% — одно из game_<результат> ниже
 game_error: "{err}Не удалось войти в игру <accent>%game%</accent>: %error%"
@@ -34,7 +34,7 @@ gamemode_unavailable_timer: "{err}Во время боя менять режим
 
 # Невидимость (персонал)
 game_vanished: "{info}Вы в невидимости и наблюдаете за игрой"
-game_vanished_title: "<primary><b>НЕВИДИМОСТЬ"
+game_vanished_title: "<primary>НЕВИДИМОСТЬ"
 game_vanished_subtitle: "<muted>Вы наблюдаете за игрой"
 game_vanish_killed: "{info}Вы включили невидимость и выбыли из игры"
 
@@ -66,17 +66,17 @@ game_team_chat_local: "<muted>Команде"
 game_team_chest: "<dark>Сундук команды"
 
 # Конец игры: тайтлы
-game_winner_title: "<success><b>ПОБЕДА"
+game_winner_title: "<success>ПОБЕДА"
 game_winner_subtitle: "<muted>Отличная игра!"
-game_loser_title: "<error><b>ПОРАЖЕНИЕ"
+game_loser_title: "<error>ПОРАЖЕНИЕ"
 game_loser_subtitle: "<muted>Повезёт в следующий раз"
-game_draw_title: "<warning><b>НИЧЬЯ"
+game_draw_title: "<warning>НИЧЬЯ"
 game_draw_subtitle: "<muted>Победителя нет"
 
 # Конец игры: сводка в чате (по центру), ники победителей код выводит строками ниже
-game_end_draw: "<warning><b>Ничья"
-game_end_winner: "<success><b>Победитель"
-game_end_winners: "<success><b>Победители"
+game_end_draw: "<warning>Ничья"
+game_end_winner: "<success>Победитель"
+game_end_winners: "<success>Победители"
 game_end_empty_winners: "<muted>Победителей нет"
 
 # Конец игры: табло

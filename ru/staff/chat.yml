@@ -3,4 +3,4 @@
 
 # ── Сообщение в стафф-чате (/staffchat, режим чата «персонал») ───
 core_staffchat_message_format: "<warning>Персонал</warning> <dark>┃</dark> %user%<dark>:</dark> %message%"
-core_staffchat_bot_label: "<dark><b>BOT</b></dark> "
+core_staffchat_bot_label: "<dark>BOT</dark> "

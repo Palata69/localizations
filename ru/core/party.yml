@@ -24,7 +24,7 @@ party_receiver_left_the_game: "{info}Приглашение для <accent>%name
 party_invitations_not_found: "{err}У вас нет приглашений в группы"
 
 # Список приглашений (/party invites) — вставляется в JSON, без " и \
-party_invites_result: "<primary><b>Приглашения в группы</b> <dark>— <muted>нажмите, чтобы вступить"
+party_invites_result: "<primary>Приглашения в группы <dark>— <muted>нажмите, чтобы вступить"
 party_invite_from: "{dot}<accent>%name%</accent> %participants%"
 party_invite_participants: "<dark>(в группе: <accent>%count%</accent>)"
 party_invite_click: "<muted>Вступить в группу <accent>%name%"
@@ -47,7 +47,7 @@ party_member_rejoin: "{info}<accent>%name%</accent> вернулся в игру
 party_setleader_broadcast: "{info}<accent>%name%</accent> передал лидерство <accent>%target%"
 
 # Список участников (/party list): строки идут в одну строку через пробел
-party_list_result: "<primary><b>Участники группы:"
+party_list_result: "<primary>Участники группы:"
 party_list_leader_row: "%status% <accent>%name%</accent> <dark>(лидер)"
 party_list_member_row: "%status% <accent>%name%"
 

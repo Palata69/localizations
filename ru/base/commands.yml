@@ -46,7 +46,7 @@ entity_id: "ID сущности"
 entity_not_found: "{err}Сущность <accent>#%id%</accent> не найдена"
 entity_get_result:
   - "{line}"
-  - "<primary><b>Сущность</b> <accent>#%id%"
+  - "<primary>Сущность <accent>#%id%"
   - "{dot}<muted>Тип: <accent>%type%"
   - "{dot}<muted>Имя: <text>%name%"
   - "{dot}<muted>Мир: <accent>%world%"
@@ -63,7 +63,7 @@ entity_list_viewers: "   <muted>Видят: <text>%players%"
 checkuuid_result: "{info}UUID: <accent>%uuid%"
 
 # /memory (/tps)
-memory_world_header: "<primary><b>%world%"
+memory_world_header: "<primary>%world%"
 memory_world_players: "{dot}<muted>Игроков: <accent>%count%"
 memory_world_chunks: "{dot}<muted>Загружено чанков: <accent>%count%"
 memory_world_tiles: "{dot}<muted>Тайл-сущностей: <accent>%count%"

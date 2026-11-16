@@ -2,7 +2,7 @@
 #  Общие строки табло (scoreboard)
 # ─────────────────────────────────────────────────────────────────────
 
-board_display_name: "<primary><b>%name%"
+board_display_name: "<primary>%name%"
 board_datetime: "<dark>%time%"
 board_server: "<muted>Сервер: <accent>%server%"
 board_game_map: "<muted>Карта: <accent>%map%"

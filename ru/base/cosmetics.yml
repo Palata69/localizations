@@ -4,13 +4,13 @@
 
 # ── Меню ────────────────────────────────────────────────────────────
 cosmetic_menu_title: "<dark>Косметика"
-profile_cosmetics_item_name: "<primary><b>Косметика"
+profile_cosmetics_item_name: "<primary>Косметика"
 profile_cosmetics_item_lore:
   - "<muted>Шапки, питомцы, ауры и следы"
   - "<muted>для лобби"
   - ""
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
-cosmetics_icon: "<primary><b>Косметика"
+cosmetics_icon: "<primary>Косметика"
 cosmetics_icon_lore:
   - "<muted>Шапки, питомцы, ауры и следы"
   - ""

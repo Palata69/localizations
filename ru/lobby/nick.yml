@@ -2,7 +2,7 @@
 
 nick_gui_title: "<dark>Маскировка"
 
-nick_gui_nickname_entry: "<primary><b>%nick%"
+nick_gui_nickname_entry: "<primary>%nick%"
 nick_gui_nickname_entry_lore:
   - "<muted>Ник для маскировки"
   - ""
@@ -21,18 +21,18 @@ nick_gui_group_entry_lore_select:
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>выбрать"
 nick_default_group: "{rank:default}"
 
-nick_gui_normal_groups: "<primary><b>Обычные ранги"
+nick_gui_normal_groups: "<primary>Обычные ранги"
 nick_gui_normal_groups_lore:
   - "<muted>Показать ранги игроков"
   - ""
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
-nick_gui_special_groups: "<primary><b>Ранги персонала"
+nick_gui_special_groups: "<primary>Ранги персонала"
 nick_gui_special_groups_lore:
   - "<muted>Показать ранги команды сети"
   - ""
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
 
-nick_gui_selector: "<primary><b>Надеть маску"
+nick_gui_selector: "<primary>Надеть маску"
 nick_gui_selector_lore:
   - "<muted>Другие игроки увидят вас"
   - "<muted>с выбранным ником и рангом"

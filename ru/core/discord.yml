@@ -4,7 +4,7 @@
 
 discord_link_action:
   - "{line}"
-  - "{info}Ваш код привязки: <accent><b>%code%</b>"
+  - "{info}Ваш код привязки: <accent>%code%"
   - "<muted>Отправьте его нашему боту в канал привязки на сервере Discord: <link>{discord}"
   - "{line}"
 discord_already_awaiting: "{err}Вы уже получили код. Отправьте его боту в Discord"

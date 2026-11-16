@@ -36,7 +36,7 @@ friend_remove_receiver: "{info}<accent>%name%</accent> удалил вас из 
 # Список (/friend list)
 friend_empty_list: "{info}У вас пока нет друзей. Добавить — <primary>/friend <ник>"
 friend_list_invalid_page: "{err}Такой страницы нет"
-friend_list_result: "<primary><b>Друзья</b> <dark>(стр. <accent>%page%</accent>/<accent>%pages%</accent>)"
+friend_list_result: "<primary>Друзья <dark>(стр. <accent>%page%</accent>/<accent>%pages%</accent>)"
 friend_list_online_row: "{dot}<accent>%name%</accent> <success>в сети"
 friend_list_offline_row: "{dot}<accent>%name%</accent> <dark>не в сети"
 # Дописываются в конец строки друга в сети
@@ -44,7 +44,7 @@ friend_list_vanished_row: " <dark>(невидимка)"
 friend_list_server: " <dark>—</dark> <muted>%server%"
 
 # Друзья в сети при входе
-friends_online: "<primary><b>Друзья в сети:"
+friends_online: "<primary>Друзья в сети:"
 friend_online_entry: "{dot}<accent>%name%</accent> <dark>—</dark> <muted>%server%"
 friend_online_others_entry: "{dot}<muted>и ещё <accent>%count%"
 friend_join_the_game: "{info}Друг <accent>%name%</accent> зашёл в игру"

@@ -1,6 +1,6 @@
 # Обучение в хабе
 
-tutorial_npc_hologram_title: "<primary><b>Обучение"
+tutorial_npc_hologram_title: "<primary>Обучение"
 tutorial_npc_hologram_action: "<muted>Нажмите, чтобы начать"
 
 tutorial_already_started: "{err}Обучение уже идёт"

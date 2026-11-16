@@ -1,21 +1,21 @@
 # Загадочный сундук и кейсы
 
-mysterybox_hologram_title: "<primary><b>Загадочный сундук"
+mysterybox_hologram_title: "<primary>Загадочный сундук"
 mysterybox_hologram_title_action: "<muted>Нажмите, чтобы открыть кейс"
 mysterybox_no_items: "{err}В этом кейсе пока нет наград"
 
 # ── Список кейсов ───────────────────────────────────────────────────
 case_list_title: "<dark>Ваши кейсы"
-case_list_empty: "<primary><b>Кейсов нет"
+case_list_empty: "<primary>Кейсов нет"
 case_list_empty_lore:
   - "<muted>Купите кейс в магазине ниже"
-case_list_shop: "<primary><b>Магазин кейсов"
+case_list_shop: "<primary>Магазин кейсов"
 case_list_shop_lore:
   - "<muted>Кейсы за облака"
   - ""
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
 
-case_gui_name: "<primary><b>%case%"
+case_gui_name: "<primary>%case%"
 case_open_click:
   - ""
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>открыть"
@@ -25,8 +25,8 @@ case_open_unavailable_group:
 case_open_unavailable_processing: "{err}Сундук уже открывают, подождите немного"
 
 # ── Создание кейса из загадочной пыли ───────────────────────────────
-case_craft_available_name: "<success><b>Создать кейс"
-case_craft_unavailable_name: "<error><b>Создать кейс"
+case_craft_available_name: "<success>Создать кейс"
+case_craft_unavailable_name: "<error>Создать кейс"
 case_craft_lore:
   - "<muted>Загадочная пыль: <accent>%dust%</accent><dark>/</dark><accent>%required%"
   - ""

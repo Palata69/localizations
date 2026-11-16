@@ -1,27 +1,27 @@
 # Мини-игры: предметы хотбара
 
-game_spectator_compass_icon: "<primary><b>Телепортатор"
+game_spectator_compass_icon: "<primary>Телепортатор"
 game_spectator_compass_icon_lore:
   - "<muted>Перемещайтесь к игрокам,"
   - "<muted>которые ещё в игре"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-game_spectator_replay_icon: "<primary><b>Играть снова"
+game_spectator_replay_icon: "<primary>Играть снова"
 game_spectator_replay_icon_lore:
   - "<muted>Новая игра"
   - "<muted>в этом же режиме"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>найти игру"
 
-game_shop_icon: "<primary><b>Магазин"
+game_shop_icon: "<primary>Магазин"
 game_shop_icon_lore:
   - "<muted>Наборы и предметы"
   - "<muted>для этой игры"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-game_lobby_icon: "<primary><b>В лобби"
+game_lobby_icon: "<primary>В лобби"
 game_lobby_icon_lore:
   - "<muted>Вернуться в лобби режима"
   - ""

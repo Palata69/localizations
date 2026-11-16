@@ -10,7 +10,7 @@ telegram_status_suspended: "{warn}Ваши ранги приостановлен
 # /2fa link
 telegram_link_code:
   - "{line}"
-  - "{info}<primary><b>Привязка Telegram"
+  - "{info}<primary>Привязка Telegram"
   - "<muted>Откройте ссылку и нажмите «Запустить»:"
   - "<link>%link%"
   - "<muted>Или отправьте боту <accent>@%bot%</accent> команду <primary>/start %code%"
@@ -36,7 +36,7 @@ telegram_ranks_restored: "{ok}Telegram привязан — ранги возв�
 
 # Прокси: вход по паролю ждёт подтверждения в Telegram
 telegram_auth_waiting: "{info}Подтвердите вход в Telegram — бот прислал сообщение. На ответ <accent>2 минуты"
-telegram_auth_waiting_title: "<primary><b>Подтвердите вход"
+telegram_auth_waiting_title: "<primary>Подтвердите вход"
 telegram_auth_waiting_subtitle: "<muted>Бот прислал сообщение в Telegram"
 telegram_auth_waiting_actionbar: "<warning>Ждём подтверждения входа в Telegram"
 telegram_auth_denied:

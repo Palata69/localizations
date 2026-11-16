@@ -24,59 +24,59 @@ lobby_vanish_active_bar: "<info>Вы невидимы"
 lobby_booster_active_bar: "<success>Бустер <accent>x%multiplier%</accent> <muted>ещё <accent>%expires%"
 
 # ── Хотбар ──────────────────────────────────────────────────────────
-gamemode_select_icon: "<primary><b>Выбор режима"
+gamemode_select_icon: "<primary>Выбор режима"
 gamemode_select_icon_lore:
   - "<muted>Все игры сети в одном меню"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-lobby_select_icon: "<primary><b>Выбор лобби"
+lobby_select_icon: "<primary>Выбор лобби"
 lobby_select_icon_lore:
   - "<muted>Перейти в другое лобби"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-server_select_icon: "<primary><b>Выбор подрежима"
+server_select_icon: "<primary>Выбор подрежима"
 server_select_icon_lore:
   - "<muted>Выберите подрежим и карту"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-map_select_icon: "<primary><b>Выбор карты"
+map_select_icon: "<primary>Выбор карты"
 map_select_icon_lore:
   - "<muted>Сыграть на любимой карте"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-shop_icon: "<primary><b>Магазин"
+shop_icon: "<primary>Магазин"
 shop_icon_lore:
   - "<muted>Предметы и улучшения режима"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-donate_icon: "<primary><b>Привилегии"
+donate_icon: "<primary>Привилегии"
 donate_icon_lore:
   - "<muted>Ранги, облака и бонусы"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>открыть"
 
-queue_join_icon: "<success><b>Встать в очередь"
+queue_join_icon: "<success>Встать в очередь"
 queue_join_icon_lore:
   - "<muted>Выберите подрежим — вас перенесут"
   - "<muted>в игру, как только найдётся арена"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>выбрать"
 
-queue_leave_icon: "<error><b>Покинуть очередь"
+queue_leave_icon: "<error>Покинуть очередь"
 queue_leave_icon_lore:
   - "<muted>Вы ждёте свободную арену"
   - ""
   - "<accent>ПКМ</accent> <dark>—</dark> <muted>выйти из очереди"
 
-profile_icon: "<primary><b>Профиль</b> %name%"
+profile_icon: "<primary>Профиль %name%"
 
-show_players_icon: "<primary><b>Показать игроков"
-hide_players_icon: "<primary><b>Скрыть игроков"
+show_players_icon: "<primary>Показать игроков"
+hide_players_icon: "<primary>Скрыть игроков"
 hider_icon_lore:
   - "<muted>Скрывает всех, кроме друзей"
   - "<muted>и участников вашей группы"
@@ -91,25 +91,25 @@ queue_vanish_cannot_join: "{err}В невидимости нельзя вста�
 queue_removed_by_core: "{warn}Очередь сброшена из-за перезапуска сети. Встаньте в неё снова"
 
 # ── Порталы и NPC (голограммы) ──────────────────────────────────────
-start_game_random_gamemode: "<primary><b>Случайная игра"
-start_game_on_gamemode: "<primary><b>Начать игру"
+start_game_random_gamemode: "<primary>Случайная игра"
+start_game_on_gamemode: "<primary>Начать игру"
 
-gamemode_npc_status_title: "<primary><b>%mode%"
+gamemode_npc_status_title: "<primary>%mode%"
 gamemode_npc_status_players: "<muted>Играют: <accent>%players%"
 gamemode_npc_status_connect: "<success>Нажмите, чтобы играть"
 gamemode_npc_status_disabled: "<error>Режим временно недоступен"
 gamemode_npc_status_busy: "<warning>Все арены заняты"
 
-rewards_npc_hologram_title: "<primary><b>Ежедневные награды"
+rewards_npc_hologram_title: "<primary>Ежедневные награды"
 rewards_npc_hologram_action: "<muted>Нажмите, чтобы открыть"
 
-votes_npc_hologram_title: "<primary><b>Голосование"
+votes_npc_hologram_title: "<primary>Голосование"
 votes_npc_hologram_action: "<muted>Голосуйте за сеть и получайте награды"
 
-quest_npc_hologram_title: "<primary><b>Задания дня"
+quest_npc_hologram_title: "<primary>Задания дня"
 quest_npc_hologram_action: "<muted>Нажмите, чтобы открыть"
 
-spectate_npc_hologram_title: "<primary><b>Наблюдение"
+spectate_npc_hologram_title: "<primary>Наблюдение"
 spectate_npc_hologram_action: "<muted>Нажмите, чтобы смотреть игры"
 
 # ── Общие сообщения лобби ───────────────────────────────────────────

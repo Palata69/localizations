@@ -7,8 +7,8 @@ game_force_started: "{ok}Вы запустили игру досрочно"
 
 game_start_timer_message: "{info}Игра начнётся через <accent>%time%"
 # Тайтлы обратного отсчёта: на 10 секундах и на последних 5
-game_start_countdown_title: "<success><b>%seconds%"
-game_start_countdown_final_title: "<error><b>%seconds%"
+game_start_countdown_title: "<success>%seconds%"
+game_start_countdown_final_title: "<error>%seconds%"
 
 # Ошибка при запуске игры
 game_start_error_screenshot: "{warn}Сделайте снимок экрана с сообщениями ниже и отправьте его администрации"
@@ -19,5 +19,5 @@ board_mode: "<muted>Режим: <accent>%mode%"
 board_players: "<muted>Игроки: <accent>%players%"
 board_waiting: "<muted>Ожидание игроков"
 board_until_start: "<muted>Старт через <accent>%time%"
-board_spectator_display_name: "<primary><b>Наблюдение"
+board_spectator_display_name: "<primary>Наблюдение"
 board_spectator_spectators: "<muted>Наблюдатели: <accent>%spectators%"

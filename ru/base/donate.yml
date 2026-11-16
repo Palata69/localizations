@@ -6,7 +6,7 @@ donate_description_gui_title: "<dark>Ранги"
 
 # Ранги: donate_description_gui_<группа> — название, _lore — описание.
 # %prefix% — как будет выглядеть ник игрока с этим рангом
-donate_description_gui_premium: "<b>{rank:premium}"
+donate_description_gui_premium: "{rank:premium}"
 donate_description_gui_premium_lore:
   - "<muted>Ваш ник: %prefix%"
   - ""
@@ -16,7 +16,7 @@ donate_description_gui_premium_lore:
   - "{dot}<muted>вход в заполненное лобби"
   - "{dot}<muted>команды <primary>/sit</primary> и <primary>/firework"
 
-donate_description_gui_legend: "<b>{rank:legend}"
+donate_description_gui_legend: "{rank:legend}"
 donate_description_gui_legend_lore:
   - "<muted>Ваш ник: %prefix%"
   - ""
@@ -24,7 +24,7 @@ donate_description_gui_legend_lore:
   - "{dot}<muted>всё, что есть у {rank:premium}"
   - "{dot}<muted>опыт <accent>×1,6"
 
-donate_description_gui_ultra: "<b>{rank:ultra}"
+donate_description_gui_ultra: "{rank:ultra}"
 donate_description_gui_ultra_lore:
   - "<muted>Ваш ник: %prefix%"
   - ""
@@ -35,7 +35,7 @@ donate_description_gui_ultra_lore:
   - "{dot}<muted>статистика других игроков"
   - "{dot}<muted>доступ к подписке {rank:elite}"
 
-donate_description_gui_sponsor: "<b>{rank:sponsor}"
+donate_description_gui_sponsor: "{rank:sponsor}"
 donate_description_gui_sponsor_lore:
   - "<muted>Ваш ник: %prefix%"
   - ""
@@ -44,7 +44,7 @@ donate_description_gui_sponsor_lore:
   - "{dot}<muted>опыт <accent>×2</accent>, монеты <accent>×3"
   - "{dot}<muted>скидка <accent>20%</accent> на покупки за монеты"
 
-donate_description_gui_support: "<b>{rank:support}"
+donate_description_gui_support: "{rank:support}"
 donate_description_gui_support_lore:
   - "<muted>Ваш ник: %prefix%"
   - ""
@@ -54,7 +54,7 @@ donate_description_gui_support_lore:
   - "<muted>Возможности:"
   - "{dot}<muted>чат персонала <primary>/chat staff"
 
-donate_description_gui_elite: "<b>{rank:elite}"
+donate_description_gui_elite: "{rank:elite}"
 donate_description_gui_elite_lore:
   - "<muted>Ваш ник: %prefix%"
   - ""

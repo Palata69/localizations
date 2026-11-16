@@ -3,8 +3,8 @@
 # ─────────────────────────────────────────────────────────────────────
 
 # Кнопки запросов (друзья, группы, игры) — вставляются в JSON, без " и \
-accept_request_button: "<success><b>[Принять]"
-reject_request_button: "<error><b>[Отклонить]"
+accept_request_button: "<success>[Принять]"
+reject_request_button: "<error>[Отклонить]"
 request_accept_hover: "<muted>Нажмите, чтобы принять"
 request_reject_hover: "<muted>Нажмите, чтобы отклонить"
 request_sent_to_same_player: "{err}Нельзя отправить запрос самому себе"

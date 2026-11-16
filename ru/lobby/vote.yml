@@ -1,4 +1,4 @@
 # Голосование за сеть: название площадки в меню (остальные ключи меню — в разделе base)
 
-vote_gui_entry_available: "<primary><b>%platform%"
+vote_gui_entry_available: "<primary>%platform%"
 vote_gui_entry_unavailable: "<muted>%platform%"

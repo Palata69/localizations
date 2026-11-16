@@ -2,7 +2,7 @@
 
 # Текст в окне «скачать ресурспак?» на клиенте
 resourcepack_prompt:
-  - "<primary><b>Ресурспак {server}"
+  - "<primary>Ресурспак {server}"
   - "<muted>Нужен для моделей, звуков и интерфейса сети"
 
 resourcepack_declined_kick:

@@ -14,7 +14,7 @@ board_multipliers_value: "<muted>опыт <accent>x%experience%</accent><dark>,<
 board_total_online: "<muted>Онлайн: <accent>%online%"
 
 # Статистика режима в игровом лобби: заголовок над строками
-board_lobby_stat_title: "<primary><b>%master%"
+board_lobby_stat_title: "<primary>%master%"
 board_lobby_stat_line: "<muted>%name%: <accent>%value%"
 
 # Голограмма статуса арен в игровом лобби

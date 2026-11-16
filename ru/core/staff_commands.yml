@@ -16,7 +16,7 @@ core_find_nicked_format: "%real_name% <dark>(маска</dark> %mask%<dark>)"
 
 # /findaccounts
 core_findaccounts_result:
-  - "<primary><b>Аккаунты игрока</b> <accent>%name%"
+  - "<primary>Аккаунты игрока <accent>%name%"
   - "{dot}<muted>IP регистрации <accent>%reg_ip%</accent>: %reg_ip_names%"
 core_findaccounts_result_last: "{dot}<muted>Последний IP <accent>%last_ip%</accent>: %last_ip_names%"
 core_findaccounts_result_online: "{dot}<muted>Текущий IP <accent>%current_ip%</accent>: %current_ip_names%"
@@ -24,7 +24,7 @@ core_findaccounts_result_online: "{dot}<muted>Текущий IP <accent>%current
 # /whois
 core_whois_result_base:
   - "{line}"
-  - "<primary><b>Игрок</b> <accent>%name%</accent> <dark>(ID %id%)"
+  - "<primary>Игрок <accent>%name%</accent> <dark>(ID %id%)"
   - "{dot}<muted>Ранги: %ranks%"
   - "{dot}<muted>Язык: <accent>%language%"
   - "{dot}<muted>Вход по лицензии: %premium_auth%"
@@ -42,7 +42,7 @@ core_whois_result_hosting: "{dot}<warning>Зашёл через VPN/хостин
 guard_usage: "{info}Использование: <primary>/guard</primary> <muted>[status | attack on/off/auto | unblock <адрес> | reload]"
 guard_status:
   - "{line}"
-  - "<primary><b>Защита от ботов</b> <dark>(</dark><accent>%proxy%</accent><dark>)"
+  - "<primary>Защита от ботов <dark>(</dark><accent>%proxy%</accent><dark>)"
   - "{dot}<muted>Защита: %enabled%"
   - "{dot}<muted>Режим атаки: %attack% <dark>(</dark>%mode%<dark>)"
   - "{dot}<muted>Подключений: <accent>%connections%</accent> за <accent>%connections_window%</accent> с <dark>(порог %connections_limit%)"
@@ -64,7 +64,7 @@ core_getname_result: "{info}Ник игрока: <accent>%name%"
 
 # /nickhistory
 command_nickhistory_empty: "{info}Эту маску ещё никто не носил"
-command_nickhistory_title: "<primary><b>История маски</b> <accent>%nick%</accent> <dark>(записей: <accent>%size%</accent>)"
+command_nickhistory_title: "<primary>История маски <accent>%nick%</accent> <dark>(записей: <accent>%size%</accent>)"
 command_nickhistory_entry: "{dot}%owner% <dark>[%rank%]</dark> <muted>с <accent>%issue_date%</accent> — %status%"
 command_nickhistory_entry_active: "<success>носит сейчас"
 command_nickhistory_entry_finished: "<muted>до <accent>%end_date%"
@@ -74,7 +74,7 @@ core_tunnel_observed: "{ok}Вы следите за <accent>%target%"
 core_tunnel_removed: "{ok}Вы больше не следите за <accent>%target%"
 core_tunnel_invaliduser: "{err}Игрок не в сети"
 core_tunnel_emptylist: "{info}Вы ни за кем не следите"
-core_tunnel_list: "<primary><b>Вы следите за игроками</b> <dark>(<accent>%size%</accent>)<dark>:"
+core_tunnel_list: "<primary>Вы следите за игроками <dark>(<accent>%size%</accent>)<dark>:"
 
 # /port — перенести игрока к себе
 core_port_successful: "{ok}<accent>%player%</accent> перенесён к вам"
@@ -89,7 +89,7 @@ core_vanish_disabled: "{ok}Невидимость выключена"
 core_vanish_function_disabled: "{err}В невидимости это недоступно"
 
 # /staffs — персонал в сети
-core_stafflist_result: "<primary><b>Персонал в сети</b> <dark>(<accent>%count%</accent>)<dark>:"
+core_stafflist_result: "<primary>Персонал в сети <dark>(<accent>%count%</accent>)<dark>:"
 core_stafflist_admins: "{dot}<muted>Администрация: %names%"
 core_stafflist_moders: "{dot}<muted>Модераторы: %names%"
 core_stafflist_helpers: "{dot}<muted>Хелперы: %names%"
@@ -133,7 +133,7 @@ time_other_spent: "{info}<accent>%name%</accent> провёл на сервер�
 
 # /analytics
 analytics_scope_global: "вся сеть"
-analytics_protocol_header: "<primary><b>Версии клиентов</b> <dark>—</dark> <accent>%scope%"
+analytics_protocol_header: "<primary>Версии клиентов <dark>—</dark> <accent>%scope%"
 analytics_protocol_row: "{dot}<muted>Протокол <accent>%protocol%</accent>: <accent>%count%"
-analytics_domains_header: "<primary><b>Адреса входа</b> <dark>—</dark> <accent>%scope%"
+analytics_domains_header: "<primary>Адреса входа <dark>—</dark> <accent>%scope%"
 analytics_domains_row: "{dot}<accent>%domain%</accent><dark>:</dark> <accent>%count%"

@@ -8,7 +8,7 @@ chatlog_id_field: "номер"
 # ── /chatlog <ник> [минуты] ─────────────────────────────────────
 chatlog_header:
   - "{line}"
-  - "<primary><b>Чат</b></primary> <accent>%player%</accent> <dark>—</dark> <muted>за <accent>%minutes%</accent> мин, сообщений: <accent>%count%"
+  - "<primary>Чат</primary> <accent>%player%</accent> <dark>—</dark> <muted>за <accent>%minutes%</accent> мин, сообщений: <accent>%count%"
 chatlog_footer: "{line}"
 chatlog_row: "<dark>%time%</dark> %channel% <muted>%server%</muted> <dark>»</dark> <text>%message%</text>%filtered%"
 chatlog_channel_public: "<muted>[чат]"
@@ -26,7 +26,7 @@ chatlog_evidence_button: "<link>[показать]"
 chatlog_evidence_button_hover: "<muted>Сообщения игрока на момент жалобы или наказания"
 chatlog_evidence_header:
   - "{line}"
-  - "<primary><b>Снимок чата</b></primary> <dark>#%id%</dark> <dark>—</dark> <muted>%kind%</muted> <accent>%player%"
+  - "<primary>Снимок чата</primary> <dark>#%id%</dark> <dark>—</dark> <muted>%kind%</muted> <accent>%player%"
   - "<muted>Сохранён <accent>%date%</accent>, сообщений: <accent>%count%"
 chatlog_evidence_not_found: "{err}Снимок чата <accent>%ref%</accent> не найден"
 chatlog_evidence_usage: "{info}Использование: <primary>/chatlog evidence <muted><номер></muted></primary> <dark>или</dark> <primary>/chatlog evidence ban <muted><номер></muted></primary> <dark>(</dark><primary>mute</primary><dark>)"

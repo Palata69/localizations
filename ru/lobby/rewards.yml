@@ -2,7 +2,7 @@
 
 # ── Ежедневные награды ──────────────────────────────────────────────
 daily_rewards_title: "<dark>Ежедневные награды"
-daily_reward_name: "<primary><b>День <accent>%day%"
+daily_reward_name: "<primary>День <accent>%day%"
 daily_reward:
   - "<muted>Награда:"
 # Строка награды в списке (общая для ежедневных наград)
@@ -25,13 +25,13 @@ daily_reward_cloud_gift: "{ok}Подарок за верность — <accent>1
 # ── Задания дня ─────────────────────────────────────────────────────
 quests_gui_title: "<dark>Задания: %mode%"
 
-quests_gui_completed_entry: "<success><b>%mode%"
+quests_gui_completed_entry: "<success>%mode%"
 quests_gui_completed_entry_lore:
   - "<success>Задание выполнено!"
   - "<muted>Новое — через <accent>%time_before_next_day%"
   - ""
 
-quests_gui_uncompleted_entry: "<primary><b>%mode%"
+quests_gui_uncompleted_entry: "<primary>%mode%"
 # %progress% — число без знака %
 quests_gui_uncompleted_entry_lore:
   - "<muted>Прогресс: <accent>%progress%%"

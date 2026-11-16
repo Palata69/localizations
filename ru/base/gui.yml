@@ -24,10 +24,10 @@ page_prev_lore:
 
 # Окно подтверждения
 confirmation_gui_title: "<dark>Подтверждение"
-confirmation_gui_yes: "<success><b>Подтвердить"
+confirmation_gui_yes: "<success>Подтвердить"
 confirmation_gui_yes_lore:
   - "<muted>Нажмите, чтобы подтвердить"
-confirmation_gui_no: "<error><b>Отмена"
+confirmation_gui_no: "<error>Отмена"
 confirmation_gui_no_lore:
   - "<muted>Нажмите, чтобы отменить"
 

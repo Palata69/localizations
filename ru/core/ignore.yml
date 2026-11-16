@@ -8,5 +8,5 @@ command_ignore_self: "{err}Нельзя добавить в чёрный спи�
 command_ignore_already_ignored: "{err}Этот игрок уже в чёрном списке"
 command_ignore_not_ignored: "{err}Этого игрока нет в чёрном списке"
 command_ignore_list_empty: "{info}Чёрный список пуст"
-command_ignore_list_title: "<primary><b>Чёрный список</b> <dark>(стр. <accent>%page%</accent>/<accent>%pages%</accent>)"
+command_ignore_list_title: "<primary>Чёрный список <dark>(стр. <accent>%page%</accent>/<accent>%pages%</accent>)"
 command_ignore_list_entry: "{dot}<accent>%display%</accent> <dark>— убрать: <primary>/ignore remove %name%"

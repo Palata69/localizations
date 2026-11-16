@@ -53,7 +53,7 @@ team_color_white_he: "<white>Белый"
 team_color_white_she: "<white>Белая"
 
 # Предмет выбора команды в лобби игры
-team_selector_item_name: "<primary><b>Выбор команды"
+team_selector_item_name: "<primary>Выбор команды"
 team_selector_item_lore:
   - "<muted>Соберите команду"
   - "<muted>с другими игроками"
@@ -65,24 +65,24 @@ team_selector_gui_title: "<dark>Выбор команды"
 team_selector_gui_click_to_invite:
   - ""
   - "<accent>ЛКМ</accent> <dark>—</dark> <muted>пригласить в команду"
-team_selector_empty_item_name: "<primary><b>Некого пригласить"
+team_selector_empty_item_name: "<primary>Некого пригласить"
 team_selector_empty_item_lore:
   - "<muted>Все игроки уже в командах"
-team_selector_full_item_name: "<error><b>Команда собрана"
+team_selector_full_item_name: "<error>Команда собрана"
 team_selector_full_item_lore:
   - "<muted>Свободных мест"
   - "<muted>в команде не осталось"
-team_selector_invite_unavailable_item_name: "<error><b>Приглашения недоступны"
+team_selector_invite_unavailable_item_name: "<error>Приглашения недоступны"
 team_selector_invite_unavailable_item_lore:
   - "<muted>Приглашать игроков может"
   - "<muted>только лидер — <accent>%leader_name%"
 team_selector_team_item_lore:
   - "<muted>Лидер вашей команды"
-team_selector_team_leader_item_name: "<primary><b>Вы — лидер команды"
+team_selector_team_leader_item_name: "<primary>Вы — лидер команды"
 team_selector_team_leader_item_lore:
   - ""
   - "<muted>Приглашайте игроков из списка выше"
-team_selector_team_member_item_name: "<primary><b>Ваша команда"
+team_selector_team_member_item_name: "<primary>Ваша команда"
 team_selector_team_member_item_lore:
   - "<muted>Лидер: <accent>%leader_name%"
   - ""

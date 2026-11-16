@@ -4,7 +4,7 @@
 #  Тогда весь стиль сети меняется здесь, без правки сообщений.
 #
 #  Значение роли: "#RRGGBB" и, при желании, начертания через пробел:
-#      bold italic underlined strikethrough obfuscated
+#       italic underlined strikethrough obfuscated
 # ─────────────────────────────────────────────────────────────────────
 
 colors:
@@ -41,7 +41,7 @@ colors:
   rarity_common:    "#C8C8D4"
   rarity_rare:      "#5EB8FF"
   rarity_epic:      "#C77DFF"
-  rarity_legendary: "#FFB347 bold"
+  rarity_legendary: "#FFB347 "
 
 # ─────────────────────────────────────────────────────────────────────
 #  Шаблоны. Вставляются в сообщения как {ok}, {err}, {warn}, {info}, {brand}...
@@ -60,7 +60,7 @@ styles:
   staff: "<warning>Персонал</warning> <dark>┃</dark> "
 
   # Сообщение от имени сети: объявления, рассылки, системные уведомления
-  brand: "<gradient:brand_from:brand_to><b>{server|upper}</b></gradient> <dark>┃</dark> "
+  brand: "<gradient:brand_from:brand_to>{server|upper}</gradient> <dark>┃</dark> "
 
   # Пункт списка и стрелка
   dot:   "<dark>•</dark> "
@@ -70,4 +70,4 @@ styles:
   line: "<dark><st>                                                  </st></dark>"
 
   # Название сети в цветах бренда: заголовки табло, тайтлы, кик-экраны
-  logo: "<gradient:brand_from:brand_to><b>{server|upper}</b></gradient>"
+  logo: "<gradient:brand_from:brand_to>{server|upper}</gradient>"

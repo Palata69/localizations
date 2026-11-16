@@ -5,7 +5,7 @@
 
 # MOTD в списке серверов (две строки)
 motd:
-  - "<gradient:brand_from:brand_to><b>{server|upper}</b></gradient> <dark>┃</dark> <muted>{domain}"
+  - "<gradient:brand_from:brand_to>{server|upper}</gradient> <dark>┃</dark> <muted>{domain}"
   - "<accent>Мини-игры, друзья и группы — заходите!"
 motd_not_connected:
   - "{logo}"
@@ -38,7 +38,7 @@ network_kick_wrong_address:
   - "{logo}"
   - ""
   - "<error>Заходите по основному адресу"
-  - "<accent><b>{domain}"
+  - "<accent>{domain}"
 network_kick_account_not_yours:
   - "{logo}"
   - ""
@@ -108,9 +108,9 @@ network_kick_server_restart:
 
 # Переподключение прокси к ядру
 core_reconnect_message: "{warn}Связь с сетью прервалась. Переподключаемся…"
-core_reconnect_process_title: "<warning><b>ПЕРЕПОДКЛЮЧЕНИЕ"
+core_reconnect_process_title: "<warning>ПЕРЕПОДКЛЮЧЕНИЕ"
 core_reconnect_process_subtitle: "<muted>Подождите несколько секунд"
-core_reconnect_success_title: "<success><b>ГОТОВО"
+core_reconnect_success_title: "<success>ГОТОВО"
 core_reconnect_success_subtitle: "<muted>Связь с сетью восстановлена"
 core_reconnect_server_not_found:
   - "{logo}"
@@ -160,8 +160,8 @@ core_list_result: "{info}Игроки: %players%"
 core_no_online_players: "{err}Здесь нет игроков в сети"
 
 # /serverinfo
-status_header: "<primary><b>Информация о серверах"
-information_title_field: "{arrow} <muted>%key%:</muted> <accent><b>%value%"
+status_header: "<primary>Информация о серверах"
+information_title_field: "{arrow} <muted>%key%:</muted> <accent>%value%"
 information_field: "  <muted>%key%:</muted> <accent>%value%"
 information_server_name: "Сервер"
 information_master_servers: "Арены"

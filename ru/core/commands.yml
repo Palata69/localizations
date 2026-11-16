@@ -8,7 +8,7 @@
 prefix: "{brand}"
 
 # Справка (/команда help) — заголовок и строки
-command_help: "<primary><b>Справка по команде</b>"
+command_help: "<primary>Справка по команде"
 command_help_row: "{dot}<primary>%usage%</primary> <dark>—</dark> <muted>%description%"
 command_help_no_description: "без описания"
 

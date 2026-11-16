@@ -91,8 +91,8 @@ party_invite_received:
 | Запись | Что делает |
 |---|---|
 | `<primary>текст</primary>` | цвет-роль из палитры (основной способ) |
-| `<b>` `<i>` `<u>` `<st>` `<obf>` | жирный, курсив, подчёркнутый, зачёркнутый, «шум» |
-| `</primary>`, `</b>` | закрыть тег; `</>` — закрыть последний открытый |
+| `` `<i>` `<u>` `<st>` `<obf>` | жирный, курсив, подчёркнутый, зачёркнутый, «шум» |
+| `</primary>`, `` | закрыть тег; `</>` — закрыть последний открытый |
 | `<reset>` | закрыть все теги |
 | `<gradient:brand_from:brand_to>текст</gradient>` | градиент по буквам, цвета — роли или `#hex`, можно больше двух |
 | `<#9D8CFF>` | произвольный цвет — **только в исключительных случаях** |
@@ -134,7 +134,7 @@ party_invite_received:
 | `info` | `#7CC7FF` | справка, нейтральные уведомления |
 | `link` | `#7CC7FF`, подчёркнутый | ссылки и кликабельный текст |
 | `brand_from` → `brand_to` | `#9D8CFF` → `#6FB6FF` | градиент названия сети |
-| `rarity_none` … `rarity_legendary` | серый, светло-серый, голубой, фиолетовый, оранжевый жирный | редкость предметов и кейсов |
+| `rarity_none` … `rarity_legendary` | серый, светло-серый, голубой, фиолетовый, оранжевый | редкость предметов и кейсов |
 
 Шаблоны:
 
@@ -190,7 +190,7 @@ command_help_row: "{dot}<primary>%usage%</primary> <dark>—</dark> <muted>%desc
 ```yaml
 friend_list_header:
   - "{line}"
-  - "<primary><b>Друзья</b> <dark>(<accent>%count%</accent>/<accent>%limit%</accent>)"
+  - "<primary>Друзья <dark>(<accent>%count%</accent>/<accent>%limit%</accent>)"
 friend_list_entry: "{dot}<accent>%player%</accent> <dark>—</dark> <success>в сети"
 friend_list_footer: "{line}"
 ```
@@ -219,7 +219,7 @@ ban_screen:
 
 **Тайтл и action bar** — коротко; заголовок цветом, подзаголовок — `text` или `muted`:
 ```yaml
-game_winner_title: "<success><b>ПОБЕДА"
+game_winner_title: "<success>ПОБЕДА"
 game_winner_subtitle: "<muted>Вы заняли <accent>1</accent> место"
 ```
 
@@ -233,7 +233,7 @@ hub_board_footer: "<primary>{domain}"
 
 **Предмет и меню** — название `primary` (или цвет редкости), описание `muted`, внизу действие:
 ```yaml
-lobby_selector_item_name: "<primary><b>Выбор режима"
+lobby_selector_item_name: "<primary>Выбор режима"
 lobby_selector_item_lore:
   - "<muted>Все игры сети"
   - "<muted>в одном меню"
@@ -269,7 +269,7 @@ mute_broadcast: "{warn}<accent>%name%</accent> выдал мут <accent>%target
 
 Ранги и всё их оформление — **в коде**, enum
 [`Group`](../core/core-base/src/main/java/by/minster/core/base/data/permission/Group.java):
-цвет `RRGGBB`, название («Premium») и жирная подпись в префиксе (`PREMIUM`). Префикс — подпись цветом ранга,
+цвет `RRGGBB`, название («Premium») и подпись обычным начертанием в префиксе (`PREMIUM`). Префикс — подпись цветом ранга,
 затем ник тем же цветом: **PREMIUM** Ник.
 
 В тексте ранг пишется через `{rank:имя}` — название его цветом: «Доступно с {rank:premium}».
@@ -316,3 +316,5 @@ cd core
 - в тексте нет `%значения%`, которое передаёт код;
 - встречаются старые коды `§` или `&`;
 - ключ повторяется или написан не в нижнем регистре.
+
+Во всех текстах сети используется обычное начертание: жирные теги и роль `bold` не добавляем.

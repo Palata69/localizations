@@ -3,7 +3,7 @@
 # ─────────────────────────────────────────────────────────────────────
 
 # Простой топ (паркур и т. п.)
-prop_player_top_title: "<primary><b>Топ-%count%"
+prop_player_top_title: "<primary>Топ-%count%"
 prop_player_top_subtitle: "<muted>%type%"
 
 # Строки топа: %player% — уже собранная строка player_top_player_entry
@@ -13,12 +13,12 @@ player_top_player_entry: "%name% <dark>—</dark> <accent>%value%"
 player_top_empty_entry: "<dark>—"
 
 # Топ по статистике режима
-stat_player_top_title: "<primary><b>%mode%"
+stat_player_top_title: "<primary>%mode%"
 stat_player_top_subtitle: "<muted>%field% <dark>·</dark> <muted>%timestamp%"
 stat_player_top_changer_value: "<muted>%value%"
 # stat_player_top_changer_value_active — в разделе lobby (tops.yml)
 stat_player_top_changer_scroll_horizontal: "%values%"
-stat_player_top_mode_changer_title: "<primary><b>Режим"
+stat_player_top_mode_changer_title: "<primary>Режим"
 stat_player_top_changer_scroll_vertical: "<muted>Нажмите, чтобы сменить"
 stat_player_mode_changed: "{info}Режим топа: <accent>%mode%"
 stat_player_period_changed: "{info}Период топа: <accent>%period%"
