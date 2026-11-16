@@ -1,0 +1,5 @@
+# Глифы микрофона из ресурспака Minster; цвет отражает состояние соединения.
+voicechat_tab_connected: "<success>\uE100</success> "
+voicechat_tab_disabled: "<warning>\uE101</warning> "
+voicechat_tab_disconnected: "<warning>\uE101</warning> "
+voicechat_tab_not_installed: "<error>\uE101</error> "
