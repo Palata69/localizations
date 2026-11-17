@@ -1,0 +1,31 @@
+# Коины и клауды игроков: /eco give|take|set|balance (ADMIN и выше)
+
+# ── Справка (@WithHelp) ─────────────────────────────────────────
+command_eco_usage: "<muted><give|take|set|balance>"
+command_eco_give_usage: "<muted><ник> <coins|clouds> <кол-во>"
+command_eco_give_description: "выдать коины или клауды"
+command_eco_take_usage: "<muted><ник> <coins|clouds> <кол-во>"
+command_eco_take_description: "забрать коины или клауды (не ниже нуля)"
+command_eco_set_usage: "<muted><ник> <coins|clouds> <кол-во>"
+command_eco_set_description: "установить баланс"
+command_eco_balance_usage: "<muted><ник>"
+command_eco_balance_description: "баланс игрока"
+
+# ── Ответы ───────────────────────────────────────────────────────
+core_eco_unknown_currency: "{err}Нет валюты <accent>%currency%</accent>. Есть <accent>coins</accent> и <accent>clouds"
+core_eco_wrong_amount: "{err}Неверное количество <accent>%amount%</accent>: нужно целое число больше нуля"
+core_eco_too_much: "{err}Баланс не может быть больше <accent>%max%"
+
+core_eco_give_done: "{ok}<accent>%name%</accent> выдано <accent>%amount%</accent> <muted>(теперь %balance%)"
+core_eco_take_done: "{ok}У <accent>%name%</accent> забрано <accent>%amount%</accent> <muted>(теперь %balance%)"
+core_eco_set_done: "{ok}Баланс <accent>%name%</accent>: <accent>%amount%"
+core_eco_balance: "{info}Баланс <accent>%name%</accent>: <accent>%coins%</accent> <dark>·</dark> <accent>%clouds%"
+
+# ── Игроку ───────────────────────────────────────────────────────
+core_eco_received: "{ok}Вам начислено <accent>%amount%</accent> <muted>(теперь %balance%)"
+core_eco_taken: "{warn}У вас списано <accent>%amount%</accent> <muted>(теперь %balance%)"
+
+# ── Персоналу (ADMIN и выше) ─────────────────────────────────────
+core_eco_give_broadcast: "{staff}{info}<accent>%admin%</accent> выдал <accent>%amount%</accent> <text>игроку <accent>%name%"
+core_eco_take_broadcast: "{staff}{info}<accent>%admin%</accent> забрал <accent>%amount%</accent> <text>у <accent>%name%"
+core_eco_set_broadcast: "{staff}{info}<accent>%admin%</accent> установил баланс <accent>%name%</accent><text>: <accent>%amount%"

@@ -55,6 +55,27 @@ cosmetic_hat_crown_lore:
 cosmetic_hat_traveler_hood_name: "Капюшон путешественника"
 cosmetic_hat_traveler_hood_lore:
   - "<muted>Как у проводника в Vanilla"
+cosmetic_hat_cat_ears_name: "Кошачьи ушки"
+cosmetic_hat_cat_ears_lore:
+  - "<muted>Мяу"
+cosmetic_hat_top_hat_name: "Цилиндр"
+cosmetic_hat_top_hat_lore:
+  - "<muted>С пряжкой в цветах {server}"
+cosmetic_hat_wizard_hat_name: "Шляпа волшебника"
+cosmetic_hat_wizard_hat_lore:
+  - "<muted>Звёзды вышиты вручную"
+cosmetic_hat_viking_helmet_name: "Шлем викинга"
+cosmetic_hat_viking_helmet_lore:
+  - "<muted>Рога настоящие"
+  - "<muted>Ну почти"
+cosmetic_hat_halo_name: "Нимб"
+cosmetic_hat_halo_lore:
+  - "<muted>Парит над головой"
+  - "<muted>Для тех, кто поддерживает {server}"
+cosmetic_hat_santa_hat_name: "Шапка Санты"
+cosmetic_hat_santa_hat_lore:
+  - "<muted>Новогодняя: доступна"
+  - "<muted>только в праздники"
 
 # ── Питомцы ─────────────────────────────────────────────────────────
 cosmetic_pet_mini_slime_name: "Мини-слайм"
@@ -66,6 +87,19 @@ cosmetic_pet_firefly_lantern_lore:
 cosmetic_pet_book_buddy_name: "Книжка-компаньон"
 cosmetic_pet_book_buddy_lore:
   - "<muted>Знает все правила {server}"
+cosmetic_pet_rubber_duck_name: "Резиновая уточка"
+cosmetic_pet_rubber_duck_lore:
+  - "<muted>Выслушает любой баг"
+cosmetic_pet_ghost_name: "Привидение"
+cosmetic_pet_ghost_lore:
+  - "<muted>Совсем не страшное"
+  - "<muted>Хэллоуинское: доступно только в сезон"
+cosmetic_pet_snowman_name: "Снеговичок"
+cosmetic_pet_snowman_lore:
+  - "<muted>Не тает даже летом"
+cosmetic_pet_baby_dragon_name: "Дракончик"
+cosmetic_pet_baby_dragon_lore:
+  - "<muted>Пока умеет только чихать искрами"
 
 # ── Ауры ────────────────────────────────────────────────────────────
 cosmetic_aura_hearts_name: "Сердечки"
@@ -82,6 +116,20 @@ cosmetic_aura_brand_ring_name: "Кольцо {server}"
 cosmetic_aura_brand_ring_lore:
   - "<muted>Кольцо в цветах сети"
   - "<muted>вращается у ног"
+cosmetic_aura_soul_flames_name: "Пламя душ"
+cosmetic_aura_soul_flames_lore:
+  - "<muted>Голубой огонь у ног"
+cosmetic_aura_snowfall_name: "Снегопад"
+cosmetic_aura_snowfall_lore:
+  - "<muted>Личная тучка со снегом"
+  - "<muted>Новогодняя: доступна только в праздники"
+cosmetic_aura_runes_name: "Руны"
+cosmetic_aura_runes_lore:
+  - "<muted>Знаки чар кружат вокруг"
+cosmetic_aura_orbit_name: "Орбита"
+cosmetic_aura_orbit_lore:
+  - "<muted>Наклонное кольцо"
+  - "<muted>медленно поворачивается"
 
 # ── Следы ───────────────────────────────────────────────────────────
 cosmetic_trail_clouds_name: "Облачка"
@@ -96,3 +144,17 @@ cosmetic_trail_notes_lore:
 cosmetic_trail_brand_sparks_name: "Искры {server}"
 cosmetic_trail_brand_sparks_lore:
   - "<muted>Искры в цветах сети"
+cosmetic_trail_flames_name: "Огонь"
+cosmetic_trail_flames_lore:
+  - "<muted>Горячие следы"
+cosmetic_trail_souls_name: "Души"
+cosmetic_trail_souls_lore:
+  - "<muted>Призрачные огоньки"
+  - "<muted>Хэллоуинский: доступен только в сезон"
+cosmetic_trail_snowflakes_name: "Снежинки"
+cosmetic_trail_snowflakes_lore:
+  - "<muted>Зима там, где вы"
+  - "<muted>Новогодний: доступен только в праздники"
+cosmetic_trail_aurora_name: "Северное сияние"
+cosmetic_trail_aurora_lore:
+  - "<muted>Зелёно-фиолетовый шлейф"
