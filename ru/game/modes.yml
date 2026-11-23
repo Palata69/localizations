@@ -107,3 +107,12 @@ game_duel_sumo_duo_description: "{@game_duel_sumo_description}"
 game_duel_bow_duo_description: "{@game_duel_bow_description}"
 game_duel_nodebuff_duo_description: "{@game_duel_nodebuff_description}"
 game_duel_the_bridge_duo_description: "{@game_duel_the_bridge_description}"
+master_citadel_description:
+  - "<muted>Три героя против трёх: ведите"
+  - "<muted>волны, ломайте башни и разрушьте"
+  - "<muted>вражеское ядро"
+
+game_citadel_description:
+  - "Выберите героя, ведите волны крипов и ломайте башни"
+  - "Побеждает команда, разрушившая <accent>вражеское ядро</accent>"
+

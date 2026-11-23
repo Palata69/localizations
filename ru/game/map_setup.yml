@@ -1,0 +1,17 @@
+# Разметка карт режимов (lite-api, server/game/map/setup): общие сообщения для команд разметки
+# %point% — путь точки в конфиге карты (например, teams.A.shop)
+
+map_setup_point_set: "{ok}Точка <accent>%point%</accent> задана"
+map_setup_list_point_set: "{ok}Точка <accent>%point%</accent> №%index% задана, всего %count%"
+map_setup_list_added: "{ok}В <accent>%point%</accent> добавлена точка, всего %count%"
+map_setup_list_removed: "{ok}Из <accent>%point%</accent> убрана последняя точка, осталось %count%"
+map_setup_list_empty: "{err}В <accent>%point%</accent> нет точек"
+map_setup_list_cleared: "{ok}Точки <accent>%point%</accent> удалены"
+map_setup_box_set: "{ok}Хитбокс <accent>%point%</accent> задан, размер %size%"
+map_setup_shown: "{info}Точки карты показаны на %seconds% с"
+map_setup_complete: "{ok}Все точки на месте, карту можно сохранять"
+map_setup_incomplete: "{err}Карта не готова, проблем: <accent>%count%</accent>"
+map_setup_problem: "<muted>  - %problem%"
+map_setup_saved: "{ok}Карта сохранена в <accent>%file%</accent>"
+map_setup_save_failed: "{err}Не удалось сохранить карту: %error%"
+map_setup_error: "{err}%error%"

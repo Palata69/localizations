@@ -1,0 +1,625 @@
+# Режим «Цитадель» (MOBA 3v3), модуль games/citadel. Все ключи — с префиксом citadel_
+
+# Админская команда /citadel
+citadel_command_usage:
+  - "{info}Команды «Цитадели»:"
+  - "<accent>/citadel setup</accent> <muted>— разметка карты"
+  - "<accent>/citadel captain</accent> <muted>— стать капитаном команды"
+
+# Разметка карты: /citadel setup ...
+citadel_setup_usage:
+  - "{info}Разметка карты (точка берётся по вашему положению):"
+  - "<accent>/citadel setup spawn</accent> <A|B> \\<1-3> <muted>— точка спавна"
+  - "<accent>/citadel setup shop</accent> <A|B> <muted>— магазин"
+  - "<accent>/citadel setup tower</accent> <A|B> <outer|inner> [ширина высота глубина] <muted>— башня"
+  - "<accent>/citadel setup core</accent> <A|B> [ширина высота глубина] <muted>— ядро"
+  - "<accent>/citadel setup lane</accent> <add|undo|clear> <muted>— маршрут крипов от базы A к базе B"
+  - "<accent>/citadel setup show</accent> <muted>— показать точки, <accent>status</accent> <muted>— чего не хватает"
+  - "<accent>/citadel setup save</accent> <muted>— проверить и сохранить config.yml карты"
+
+# Роли героев
+citadel_role_tank: "Танк"
+citadel_role_fighter: "Боец"
+citadel_role_marksman: "Стрелок"
+citadel_role_mage: "Маг"
+citadel_role_support: "Поддержка"
+citadel_role_assassin: "Убийца"
+
+# Герои: имя и краткое описание для выбора
+citadel_hero_boulder_name: "<accent>Глыба"
+citadel_hero_boulder_description:
+  - "<muted>Держит линию и не даёт врагам"
+  - "<muted>уйти: оглушает и замедляет"
+citadel_hero_cleaver_name: "<accent>Секач"
+citadel_hero_cleaver_description:
+  - "<muted>Силён в затяжной драке,"
+  - "<muted>добивает раненых врагов"
+citadel_hero_falcon_name: "<accent>Сокол"
+citadel_hero_falcon_description:
+  - "<muted>Наносит урон издалека,"
+  - "<muted>но уязвим вблизи"
+citadel_hero_spark_name: "<accent>Искра"
+citadel_hero_spark_description:
+  - "<muted>Мощные заклинания по площади"
+  - "<muted>и мгновенный перенос"
+citadel_hero_solace_name: "<accent>Отрада"
+citadel_hero_solace_description:
+  - "<muted>Лечит и защищает союзников,"
+  - "<muted>сковывает врагов"
+citadel_hero_shade_name: "<accent>Тень"
+citadel_hero_shade_description:
+  - "<muted>Появляется из невидимости"
+  - "<muted>и добивает ослабленных героев"
+
+citadel_hero_warden_name: "<accent>Страж"
+citadel_hero_warden_description:
+  - "<muted>Вытаскивает врагов цепью"
+  - "<muted>и прикрывает союзников"
+citadel_hero_frost_name: "<accent>Мерзлота"
+citadel_hero_frost_description:
+  - "<muted>Замедляет всё вокруг"
+  - "<muted>и запирает врагов во льду"
+citadel_hero_brawler_name: "<accent>Буян"
+citadel_hero_brawler_description:
+  - "<muted>Разгоняет союзников"
+  - "<muted>и сам лезет в гущу драки"
+citadel_hero_lancer_name: "<accent>Пика"
+citadel_hero_lancer_description:
+  - "<muted>Бьёт копьём издалека"
+  - "<muted>и пригвождает цель к месту"
+citadel_hero_hammer_name: "<accent>Молот"
+citadel_hero_hammer_description:
+  - "<muted>Ломает строй врага"
+  - "<muted>ударами по площади"
+citadel_hero_gunner_name: "<accent>Пушкарь"
+citadel_hero_gunner_description:
+  - "<muted>Взрывной урон"
+  - "<muted>и мины на подходах"
+citadel_hero_raven_name: "<accent>Ворон"
+citadel_hero_raven_description:
+  - "<muted>Самая дальняя атака,"
+  - "<muted>метит цели для команды"
+citadel_hero_squirrel_name: "<accent>Белка"
+citadel_hero_squirrel_description:
+  - "<muted>Ловкая стрелок с арбалетом:"
+  - "<muted>ловушки у деревьев, отскоки желудя"
+  - "<muted>и заряженный выстрел издалека"
+citadel_hero_storm_name: "<accent>Буря"
+citadel_hero_storm_description:
+  - "<muted>Молнии и ветер:"
+  - "<muted>раскидывает и стягивает врагов"
+citadel_hero_ash_name: "<accent>Пепел"
+citadel_hero_ash_description:
+  - "<muted>Выпивает жизнь врагов"
+  - "<muted>и насылает мор"
+citadel_hero_prism_name: "<accent>Призма"
+citadel_hero_prism_description:
+  - "<muted>Меняет расстановку боя"
+  - "<muted>и запирает цель в кристалл"
+citadel_hero_herald_name: "<accent>Вестница"
+citadel_hero_herald_description:
+  - "<muted>Лечит группу и не даёт"
+  - "<muted>союзникам упасть"
+citadel_hero_shaman_name: "<accent>Шаманка"
+citadel_hero_shaman_description:
+  - "<muted>Ставит тотемы и снимает"
+  - "<muted>контроль с союзников"
+citadel_hero_sting_name: "<accent>Жало"
+citadel_hero_sting_description:
+  - "<muted>Травит цель"
+  - "<muted>и добивает её ядом"
+citadel_hero_phantom_name: "<accent>Призрак"
+citadel_hero_phantom_description:
+  - "<muted>Отвлекает двойником"
+  - "<muted>и прыгает между целями"
+
+# Капитаны
+citadel_captains_started: "{info}Выбор капитанов: нажмите <accent>ПКМ</accent> или <accent>/citadel captain</accent>, чтобы стать капитаном команды. Через %seconds% с капитан выберется случайно"
+citadel_captains_actionbar: "<muted>ПКМ — стать капитаном</muted> <dark>•</dark> <accent>%seconds% с"
+citadel_captain_chosen: "{info}Капитан команды %team%: <accent>%player%"
+citadel_captain_chosen_random: "{info}Капитан команды %team% выбран случайно: <accent>%player%"
+citadel_captain_replaced: "{warn}Капитан ушёл, новый капитан команды %team%: <accent>%player%"
+citadel_captain_already: "{err}Капитан уже выбран: <accent>%player%"
+
+# Баны и пики капитанов
+citadel_draft_started_captains: "{info}Баны и пики! Ходят капитаны: <accent>%step% с</accent> на ход и <accent>%reserve% с</accent> резерва на команду. ПКМ — открыть выбор"
+citadel_draft_ban_title: "<error>Ваш бан!"
+citadel_draft_pick_title: "<accent>Ваш выбор!"
+citadel_draft_your_step_subtitle: "<muted>%seconds% с, потом идёт резерв команды"
+citadel_draft_step_actionbar: "%team% <muted>%action%</muted> <dark>•</dark> <accent>%seconds% с"
+citadel_draft_step_reserve_actionbar: "%team% <muted>%action%</muted> <dark>•</dark> <warning>резерв %reserve%"
+citadel_draft_action_ban: "банят"
+citadel_draft_action_pick: "выбирают"
+citadel_draft_banned: "{info}%team% банят %hero%"
+citadel_draft_picked: "{info}%team% выбирают %hero%"
+citadel_draft_random_ban: "{warn}%team% не успели — случайный бан: %hero%"
+citadel_draft_random_pick: "{warn}%team% не успели — случайный выбор: %hero%"
+citadel_draft_not_captain: "{err}Банит и выбирает только капитан команды"
+citadel_draft_not_your_turn: "{err}Сейчас ход команды %team%"
+citadel_draft_hero_unavailable: "{err}Этот герой уже забанен или выбран"
+citadel_draft_player_left: "{warn}<accent>%player%</accent> вышел из игры"
+citadel_draft_lineup_title: "{info}Составы команд:"
+citadel_draft_lineup_team: "  %team%: %heroes%"
+citadel_draft_gui_title: "Баны и пики"
+citadel_draft_gui_role: "<muted>Роль:</muted> %role%"
+citadel_draft_gui_click: "<accent>Нажмите, чтобы выбрать"
+citadel_draft_gui_click_ban: "<error>Нажмите, чтобы забанить"
+citadel_draft_gui_free: "<muted>Свободен"
+citadel_draft_gui_banned: "<error>Забанен"
+citadel_draft_gui_picked: "<muted>Выбран:</muted> %team%"
+
+# Планирование: раздача героев команды и стартовый закуп
+citadel_planning_started: "{info}Время планирования: <accent>%seconds% с</accent>. Возьмите героя из выбранных капитаном (ПКМ) и закупитесь в магазине (<accent>F</accent>)"
+citadel_planning_actionbar: "<muted>Планирование</muted> <dark>•</dark> <accent>%seconds% с"
+citadel_planning_gui_title: "Герои команды"
+citadel_planning_gui_click: "<accent>Нажмите, чтобы взять"
+citadel_planning_gui_yours: "<success>Ваш герой"
+citadel_planning_gui_taken: "<muted>Берёт</muted> <accent>%player%"
+citadel_planning_claimed: "{ok}Вы берёте %hero%"
+citadel_planning_taken: "{err}Этого героя уже взял <accent>%player%"
+citadel_planning_result: "{info}Вы играете за %hero%"
+
+# Матч
+citadel_match_starting: "{ok}Герои выбраны — матч начинается!"
+citadel_hud: "<error>❤ %hp%</error><muted>/%max_hp%</muted> <dark>•</dark> <accent>✦ %mana%</accent><muted>/%max_mana%</muted> <dark>•</dark> <warning>⛃ %gold%"
+citadel_ability_slot: "Способность %slot%"
+citadel_cast_no_ability: "{err}Здесь нет способности"
+citadel_cast_silenced: "{err}Сейчас нельзя применять способности"
+citadel_cast_locked: "{err}Ультимейт открывается с <accent>%level%</accent> уровня"
+citadel_cast_cooldown: "{err}Перезарядка: <accent>%seconds% с"
+citadel_cast_no_mana: "{err}Не хватает маны"
+citadel_cast_no_target: "{err}Нет цели в прицеле"
+citadel_cast_failed: "{err}Не удалось применить способность"
+citadel_hero_killed: "{info}<accent>%killer%</accent> убивает <accent>%victim%"
+citadel_hero_died: "{info}<accent>%victim%</accent> погибает"
+
+
+# Способности героев
+citadel_hero_boulder_ability_1_name: "<accent>Удар оземь"
+citadel_hero_boulder_ability_1_desc:
+  - "<muted>Бьёт о землю: урон вокруг (4 бл.)"
+  - "<muted>и замедление врагов на 30%"
+citadel_hero_boulder_ability_2_name: "<accent>Каменная кожа"
+citadel_hero_boulder_ability_2_desc:
+  - "<muted>Щит из камня на 4 с"
+citadel_hero_boulder_ability_3_name: "<accent>Таран"
+citadel_hero_boulder_ability_3_desc:
+  - "<muted>Рывок на 6 бл. по взгляду,"
+  - "<muted>первый враг на пути оглушён"
+citadel_hero_boulder_ability_4_name: "<accent>Обвал"
+citadel_hero_boulder_ability_4_desc:
+  - "<muted>Камнепад в точку: через 0,6 с"
+  - "<muted>оглушение и урон в радиусе 4 бл."
+citadel_hero_warden_ability_1_name: "<accent>Удар щитом"
+citadel_hero_warden_ability_1_desc:
+  - "<muted>Урон в конусе перед собой"
+  - "<muted>и короткое оглушение"
+citadel_hero_warden_ability_2_name: "<accent>Строй"
+citadel_hero_warden_ability_2_desc:
+  - "<muted>4 с: вы и союзники рядом (6 бл.)"
+  - "<muted>получаете на 25% меньше урона"
+citadel_hero_warden_ability_3_name: "<accent>Аркан"
+citadel_hero_warden_ability_3_desc:
+  - "<muted>Цепь на 10 бл.: первый враг"
+  - "<muted>притягивается к вам и замедлен"
+citadel_hero_warden_ability_4_name: "<accent>Твердыня"
+citadel_hero_warden_ability_4_desc:
+  - "<muted>5 с: невосприимчивость к контролю и щит,"
+  - "<muted>союзники рядом получают щит вдвое меньше"
+citadel_hero_frost_ability_1_name: "<accent>Ледяной шип"
+citadel_hero_frost_ability_1_desc:
+  - "<muted>Шип на 12 бл. сквозь врагов:"
+  - "<muted>урон и замедление на 35%"
+citadel_hero_frost_ability_2_name: "<accent>Ледяной панцирь"
+citadel_hero_frost_ability_2_desc:
+  - "<muted>Щит на 5 с; кто бьёт вас вблизи,"
+  - "<muted>замедлен на 30%"
+citadel_hero_frost_ability_3_name: "<accent>Скольжение"
+citadel_hero_frost_ability_3_desc:
+  - "<muted>Рывок на 7 бл., позади — ледяная"
+  - "<muted>дорожка, замедляющая врагов"
+citadel_hero_frost_ability_4_name: "<accent>Вечная мерзлота"
+citadel_hero_frost_ability_4_desc:
+  - "<muted>Ледяная волна вокруг (6 бл.):"
+  - "<muted>урон и оглушение"
+citadel_hero_squirrel_ability_1_name: "<accent>Выстрел желудем"
+citadel_hero_squirrel_ability_1_desc:
+  - "<muted>Желудь отскакивает по врагам;"
+  - "<muted>промах — на месте падения растёт дерево"
+citadel_hero_squirrel_ability_2_name: "<accent>Лесная ловушка"
+citadel_hero_squirrel_ability_2_desc:
+  - "<muted>Сеть в точку: враги у деревьев"
+  - "<muted>притягиваются к ним и оглушены"
+citadel_hero_squirrel_ability_3_name: "<accent>Лесной рывок"
+citadel_hero_squirrel_ability_3_desc:
+  - "<muted>Ускорение, лазание по деревьям"
+  - "<muted>и невидимость на 1 с"
+citadel_hero_squirrel_ability_4_name: "<accent>Меткий выстрел"
+citadel_hero_squirrel_ability_4_desc:
+  - "<muted>Нажмите — заряд (до 3 с), ещё раз — выстрел."
+  - "<muted>Чем дольше заряд, тем сильнее и дальше"
+citadel_hero_falcon_ability_1_name: "<accent>Пробивающая стрела"
+citadel_hero_falcon_ability_1_desc:
+  - "<muted>Стрела на 16 бл. сквозь всех врагов"
+citadel_hero_falcon_ability_2_name: "<accent>Капкан"
+citadel_hero_falcon_ability_2_desc:
+  - "<muted>Ловушка на 30 с (до 2 сразу):"
+  - "<muted>первый враг рядом обездвижен"
+citadel_hero_falcon_ability_3_name: "<accent>Кувырок"
+citadel_hero_falcon_ability_3_desc:
+  - "<muted>Рывок на 5 бл. назад"
+citadel_hero_falcon_ability_4_name: "<accent>Шквал"
+citadel_hero_falcon_ability_4_desc:
+  - "<muted>3 с: град стрел по области в точке."
+  - "<muted>Оглушение или немота прерывают"
+citadel_hero_gunner_ability_1_name: "<accent>Картечь"
+citadel_hero_gunner_ability_1_desc:
+  - "<muted>Выстрел конусом перед собой (6 бл.)"
+citadel_hero_gunner_ability_2_name: "<accent>Мина"
+citadel_hero_gunner_ability_2_desc:
+  - "<muted>Мина на 40 с (до 2 сразу): взрыв,"
+  - "<muted>когда враг рядом, и замедление"
+citadel_hero_gunner_ability_3_name: "<accent>Отдача"
+citadel_hero_gunner_ability_3_desc:
+  - "<muted>Выстрел вперёд и рывок назад"
+citadel_hero_gunner_ability_4_name: "<accent>Ядро"
+citadel_hero_gunner_ability_4_desc:
+  - "<muted>Ядро на 30 бл.: взрывается"
+  - "<muted>о врага или стену"
+citadel_hero_raven_ability_1_name: "<accent>Стая"
+citadel_hero_raven_ability_1_desc:
+  - "<muted>Три ворона летят к врагу в прицеле"
+citadel_hero_raven_ability_2_name: "<accent>Метка охотника"
+citadel_hero_raven_ability_2_desc:
+  - "<muted>5 с: враг получает"
+  - "<muted>на 15% больше любого урона"
+citadel_hero_raven_ability_3_name: "<accent>Перо"
+citadel_hero_raven_ability_3_desc:
+  - "<muted>Перенос в точку; следующая атака"
+  - "<muted>за 3 с сильнее на 40%"
+citadel_hero_raven_ability_4_name: "<accent>Буря перьев"
+citadel_hero_raven_ability_4_desc:
+  - "<muted>4 с: урон и замедление"
+  - "<muted>врагам вокруг вас (5 бл.)"
+citadel_hero_spark_ability_1_name: "<accent>Огненный шар"
+citadel_hero_spark_ability_1_desc:
+  - "<muted>Снаряд на 14 бл.: взрыв"
+  - "<muted>в радиусе 2 бл."
+citadel_hero_spark_ability_2_name: "<accent>Цепная молния"
+citadel_hero_spark_ability_2_desc:
+  - "<muted>Бьёт врага в прицеле и перескакивает"
+  - "<muted>ещё на двух рядом"
+citadel_hero_spark_ability_3_name: "<accent>Мерцание"
+citadel_hero_spark_ability_3_desc:
+  - "<muted>Мгновенный перенос в точку"
+citadel_hero_spark_ability_4_name: "<accent>Метеор"
+citadel_hero_spark_ability_4_desc:
+  - "<muted>Через 1,2 с падает в точку:"
+  - "<muted>урон в радиусе 5 бл."
+citadel_hero_storm_ability_1_name: "<accent>Разряд"
+citadel_hero_storm_ability_1_desc:
+  - "<muted>Молния во врага в прицеле:"
+  - "<muted>урон и короткое оглушение"
+citadel_hero_storm_ability_2_name: "<accent>Грозовая туча"
+citadel_hero_storm_ability_2_desc:
+  - "<muted>Туча в точке на 4 с:"
+  - "<muted>урон врагам под ней каждую секунду"
+citadel_hero_storm_ability_3_name: "<accent>Порыв"
+citadel_hero_storm_ability_3_desc:
+  - "<muted>Ветер конусом перед собой:"
+  - "<muted>отбрасывает врагов на 6 бл."
+citadel_hero_storm_ability_4_name: "<accent>Смерч"
+citadel_hero_storm_ability_4_desc:
+  - "<muted>Смерч в точке на 3 с:"
+  - "<muted>тянет врагов к центру и бьёт"
+citadel_hero_ash_ability_1_name: "<accent>Иссушение"
+citadel_hero_ash_ability_1_desc:
+  - "<muted>Урон врагу в прицеле;"
+  - "<muted>вы лечитесь на половину урона"
+citadel_hero_ash_ability_2_name: "<accent>Проклятие"
+citadel_hero_ash_ability_2_desc:
+  - "<muted>4 с: враг получает на 20% больше"
+  - "<muted>магического урона и замедлен"
+citadel_hero_ash_ability_3_name: "<accent>Шаг во мглу"
+citadel_hero_ash_ability_3_desc:
+  - "<muted>Перенос в точку и ускорение на 2 с"
+citadel_hero_ash_ability_4_name: "<accent>Мор"
+citadel_hero_ash_ability_4_desc:
+  - "<muted>6 с урона каждую секунду; если цель умрёт,"
+  - "<muted>мор перейдёт на ближайшего врага"
+citadel_hero_prism_ability_1_name: "<accent>Осколки"
+citadel_hero_prism_ability_1_desc:
+  - "<muted>Веер из трёх снарядов"
+citadel_hero_prism_ability_2_name: "<accent>Грань"
+citadel_hero_prism_ability_2_desc:
+  - "<muted>Щит союзнику в прицеле или себе;"
+  - "<muted>часть поглощённого урона уходит обратно"
+citadel_hero_prism_ability_3_name: "<accent>Преломление"
+citadel_hero_prism_ability_3_desc:
+  - "<muted>Меняетесь местами с героем в прицеле"
+citadel_hero_prism_ability_4_name: "<accent>Кристальная темница"
+citadel_hero_prism_ability_4_desc:
+  - "<muted>2 с враг заперт в кристалле (оглушён и неуязвим),"
+  - "<muted>потом взрыв бьёт врагов вокруг"
+citadel_hero_solace_ability_1_name: "<accent>Исцеление"
+citadel_hero_solace_ability_1_desc:
+  - "<muted>Лечит союзника в прицеле или вас"
+citadel_hero_solace_ability_2_name: "<accent>Оберег"
+citadel_hero_solace_ability_2_desc:
+  - "<muted>Щит на 4 с союзнику в прицеле или вам"
+citadel_hero_solace_ability_3_name: "<accent>Путы"
+citadel_hero_solace_ability_3_desc:
+  - "<muted>Снаряд на 12 бл.: первый враг"
+  - "<muted>обездвижен на 1,5 с"
+citadel_hero_solace_ability_4_name: "<accent>Святилище"
+citadel_hero_solace_ability_4_desc:
+  - "<muted>Зона в точке на 5 с: союзники в ней"
+  - "<muted>лечатся и получают на 25% меньше урона"
+citadel_hero_herald_ability_1_name: "<accent>Гимн"
+citadel_hero_herald_ability_1_desc:
+  - "<muted>Лечит вас и союзников рядом (7 бл.)"
+citadel_hero_herald_ability_2_name: "<accent>Марш"
+citadel_hero_herald_ability_2_desc:
+  - "<muted>3 с: вы и союзники рядом"
+  - "<muted>быстрее на 25%"
+citadel_hero_herald_ability_3_name: "<accent>Диссонанс"
+citadel_hero_herald_ability_3_desc:
+  - "<muted>Волна на 10 бл.: первый враг получает"
+  - "<muted>урон и немоту на 1,5 с"
+citadel_hero_herald_ability_4_name: "<accent>Песнь стойкости"
+citadel_hero_herald_ability_4_desc:
+  - "<muted>4 с: вы и союзники рядом не падаете"
+  - "<muted>ниже 1 HP и понемногу лечитесь"
+citadel_hero_shaman_ability_1_name: "<accent>Тотем жизни"
+citadel_hero_shaman_ability_1_desc:
+  - "<muted>Тотем на 6 с: лечит союзников"
+  - "<muted>рядом каждую секунду"
+citadel_hero_shaman_ability_2_name: "<accent>Тотем стужи"
+citadel_hero_shaman_ability_2_desc:
+  - "<muted>Тотем на 5 с: замедляет врагов"
+  - "<muted>рядом на 30%"
+citadel_hero_shaman_ability_3_name: "<accent>Очищение"
+citadel_hero_shaman_ability_3_desc:
+  - "<muted>Снимает контроль с союзника в прицеле"
+  - "<muted>или с вас и даёт щит"
+citadel_hero_shaman_ability_4_name: "<accent>Зов предков"
+citadel_hero_shaman_ability_4_desc:
+  - "<muted>Оглушает врагов вокруг (7 бл.)"
+  - "<muted>и лечит союзников"
+
+# Предметы
+citadel_item_sword_name: "<accent>Меч"
+citadel_item_sword_description:
+  - "<muted>+15 урона"
+citadel_item_chestplate_name: "<accent>Нагрудник"
+citadel_item_chestplate_description:
+  - "<muted>+10 брони"
+citadel_item_amulet_name: "<accent>Амулет"
+citadel_item_amulet_description:
+  - "<muted>+10 сопротивления магии"
+citadel_item_crystal_name: "<accent>Кристалл"
+citadel_item_crystal_description:
+  - "<muted>+200 маны"
+  - "<muted>+0,5% маны в секунду"
+citadel_item_ring_name: "<accent>Кольцо"
+citadel_item_ring_description:
+  - "<muted>+200 HP"
+citadel_item_boots_name: "<accent>Сапоги"
+citadel_item_boots_description:
+  - "<muted>+10% скорости"
+citadel_item_thirst_blade_name: "<accent>Клинок жажды"
+citadel_item_thirst_blade_description:
+  - "<muted>+30 урона, +250 HP"
+  - "<muted>Вампиризм 12%"
+citadel_item_guardian_plate_name: "<accent>Латы стража"
+citadel_item_guardian_plate_description:
+  - "<muted>+25 брони, +350 HP"
+  - "<muted>Отражает 15% физического урона"
+citadel_item_storm_staff_name: "<accent>Посох бури"
+citadel_item_storm_staff_description:
+  - "<muted>+60 силы способностей, +300 маны"
+  - "<muted>Перезарядка способностей −10%"
+citadel_item_dusk_cloak_name: "<accent>Плащ сумерек"
+citadel_item_dusk_cloak_description:
+  - "<muted>+25 сопротивления магии, +12% скорости"
+  - "<muted>Щит на 150 раз в 30 с"
+citadel_item_wanderer_boots_name: "<accent>Сапоги странника"
+citadel_item_wanderer_boots_description:
+  - "<muted>+20% скорости, +5 брони"
+citadel_item_healing_potion_name: "<accent>Зелье лечения"
+citadel_item_healing_potion_description:
+  - "<muted>400 HP за 8 с, урон прерывает"
+  - "<muted>В запасе до 3 штук"
+# Бойцы и убийцы
+citadel_hero_cleaver_ability_1_name: "<accent>Широкий взмах"
+citadel_hero_cleaver_ability_1_desc:
+  - "<muted>Бьёт врагов перед вами"
+  - "<muted>в конусе на 4 бл."
+citadel_hero_cleaver_ability_2_name: "<accent>Азарт"
+citadel_hero_cleaver_ability_2_desc:
+  - "<muted>5 с: атаки на 30% быстрее"
+  - "<muted>и лечат на 20% урона"
+citadel_hero_cleaver_ability_3_name: "<accent>Прыжок"
+citadel_hero_cleaver_ability_3_desc:
+  - "<muted>Прыжок в точку до 8 бл.:"
+  - "<muted>урон врагам при приземлении"
+citadel_hero_cleaver_ability_4_name: "<accent>Казнь"
+citadel_hero_cleaver_ability_4_desc:
+  - "<muted>Сильный удар по врагу в прицеле:"
+  - "<muted>чем меньше у него HP, тем больнее."
+  - "<muted>Убийство сбрасывает перезарядку"
+citadel_hero_brawler_ability_1_name: "<accent>Серия"
+citadel_hero_brawler_ability_1_desc:
+  - "<muted>Следующие 3 атаки за 4 с сильнее,"
+  - "<muted>третья оглушает"
+citadel_hero_brawler_ability_2_name: "<accent>Боевой клич"
+citadel_hero_brawler_ability_2_desc:
+  - "<muted>4 с: вы и союзники рядом быстрее"
+  - "<muted>на 20% и атакуют на 20% чаще"
+citadel_hero_brawler_ability_3_name: "<accent>Бросок через себя"
+citadel_hero_brawler_ability_3_desc:
+  - "<muted>Бросает врага вплотную за спину:"
+  - "<muted>урон и оглушение на 0,6 с"
+citadel_hero_brawler_ability_4_name: "<accent>Ярость"
+citadel_hero_brawler_ability_4_desc:
+  - "<muted>6 с: урон больше на 30%, контроль"
+  - "<muted>не действует, атаки лечат на 15%"
+citadel_hero_lancer_ability_1_name: "<accent>Выпад"
+citadel_hero_lancer_ability_1_desc:
+  - "<muted>Укол на 5 бл. сквозь всех врагов"
+citadel_hero_lancer_ability_2_name: "<accent>Вихрь"
+citadel_hero_lancer_ability_2_desc:
+  - "<muted>Удар вокруг на 3,5 бл.;"
+  - "<muted>лечит на 30% урона по героям"
+citadel_hero_lancer_ability_3_name: "<accent>Рывок с копьём"
+citadel_hero_lancer_ability_3_desc:
+  - "<muted>Рывок на 7 бл.: урон всем"
+  - "<muted>врагам на пути"
+citadel_hero_lancer_ability_4_name: "<accent>Пригвоздить"
+citadel_hero_lancer_ability_4_desc:
+  - "<muted>Копьё на 14 бл.: первый вражеский"
+  - "<muted>герой получает урон и обездвижен на 2 с"
+citadel_hero_hammer_ability_1_name: "<accent>Удар молота"
+citadel_hero_hammer_ability_1_desc:
+  - "<muted>Удар вокруг на 3 бл.: урон,"
+  - "<muted>враги подброшены и оглушены"
+citadel_hero_hammer_ability_2_name: "<accent>Закалка"
+citadel_hero_hammer_ability_2_desc:
+  - "<muted>4 с: +30 брони"
+  - "<muted>и +30 сопротивления магии"
+citadel_hero_hammer_ability_3_name: "<accent>Прыжок с молотом"
+citadel_hero_hammer_ability_3_desc:
+  - "<muted>Прыжок в точку до 9 бл.: урон"
+  - "<muted>и замедление врагов при приземлении"
+citadel_hero_hammer_ability_4_name: "<accent>Землетрясение"
+citadel_hero_hammer_ability_4_desc:
+  - "<muted>3 волны вокруг (7 бл.) раз в секунду:"
+  - "<muted>урон и замедление на 40%"
+citadel_hero_shade_ability_1_name: "<accent>Удар в спину"
+citadel_hero_shade_ability_1_desc:
+  - "<muted>Удар по врагу вплотную,"
+  - "<muted>сзади — в полтора раза сильнее"
+citadel_hero_shade_ability_2_name: "<accent>Дымка"
+citadel_hero_shade_ability_2_desc:
+  - "<muted>Невидимость на 3 с или до атаки,"
+  - "<muted>скорость +20%"
+citadel_hero_shade_ability_3_name: "<accent>Бросок клинка"
+citadel_hero_shade_ability_3_desc:
+  - "<muted>Клинок на 10 бл.: при попадании"
+  - "<muted>вы оказываетесь за спиной цели"
+citadel_hero_shade_ability_4_name: "<accent>Метка"
+citadel_hero_shade_ability_4_desc:
+  - "<muted>Через 3 с цель получает чистый урон:"
+  - "<muted>30% вашего урона по ней за это время"
+  - "<muted>и ещё немного сверху"
+citadel_hero_sting_ability_1_name: "<accent>Отравленный клинок"
+citadel_hero_sting_ability_1_desc:
+  - "<muted>Удар по врагу вплотную"
+  - "<muted>и яд на 4 с"
+citadel_hero_sting_ability_2_name: "<accent>Ядовитое облако"
+citadel_hero_sting_ability_2_desc:
+  - "<muted>Облако на 4 с: урон каждую секунду"
+  - "<muted>и замедление на 20%"
+citadel_hero_sting_ability_3_name: "<accent>Перекат"
+citadel_hero_sting_ability_3_desc:
+  - "<muted>Рывок на 5 бл."
+  - "<muted>и невидимость на 1 с"
+citadel_hero_sting_ability_4_name: "<accent>Смертельный яд"
+citadel_hero_sting_ability_4_desc:
+  - "<muted>Через 3 с чистый урон по врагу;"
+  - "<muted>если у него меньше 35% HP — намного больше"
+citadel_hero_phantom_ability_1_name: "<accent>Удар из тени"
+citadel_hero_phantom_ability_1_desc:
+  - "<muted>Следующая атака за 4 с сильнее"
+  - "<muted>и замедляет на 40%"
+citadel_hero_phantom_ability_2_name: "<accent>Двойник"
+citadel_hero_phantom_ability_2_desc:
+  - "<muted>Невидимость на 2 с, а на вашем месте"
+  - "<muted>двойник на 4 с: его бьют крипы и башни"
+citadel_hero_phantom_ability_3_name: "<accent>Шаг сквозь тень"
+citadel_hero_phantom_ability_3_desc:
+  - "<muted>Перенос за спину врага"
+  - "<muted>в прицеле (до 10 бл.)"
+citadel_hero_phantom_ability_4_name: "<accent>Тысяча клинков"
+citadel_hero_phantom_ability_4_desc:
+  - "<muted>3 удара по вражеским героям рядом"
+  - "<muted>с переносом к каждому, потом назад"
+# Линия: крипы, башни, ядро, фонтан
+citadel_tower_destroyed_outer: "{warn}%team% теряют <accent>внешнюю башню"
+citadel_tower_destroyed_inner: "{warn}%team% теряют <accent>внутреннюю башню</accent> — ядро открыто"
+citadel_core_destroyed: "{warn}Ядро разрушено: %team% проигрывают"
+citadel_team_abandoned: "{warn}%team% покинули игру — победа за соперниками"
+# Статистика и награды
+citadel_stat_games: "Матчи"
+citadel_stat_wins: "Победы"
+citadel_stat_kills: "Убийства"
+citadel_stat_deaths: "Смерти"
+citadel_stat_assists: "Помощь"
+citadel_stat_towers: "Башни"
+citadel_stat_creeps: "Добито крипов"
+citadel_stats_summary: "{info}Итог матча: <accent>%kills%</accent><dark>/</dark><accent>%deaths%</accent><dark>/</dark><accent>%assists%</accent> <muted>(У/С/П)</muted> <dark>•</dark> <muted>башни:</muted> <accent>%towers%</accent> <dark>•</dark> <muted>крипы:</muted> <accent>%creeps%"
+citadel_coins_reason: "матч в Цитадели"
+# Экономика в матче и магазин
+citadel_shop_keeper_name: "<accent>Торговец"
+citadel_shop_hint: "{info}Магазин — <accent>F</accent> в зоне своего фонтана. Предметы — клавиши 5–8, зелье — 9 (ПКМ — выпить)"
+citadel_shop_closed: "{err}Магазин сейчас закрыт"
+citadel_shop_dead: "{err}Мёртвые не торгуют — дождитесь возрождения"
+citadel_shop_outside_fountain: "{err}Магазин работает только в зоне своего фонтана"
+citadel_shop_bought: "{ok}Куплено: %item% <muted>за</muted> <accent>%price% ⛃"
+citadel_shop_sold: "{ok}Продано: %item% <muted>за</muted> <accent>%price% ⛃"
+citadel_shop_not_enough_gold: "{err}Не хватает <accent>%missing% ⛃"
+citadel_shop_no_free_slot: "{err}Все 4 слота предметов заняты — сначала продайте что-нибудь"
+citadel_shop_potion_limit: "{err}Зелий уже максимум: <accent>%max%"
+citadel_shop_missing_components: "{err}Нужны компоненты в слотах: %components%"
+citadel_shop_empty_slot: "{err}В этом слоте ничего нет"
+citadel_shop_no_potions: "{err}Зелий нет"
+citadel_shop_recipe_separator: "<muted> + "
+citadel_shop_gui_title: "Магазин"
+citadel_shop_gui_gold: "<warning>⛃ %gold%"
+citadel_shop_gui_gold_lore:
+  - "<muted>Золото: 2 в секунду, крипы,"
+  - "<muted>герои и башни"
+citadel_shop_gui_owned: "<accent>Ваши предметы"
+citadel_shop_gui_owned_lore:
+  - "<muted>Справа — слоты 5–8 и зелья"
+  - "<muted>Нажмите на предмет, чтобы продать за полцены"
+citadel_shop_gui_recipe: "<muted>Собирается из:</muted> %components%"
+citadel_shop_gui_price_upgrade: "<muted>Доплата:</muted> <warning>%price% ⛃</warning> <muted>(всего %total%)"
+citadel_shop_gui_price: "<muted>Цена:</muted> <warning>%price% ⛃"
+citadel_shop_gui_potions: "<muted>У вас:</muted> <accent>%count%</accent><muted>/%max%"
+citadel_shop_gui_click_buy: "<success>Нажмите, чтобы купить"
+citadel_shop_gui_not_enough_gold: "<error>Не хватает %missing% ⛃"
+citadel_shop_gui_no_free_slot: "<error>Все слоты предметов заняты"
+citadel_shop_gui_potion_limit: "<error>Зелий уже максимум"
+citadel_shop_gui_missing_components: "<error>Нужны компоненты в слотах"
+citadel_shop_gui_empty_slot: "<muted>Пустой слот (клавиша %key%)"
+citadel_shop_gui_click_sell:
+  - "<accent>Нажмите, чтобы продать</accent> <muted>за</muted> <warning>%price% ⛃"
+citadel_shop_gui_no_potions: "<muted>Зелий нет"
+citadel_potion_slot_empty_name: "<muted>Зелий нет"
+citadel_potion_slot_empty_lore:
+  - "<muted>Зелье лечения — в магазине у фонтана (F)"
+citadel_potion_slot_hint:
+  - "<accent>ПКМ</accent> <dark>—</dark> <muted>выпить"
+citadel_potion_interrupted: "{warn}Зелье прервано уроном"
+citadel_potion_none: "<error>Зелий нет — купите в магазине у фонтана"
+citadel_potion_already: "<error>Зелье ещё действует"
+citadel_potion_full_health: "<error>HP и так полное"
+citadel_reward_kill: "{ok}Убийство: <warning>+%gold% ⛃</warning> <muted>и</muted> <accent>+%experience% опыта"
+citadel_reward_assist: "{ok}Помощь: <warning>+%gold% ⛃</warning> <muted>и</muted> <accent>+%experience% опыта"
+citadel_reward_tower: "{ok}Башня разрушена: <warning>+%gold% ⛃</warning> <muted>и</muted> <accent>+%experience% опыта"
+citadel_reward_leaver: "{info}Золото ушедшего <accent>%player%</accent> поделено: <warning>+%gold% ⛃"
+citadel_level_up: "{ok}Новый уровень: <accent>%level%"
+citadel_ultimate_unlocked: "{ok}Ультимейт открыт — клавиша <accent>4"
+
+# Интерфейс матча
+citadel_board_time: "<muted>Время: <accent>%time%"
+citadel_board_team: "%team% <accent>%score% ⚔</accent> <dark>•</dark> %towers%"
+citadel_board_tower_up: "<text>■"
+citadel_board_tower_down: "<dark>□"
+citadel_board_kda: "<muted>У/С/П: <accent>%kills%/%deaths%/%assists%"
+citadel_board_gold: "<muted>Золото: <warning>%gold% ⛃"
+citadel_board_level: "<muted>Уровень: <accent>%level%"
+citadel_board_respawn: "<muted>Возрождение: <accent>%seconds% с"
+citadel_bossbar_core: "Ядро: %team% <dark>•</dark> <accent>%health%</accent><muted>/%max%"
+citadel_bossbar_core_invulnerable: "<muted>⛨</muted> Ядро: %team% <dark>•</dark> <accent>%health%</accent><muted>/%max% — неуязвимо, пока стоит внутренняя башня"
