@@ -1,0 +1,4 @@
+# «Цитадель»: проверка HUD без матча (/citadel hud)
+citadel_hud_preview_on: "{ok}HUD включён с тестовыми значениями. Убрать — <accent>/citadel hud"
+citadel_hud_preview_off: "{ok}Пробный HUD убран"
+citadel_hud_preview_unavailable: "{err}UltimateUI на этом сервере нет или он ещё не готов"
